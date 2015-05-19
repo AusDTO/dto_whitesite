@@ -9,8 +9,13 @@ $zen-gutter-width: 20px;
 .layout-sidebar-left,
 .layout-sidebar-right,
 .layout-sidebar-both,
-.layout-full {
+.layout-no-sidebar {
   padding: 20px;
+}
+
+.sidebar,
+.main-content {
+  padding-bottom: 1em;
 }
 
 

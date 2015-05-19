@@ -49,7 +49,7 @@
     $layout = 'layout-sidebar-right';
   }
   else {
-    $layout = 'layout-full';
+    $layout = 'layout-no-sidebar';
   }
 
   ?>
@@ -63,7 +63,7 @@
   <div class="<?php print $layout; ?>">
 
     <?php if ($sidebar): ?>
-      <aside class="<?php print $layout; ?>__sidebar" role="complementary">
+      <aside class="<?php print $layout; ?>__sidebar sidebar sidebar" role="complementary">
         <?php print $sidebar; ?>
       </aside>
     <?php endif; ?>
@@ -89,7 +89,7 @@
     </div>
 
     <?php if ($sidebar_two): ?>
-      <aside class="<?php print $layout; ?>__sidebar_two" role="complementary">
+      <aside class="<?php print $layout; ?>__sidebar_two sidebar sidebar-right" role="complementary">
         <?php print $sidebar_two; ?>
       </aside>
 
