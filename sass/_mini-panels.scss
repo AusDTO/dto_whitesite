@@ -1,0 +1,58 @@
+/*
+ * Mini-panles styling.
+ */
+
+// 
+.mini-panel-3-col-responsive-layout {
+  
+  h2 {
+    padding-bottom: 0.5em;    
+  }
+    
+  // Grid config.
+  $zen-column-count: 6;
+  $zen-gutter-width: 20px;
+  @include zen-grid-container;
+  
+  .mini-panel-3-col-responsive-layout-left-col {
+    
+    @include zen-grid-item(6, 1);
+    
+    @include breakpoint($narrow) {
+      @include zen-grid-item(3, 1);
+    }
+    
+    @include breakpoint($wide) {
+      @include zen-grid-item(2, 1);
+    }
+  }
+  
+  .mini-panel-3-col-responsive-layout-center-col {
+    
+    @media (max-width: $narrow) {
+      @include zen-clear();
+    }
+    @include zen-grid-item(6, 1);
+
+    @include breakpoint($narrow) {
+      @include zen-grid-item(3, 4);
+    }
+    
+    @include breakpoint($wide) {
+      @include zen-grid-item(2, 3);
+    }
+  }
+  
+  .mini-panel-3-col-responsive-layout-right-col {
+    
+    @media (max-width: $wide) {
+      @include zen-clear();
+    }
+    
+    @include zen-grid-item(6, 1);
+    
+    @include breakpoint($wide) {
+      @include zen-grid-item(2, 5);
+    }
+  }
+}
