@@ -18,7 +18,12 @@
   .block {   
     
     .block__title {
-      
+      font-size: 2rem;
+      color: $black;
+      line-height: 2.93333rem;
+      margin: 1px 0 11px;
+      background-color: $white;
+      padding: 0;
     }
     
     .block__content {
