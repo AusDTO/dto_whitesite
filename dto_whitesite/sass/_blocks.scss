@@ -2,7 +2,29 @@
  * Block styling.
  */
 
+/**
+ * Front page three column responsive mini-panel block
+ */
 #block-panels-mini-front-page-3-col-layout {
   border-bottom: 1px solid grey;
 }
 
+
+/**
+ * General sidebar block styling 
+ */
+.sidebar {
+  
+  .block {   
+    
+    .block__title {
+      
+    }
+    
+    .block__content {
+      background-color: white;
+      padding: 0;
+    }
+  }
+}
+ 

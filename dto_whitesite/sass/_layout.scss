@@ -44,12 +44,12 @@ $zen-gutter-width: 20px;
   @include breakpoint($narrow) {
     
     .layout-sidebar-right__main {
-      @include zen-grid-item(9, 1);
+      @include zen-grid-item(8, 1);
     }
     
     // Right sidebar.
     .layout-sidebar-right__sidebar_two {
-      @include zen-grid-item(3, 10);
+      @include zen-grid-item(4, 9);
     }
   }
 }
