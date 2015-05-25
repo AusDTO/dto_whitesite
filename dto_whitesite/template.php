@@ -567,3 +567,18 @@ function dto_whitesite_preprocess_node(&$vars, $hook) {
                        "<span class='postedDate'>on " . date("l, M jS, Y", $vars['created']) . " </span>".
                        "<span class='postedBy'>by " . $vars['name'] ."</span>";
 }
+
+/**
+ * Implements hook_form_alter
+ */
+function dto_whitesite_form_alter(&$form, &$form_state, $form_id) {
+
+  switch ($form_id) {
+    
+    // Modify default search form.
+    case 'search_api_page_search_form_default_search':
+      // Add title tag to search form keywords field for improved accessibility.
+      $form['keys_1']['#attributes']['title'] = t('Enter your search keywords');
+      break;
+  }
+}
