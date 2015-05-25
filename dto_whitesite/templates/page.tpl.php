@@ -10,7 +10,7 @@
 
 <div class="layout-centered page-wrapper">
   <header class="header" role="banner">
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
+    <a href="<?php print $front_page; ?>" title="<?php print t('Link to Digital Transformation Office home page'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Digital Translformation Office'); ?>" class="header__logo-image" /></a>
 
     <nav class="header__secondary-menu" role="navigation">
       <?php print theme('links__system_secondary_menu', array(
