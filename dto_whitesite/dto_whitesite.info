@@ -54,6 +54,7 @@ stylesheets[all][] = agov_styles.css
 ; Then we add our own stylesheet.
 stylesheets[all][] = css/styles.css
 stylesheets[all][] = libraries/gray/css/gray.min.css
+stylesheets[all][] = css/font-awesome.min.css
 
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
 ; Instead, Zen now adds conditional-comment-included classes to the html
@@ -71,6 +72,7 @@ stylesheets[all][] = libraries/gray/css/gray.min.css
 
 scripts[] = js/agency.js
 scripts[] = libraries/gray/js/jquery.gray.js
+scripts[] = js/jquery-menu.js
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and

@@ -8,10 +8,13 @@
  */
 ?>
 
-<div class="layout-centered page-wrapper">
+<!--<div class="layout-centered page-wrapper">-->
+<div class="menu-open"></div>
   <header class="header" role="banner">
-    <a href="<?php print $front_page; ?>" title="<?php print t('Link to Digital Transformation Office home page'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Digital Translformation Office'); ?>" class="header__logo-image" /></a>
-
+  <div class="nav-head-container">
+    <!--<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /><div class="mobile-header">Digital Transformation Office</div></a>-->
+    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="sites/all/themes/custom/dto_whitesite/images/update/government-crest.png" alt="<?php print t('Home'); ?>" class="header__logo-image" /><span class="title">Digital Transformation Office</span></a>
+<a class="mobile-nav" href="#open-menu"><div class="top"></div><div class="middle"></div><div class="bottom"></div>MENU</a>
     <nav class="header__secondary-menu" role="navigation">
       <?php print theme('links__system_secondary_menu', array(
         'links' => $secondary_menu,
@@ -29,10 +32,10 @@
     </nav>
 
     <?php print render($page['header']); ?>
+    </div>
   </header>
-
   <?php print render($page['navigation']); ?>
-
+<div class="layout-centered page-wrapper">
   <?php
   // Render the sidebars to see if there's anything in them.
   $sidebar  = render($page['sidebar']);
