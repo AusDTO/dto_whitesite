@@ -63,7 +63,7 @@
   <div class="<?php print $layout; ?>">
 
     <?php if ($sidebar): ?>
-      <aside class="<?php print $layout; ?>__sidebar sidebar sidebar" role="complementary">
+      <aside class="<?php print $layout; ?>__sidebar sidebar sidebar-left" role="complementary">
         <?php print $sidebar; ?>
       </aside>
     <?php endif; ?>
