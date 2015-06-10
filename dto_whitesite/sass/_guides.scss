@@ -1,0 +1,65 @@
+/*
+ * Provides styling for DSS guides.
+ */
+
+
+/*
+ * Mandatory requirements
+ */
+.field-name-field-mandatory-requirement {
+  border: 1px solid grey;
+  margin: 5px 5px;
+  padding: 10px;
+}
+
+/*
+ * Mandatory requirements
+ */
+.field-name-field-best-practice,
+.field-name-field-mandatory-requirement {
+  border: 1px solid grey;
+  margin: 5px 5px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.dto-importance-marker {
+  width: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+/*
+ * Tags
+ */
+.field-type-taxonomy-term-reference {
+  
+  .field-item {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: pink;
+    @include border-radius(5px);
+  }
+}
+
+.field-name-field-job-role {
+  
+  .field-item {
+    background-color: pink;
+  }
+}
+
+.field-name-field-topic {
+  
+  .field-item {
+    background-color: #c0e1fb;
+  }
+}
+
+.field-name-field-tags-phase {
+  
+  .field-item {
+    background-color: #bdfdba;
+  }
+}
