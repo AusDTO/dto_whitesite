@@ -1,0 +1,81 @@
+/**
+ * Provides styling for blogs
+ */
+
+.user-picture {
+  
+  img {
+    @include border-radius(35px);
+  }
+}
+
+.view-blog {
+  
+  .views-row {
+    margin-bottom: 40px;
+  }
+  
+  .views-field-comment-count {
+    display: inline-block;
+  }
+}
+
+.dto-view-blog-author-wrapper {
+  overflow: hidden;
+  margin-bottom: 1.5em;
+}
+
+.views-field-picture {
+  display: inline-block;
+  width: 70px;
+}
+
+.views-field-name {
+  font-size: 1.3em;
+  font-weight: bold;
+  
+  .field-content {
+    display: table-cell;
+  }
+}
+
+.views-field-created {
+  
+  .field-content {
+    display: table-cell;
+  }
+}
+
+.dto-view-blog-author-name-create-field-wrapper {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.views-field-title {
+  margin-bottom: 0.5em;
+  
+  a {
+    font-size: 1.4em;
+    color: $title-link-blue;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.dto-view-blog-aticle-length-comment-count-fields-wrapper {
+  margin-bottom: 0.5em;
+}
+
+.views-field-field-article-length {
+  display: inline-block;
+  color: $dark-grey;
+}
+
+.views-field-comment-count {
+  display: inline-block;
+  color: $dark-grey;
+}
