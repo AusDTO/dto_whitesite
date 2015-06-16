@@ -1,0 +1,80 @@
+.footer {
+	background-color:#fff;
+	color:#333;
+	border-top:2px solid #ddd;
+	.connect-with-dto {
+		max-width:980px;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		padding:0 15px;
+		overflow:hidden;
+		h2 {
+			text-transform:uppercase;
+			color:#888;
+			font-size:1em;
+			margin-top:15px;
+			margin-bottom:0;
+		}
+		.twitter-icon {
+			background-image:url('../images/update/twitter-logo-small.png');
+			background-repeat:no-repeat;
+			background-size:contain;
+			display:block;
+			height:40px;
+			width:50px;
+			margin-bottom:15px;
+			float:left;
+		}
+		.youtube-icon {
+			background-image:url('../images/update/youtube-logo-small.png');
+			background-repeat:no-repeat;
+			background-size:contain;
+			display:block;
+			height:40px;
+			width:40px;
+			margin-bottom:15px;
+			float:left;
+			margin-top:6px;
+		}
+	}
+	.footer-links {
+		max-width:980px;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		padding:0 15px;
+		padding-bottom:13px;
+		.header__logo {
+			img {
+				
+			}
+			.title {
+				display:block;
+			}
+		}
+		.region-footer-bottom {
+			border-top:1px solid #ccc;
+			background-color:#fff;
+			padding-top:8px;
+			&::before {
+				background-image:none;
+			}
+			.block-menu {
+				margin-left:0px;
+				.block__content {
+					
+					.menu {
+						li {
+							
+							a {
+								color:#888;
+								font-size:0.85em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

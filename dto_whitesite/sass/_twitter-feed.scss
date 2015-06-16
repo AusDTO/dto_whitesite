@@ -1,0 +1,33 @@
+.front {
+	.pane-twitter-block-1 {
+		padding:20px;
+		background-color:#fff;
+		margin-top:25px;
+		overflow:hidden;
+		margin-bottom:0;
+		h2 {
+
+		}
+		iframe {
+			width:100%!important;
+			
+		}
+	}
+}
+
+/*@media (max-width: 768px) {
+	.front {
+		.pane-twitter-block-1 {
+			h2 {
+				width:100%;
+			}
+			.block__content {
+				width:100%;
+				float:left;
+				iframe {
+					width:100%!important;
+				}
+			}
+		}
+	}
+}*/

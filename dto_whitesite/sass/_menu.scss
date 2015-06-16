@@ -1,5 +1,379 @@
-/*
- * General styling for menu elements.
- */
+//I had to use lots of !important tags because Superfish is hard to style. Dont hold it against me.
 
+body{
+	.region-navigation {
+		//background-color:#e1e3e4;
+		//background-color:#fff;
+		//border-bottom:1px solid #eee;
+		.block-superfish {
+			.block__content {
+				margin-left:auto;
+				margin-right:auto;
+				max-width:980px;
+				ul {
+					&.menu {
+						//background-color:#fff;
+					}
+					li{
+						display:block;
+						a{
+							//color:#333;
+							font-size:1em;
+							padding:16px 20px;
+							&.active {
+								padding:16px 20px;
+								&::before {
+									border-top:none!important;
+								}
+							}
+							&:hover, &:focus {
+								&::before {
+									border-top:none!important;
+								}
+							}
+							&.menuparent::after {
+								content: "\f107";
+								font-family:FontAwesome;
+								margin-left:10px;
+								color:inherit;
+							}
+						}
+						ul {
+							width:100%!important;
+							li {
+								ul {
+									left:100%!important;
+								}
+							}
+						}
+						&.sfHover {
+							a {
+								&.menuparent::after {
+									color:inherit;
+								}	
+							}
+						}
+						a.sf-depth-1 {
+							&.active {
+								background-color:#f4f4f4;
+							}
+						}
+						a.sf-depth-2 {
+							padding-right:25px;
+							&.menuparent::after {
+								position:absolute;
+								right:30px;
+								transform:rotate(-90deg);
+								-webkit-transform:rotate(-90deg);
+								margin-right:-22px;
+								color:inherit;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//logo-header stuff
+.header {
+	background-color:#fff;
+	border-bottom:1px solid #eee;
+	.nav-head-container {
+		max-width:980px;
+		margin-left:auto;
+		margin-right:auto;
+		.header__logo {
+			/*width:70%;
+			max-width:none;*/
+			text-decoration:none;
+			img {
+				border-right:1px solid #ccc;
+				padding-right:15px;
+				margin-right:15px;
+				width:150px;
+				max-height:none;
+			}
+			.title {
+				font-size:1.4em;
+				color:#000;
+				line-height:2.9em;
+			}
+		} 
+		//search bar
+		/*.header__region{
+			width:30%;
+			margin-top:-5px;
+			.block-search-api-page {
+				width:100%;
+			}
+		}*/
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width: 980px) {
+	.header {
+	.nav-head-container {
+		.header__logo {
+			max-width:60%;
+			img {
+				width:135px;
+				max-height:none;
+			}
+			.title {
+				font-size:1.25em;
+				line-height:2.9em;
+			}
+		}
+		.header__region {
+			margin-top:10px;
+		} 
+	}
+}
+	
+}
+
+@media (max-width: 768px) {
+	.header {
+		margin-top:65px;
+		padding-bottom:10px;
+		.nav-head-container {
+			.header__logo {
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+				text-align: center;
+				width:90%;
+				max-width:none;
+				img {
+					border-right:none;
+					padding-right:0px;
+					margin-right:0px;
+					border-bottom:1px solid #ccc;
+					padding-bottom:15px;
+					margin-bottom:0;
+					display:block;
+					margin-left:auto;
+					margin-right:auto;
+					width:140px;
+				}
+				.title {
+					font-size:1.4em;
+				}
+			}
+			.block-agov-text-resize {
+				display:none;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.mobile-nav {
+		display:none;
+	}
+}
+@media (max-width: 768px) {
+	//burger styling
+	.mobile-nav {
+		position:fixed;
+		right:0;
+		top:10px;
+		transition:500ms;
+		padding:30px 15px 0 3%;
+		background-color:#fff;
+		font-size:0.75em;
+		z-index:1001;
+		top:0;
+		color:#666;
+		text-decoration:none;
+		.top, .middle, .bottom {
+			background-color:#666;
+			transition:500ms;
+		}
+		.top {
+			height:4px;
+			right:15px;
+			position:absolute;
+			top:10px;
+			width:35px;
+		}
+		.middle {
+			height:4px;
+			right:15px;
+			position:absolute;
+			top:19px;
+			width:35px;
+		}
+		.bottom {
+			height:4px;
+			right:15px;
+			position:absolute;
+			top:28px;
+			width:35px;
+		}
+	}
+	//header styling
+	.header {
+		margin-top:60px;
+	}
+	//superfish styling
+	.region-navigation {
+		transition:500ms;
+		-webkit-transition:500ms;
+		top:0;
+		right:-100%;
+		overflow-x:hidden;
+		overflow-y: auto;
+		position:fixed;
+		height:100%;
+		border-left:1px solid #ccc;
+		width:80%;
+		z-index:1001;
+		padding:10px;
+		background-color:#fff;
+		.block-superfish {
+			.block__content {
+				ul {
+					display:block;
+					li {
+						width:100%;
+						//padding-left:15px;
+						border-left:none;
+						border-right:none;
+						border-bottom:1px solid #ccc;
+						background-color:#fff;
+						
+						&.first {
+							border-bottom:1px solid #ccc;
+						}
+						a{
+							padding-right:30px!important;
+							color:#333;
+							font-size:0.8em!important;
+							&.menuparent::after {
+								float:right;
+								margin-right:-22px;
+								color:#000!important;
+							}
+						}
+						ul {
+							box-shadow:none;
+							position:relative;
+							left:0!important;
+							width:100%!important;
+							li {
+								padding-left:10px;
+								width:100%;
+								&.last {
+									border-bottom:none;
+								}
+								a {
+									padding-right:30px!important;
+									width:100%;
+									&.menuparent::after {
+										position:absolute;
+										right:5px;
+										transform:rotate(90deg);
+										margin-right:-22px;
+										color:#000!important;
+									}
+									&.sf-depth-2.menuparent::after {
+										transform:rotate(0deg);
+										-webkit-transform:rotate(0deg)!important;
+									}
+								}
+							}
+						}
+						
+					}
+				}
+			}
+		}
+		.tinynav {
+			display:none;
+		}
+		//changes hover state to accordion
+		.block__content > .menu > li > ul, .region-navigation .block__content > .menu ul ul {
+			position:relative;
+			width:100%!important;
+		}
+		.active-trail a.active::before {
+			border-top:none!important;
+		}
+		li:hover, li:focus {
+			a::before {
+				border-top:none!important;
+				border-left:none!important;
+			}
+			a {
+				background-color:#fff!important;
+			}
+		}
+		.active-trail a.active {
+			font-weight:bold;
+			color:#4dc9e3;
+		}
+	}
+	//controls menu opening
+	.show {
+		overflow:hidden;
+		.mobile-nav {
+			right:80%;
+			.top {
+				transform:rotate(-45deg);
+				-webkit-transform:rotate(-45deg);
+				top:18px;
+			}
+			.middle {
+				opacity:0;
+			}
+			.bottom {
+				transform:rotate(45deg);
+				-webkit-transform:rotate(45deg);
+				top:18px;
+			}
+		}
+		.menu-open {
+			width:100%;
+			height:100%;
+			z-index:1000;
+			position:absolute;
+			opacity:0.8;
+		}
+		.region-navigation {
+			right:0%;
+		}
+		
+	}
+	//Search bar placement
+	.header__region.region.region-header {
+		margin-top:0;
+		position:fixed;
+		top:0;
+		left:0;
+		background-color:#fff;
+		z-index:1000;
+		width:100%;
+		padding:10px;
+		border-bottom:1px solid #eee;
+		.search--header, .block-search-api-page {
+			width:75%;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.header {
+		.nav-head-container {
+			.header__logo {
+				.title {
+					font-size:1.25em;
+				}
+			} 
+		}
+	}
+}
 
