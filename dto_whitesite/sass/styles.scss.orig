@@ -19,8 +19,11 @@ $primaryColour2: #1675bc;
 @import 'print';
 @import 'blocks';
 @import 'mini-panels';
+<<<<<<< HEAD
 @import 'guides';
 @import 'dss-criteria-list-view';
 @import 'comments-block';
 @import 'comments';
+=======
 @import 'blog';
+>>>>>>> new_blog_pages

@@ -5,10 +5,13 @@
 // Colors
 $white: white;
 $black: black;
+<<<<<<< HEAD
 $grey-line: #bfc1c3;
+
+=======
 $title-link-blue: #2384bb;
 $dark-grey: #676767;
-$light-grey: #d6d7d6;
+>>>>>>> new_blog_pages
 
 // Breakpoints.
 $narrow: 640px;
