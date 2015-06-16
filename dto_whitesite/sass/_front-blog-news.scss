@@ -1,0 +1,45 @@
+.front {
+	#block-bean-our-purpose-frontpage {
+		
+	}
+}
+
+.front {
+	.pane-home-page-blog-articles {
+		h2 {
+		}
+		.view-home-page-blog-articles {
+			h3 {
+				//font-size:1.2em;
+				line-height:1.2em;
+				margin-top:13px;
+				margin-bottom:13px;
+			}
+			.more-link {
+				padding-top:15px;
+				padding-bottom:15px;
+				border-top:1px solid #eee;
+			}
+		}
+	}
+}
+
+.front {
+	.pane-latest-news {
+		.view-latest-news {
+			h3 {
+				line-height:1.2em;
+				margin-top:13px;
+				margin-bottom:13px;
+			}
+			p {
+				margin:0 0 1.46667rem;
+			}
+			.more-link {
+				padding-top:15px;
+				padding-bottom:15px;
+				border-top:1px solid #eee;
+			}
+		}
+	}
+}

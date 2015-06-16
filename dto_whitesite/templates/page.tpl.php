@@ -13,7 +13,7 @@
   <header class="header" role="banner">
   <div class="nav-head-container">
     <!--<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /><div class="mobile-header">Digital Transformation Office</div></a>-->
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="sites/all/themes/custom/dto_whitesite/images/update/government-crest.png" alt="<?php print t('Home'); ?>" class="header__logo-image" /><span class="title">Digital Transformation Office</span></a>
+    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="/sites/all/themes/custom/dto_whitesite/images/update/government-crest.png" alt="<?php print t('Home'); ?>" class="header__logo-image" /><span class="title">Digital Transformation Office</span></a>
 <a class="mobile-nav" href="#open-menu"><div class="top"></div><div class="middle"></div><div class="bottom"></div>MENU</a>
     <nav class="header__secondary-menu" role="navigation">
       <?php print theme('links__system_secondary_menu', array(
@@ -100,9 +100,22 @@
 
   </div>
 
-  <?php print render($page['footer_top']); ?>
-  <?php print render($page['footer_bottom']); ?>
+  
 
 </div>
+
+<?php print render($page['footer_top']); ?>
+<footer class="footer">
+	<div class="connect-with-dto">
+    <h2>Connect with DTO</h2>
+    <a href="https://twitter.com/AusDTO" title="DTO Twitter"><div class="twitter-icon"></div></a>
+    <a href="https://www.youtube.com/channel/UCmDkFN3UlK2wSKDQQhd-Y-A" title="DTO Youtube"><div class="youtube-icon"></div></a>
+    </div>
+    <div class="footer-links">
+   <!-- <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="sites/all/themes/custom/dto_whitesite/images/update/government-crest.png" alt="<?php print t('Home'); ?>" class="header__logo-image" /><span class="title">Digital Transformation Office</span></a>-->
+    <?php print render($page['footer_bottom']); ?>
+    </div>
+  
+</footer>
 
 <?php print render($page['bottom']); ?>

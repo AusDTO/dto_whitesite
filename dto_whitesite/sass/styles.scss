@@ -20,7 +20,12 @@ $primaryColour2: #1675bc;
 @import 'mini-panels';
 
 // Simon
-@import '_globals';
+
 @import '_menu';
-@import '_fonts';
+
+@import '_footer';
+@import '_twitter-feed';
+@import '_typography';
+
+@import '_front-blog-news';
 
