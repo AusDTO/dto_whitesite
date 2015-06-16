@@ -580,5 +580,9 @@ function dto_whitesite_form_alter(&$form, &$form_state, $form_id) {
       // Add title tag to search form keywords field for improved accessibility.
       $form['keys_1']['#attributes']['title'] = t('Enter your search keywords');
       break;
+    
+    case 'comment_node_dss_criteria_form':
+      $form['actions']['submit']['#value'] = t('Post comment');
+      break;
   }
 }

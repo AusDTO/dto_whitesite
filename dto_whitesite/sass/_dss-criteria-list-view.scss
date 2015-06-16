@@ -1,0 +1,95 @@
+/**
+ * Contains styling related to display of criteria 
+ */
+
+/*
+ * Styling for view containing list of criteria.
+ */
+.view-dss-criteria {
+  
+  .views-row-fields-wrapper {
+    padding-left: 20%;
+    
+    @include breakpoint($narrow) {
+      padding-left: 15%;
+    }
+  }
+  
+  .views-row {
+    padding: 30px 0 30px 0;
+    border-bottom: 1px solid $grey-line;
+  }
+  
+  .views-row-first {
+    border-top: 3px solid $grey-line;
+    margin-top: 20px;
+  }
+  
+  .item-list {
+    
+    ol {
+      list-style-type: none;
+      counter-reset: standard-counter;
+      padding: 0;
+      vertical-align: middle;
+      
+      > li::before {
+        content: counter(standard-counter, decimal);
+        counter-increment: standard-counter;
+        display: inline-block;
+        float: left;
+        font-family: "nta",Arial,sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1;
+        margin-right: 6.5%;
+        padding-left: 15px;
+        text-align: right;
+        text-transform: none;
+        
+        @include breakpoint(420px) {
+          font-size: 60px;
+          padding-left: 30px;
+        }
+        
+        @include breakpoint($narrow) {
+          font-size: 80px;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  
+  .views-field-field-criteria-description {
+    font-size: 1.1em;
+    padding: 2px 0 20px 0;
+    
+    @include breakpoint($narrow) {
+      font-size: 1.4em;
+      padding: 10px 0 20px 0;
+    }
+  }
+
+  .comment-count-link-fields-outer-wrapper {
+    @include clearfix;
+    margin-top: 12px;
+    
+    .comment-count-link-fields-inner-wrapper {
+      dipslay: inline-block;
+      float: right;
+      
+      @include breakpoint($narrow) {
+        float: right;
+      }
+    }
+  }
+  
+  .views-field-comment-count {
+    display: inline-block;
+    padding: 0 20px 10px;
+  }
+  
+  .views-field-comments-link {
+    display: inline-block;
+  }
+}
