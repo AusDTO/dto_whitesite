@@ -23,7 +23,6 @@
  *
  * @ingroup views_templates
  */
-dpm($fields);
 ?>
 
   <div class="dto-view-blog-author-wrapper">

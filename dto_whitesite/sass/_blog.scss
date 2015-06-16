@@ -4,30 +4,89 @@
 
 .user-picture {
   
-  img {
-    @include border-radius(35px);
+}
+
+
+/*
+ * Blog list layout.
+ */
+.view-blog {
+  overflow: hidden;
+  
+  > .view-header {
+    margin-bottom: 40px;
+    
+    @include breakpoint($narrow) {
+      float: right;
+      width: 30%;
+    }
+  }
+  
+  > .view-content {
+    
+    @include breakpoint($narrow) {
+      float: left;
+      width: 70%;
+    }
+  }
+  
+  > .more-link {
+    clear: both;
+    text-align: center;
   }
 }
 
+
+/*
+ * Blog list styling.
+ */
 .view-blog {
   
-  .views-row {
-    margin-bottom: 40px;
+  > .view-header {
+        
+    .view-content {
+      
+      .views-row {
+        display: inline-block;
+
+        a {
+          color: $black;
+          font-size: 15px;
+          padding: 5px 10px;
+          background-color: #f1f1f0;
+          @include border-radius(5px);
+          text-decoration: none;
+        }
+
+        a:hover,
+        a:active {
+          text-decoration: underline;
+        }
+      }
+    }
   }
   
-  .views-field-comment-count {
-    display: inline-block;
+  > .view-content {
+    
+    .views-row {
+      margin-bottom: 40px;
+    }
   }
 }
+
 
 .dto-view-blog-author-wrapper {
   overflow: hidden;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.3em;
 }
 
 .views-field-picture {
   display: inline-block;
   width: 70px;
+  
+  img {
+    @include border-radius(35px);
+  }
 }
 
 .views-field-name {
@@ -78,4 +137,26 @@
 .views-field-comment-count {
   display: inline-block;
   color: $dark-grey;
+}
+
+.block__title {
+  border-top: 2px solid black;
+  font-size: 18px;
+  font-size: 1.2rem;
+} 
+
+.more-link {
+  border-top: 1px solid $light-grey;
+  padding: 10px 0 30px;
+  
+  a {
+    font-size: 1em;
+    color: $title-link-blue;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
 }
