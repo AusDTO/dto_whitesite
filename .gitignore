@@ -1,4 +1,3 @@
-dto_whitesite/.sass-cache/
-dto_whitesite/sass/.sass-cache/
-dto_whitesite/sass/sass/.sass-cache/
+.sass-cache
+*.css.map
 nbproject/
