@@ -21,3 +21,28 @@
 		padding-left:20px;
 	}
 }
+
+@media (max-width: 480px) {
+	.front-communicate {
+		.engage, .media-centre {
+			width:100%;
+			float:left;
+			text-align:center;
+			img {
+				height:130px;
+			}
+			h3 {
+				margin-top:15px;
+			}
+			.more-link {
+				text-align:center;
+			}
+		}
+		.engage {
+			padding-right:0;
+		}
+		.media-centre {
+			padding-left:0px;
+		}
+	}
+}
