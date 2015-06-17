@@ -77,3 +77,44 @@ $zen-gutter-width: 20px;
     }
   }
 }
+
+//ss main page layout adjusts
+
+.layout-centered.page-wrapper {
+	max-width:100%;
+	.breadcrumb {
+		margin-left:auto;
+		margin-right:auto;
+		max-width:980px;
+	}
+	.main-content {
+		max-width:980px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+.front {
+	.layout-centered.page-wrapper {
+		margin-top:-6px;
+		max-width:100%;
+		outline:none;
+		.layout-no-sidebar {
+			padding:0;
+			.main-content {
+				max-width:100%;
+				.inside {
+					max-width:980px;
+					margin-left:auto;
+					margin-right:auto;
+				}
+				.panels-flexible-row {
+					padding-top:40px;
+				}
+				.hp_top {
+					padding-top:20px;
+				}
+			}
+		}
+	}
+}

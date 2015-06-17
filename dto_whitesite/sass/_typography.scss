@@ -8,11 +8,17 @@
        url('../fonts/font-awesome/fontawesome-webfont#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-h1, h2, .listing__title, .node-teaser h2, .search-results h3.title, .mission__statement, h3, h4, h5, h6, a {
+/*h1, h2, .listing__title, .node-teaser h2, .search-results h3.title, .mission__statement, h3, h4, h5, h6, a {
 	font-family:Arial,Helvetica Neue,Helvetica,sans-serif!important;
-}
+}*/
 
 *, html, body {
 	font-family:Arial,Helvetica Neue,Helvetica,sans-serif!important;
+}
+
+h2 {
+	font-weight:bold;
+	font-color:$ultra-grey;
+	margin-bottom:25px;
 }
 
