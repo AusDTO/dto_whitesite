@@ -103,8 +103,11 @@ $zen-gutter-width: 20px;
 			padding:0;
 			.main-content {
 				max-width:100%;
-				.inside {
-					max-width:980px;
+				padding-bottom:0;
+				.panels-flexible-row-inside {
+					max-width:1020px;
+					padding-left:20px;
+					padding-right:20px;
 					margin-left:auto;
 					margin-right:auto;
 				}
@@ -113,6 +116,9 @@ $zen-gutter-width: 20px;
 				}
 				.hp_top {
 					padding-top:20px;
+				}
+				.panels-flexible-row-last {
+					
 				}
 			}
 		}
