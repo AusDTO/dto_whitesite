@@ -586,3 +586,19 @@ function dto_whitesite_form_alter(&$form, &$form_state, $form_id) {
       break;
   }
 }
+
+/**
+ * Implements hook_preprocess_views_view_fields()
+ */
+/** -- Uncomment this code block to use -- 
+function dto_whitesite_preprocess_views_view_fields(&$vars) {
+  $view = $vars['view'];
+  
+  switch ($view->name) {
+  
+    case 'blog_categories':
+      // COde here
+      break;
+  }
+}
+*/
