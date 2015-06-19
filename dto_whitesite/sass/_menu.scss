@@ -35,14 +35,33 @@ body{
 								margin-left:10px;
 								color:inherit;
 							}
+							
+						}
+						&.active-trail {
+							a{	
+								&.sf-depth-1 {
+									padding:16px 20px;
+									background-color:$background-grey;//Fix me
+									&::before {
+										border-top:none!important;
+									}
+									.sf-depth-2 {
+										background-color:$background-grey;
+									}
+								}
+							}
+							li {
+								&.active-trail {
+									a {
+										&.sf-depth-2 {
+											background-color:$background-grey;//Fix me
+										}
+									}
+								}
+							}	
 						}
 						ul {
 							width:100%!important;
-							li {
-								ul {
-									left:100%!important;
-								}
-							}
 						}
 						&.sfHover {
 							a {
@@ -74,6 +93,27 @@ body{
 	}
 }
 
+@media (min-width: 768px) {
+	body{
+		.region-navigation {
+			.block-superfish {
+				.block__content {
+					ul {
+						li{
+							ul {
+								li {
+									ul {
+										left:100%!important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 //logo-header stuff
 .header {
@@ -133,10 +173,11 @@ body{
 	
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.header {
-		margin-top:65px;
-		padding-bottom:10px;
+		margin-top:55px;
+		padding-bottom:0;
+		padding-top:15px;
 		.nav-head-container {
 			.header__logo {
 				display:block;
@@ -155,10 +196,11 @@ body{
 					display:block;
 					margin-left:auto;
 					margin-right:auto;
-					width:140px;
+					width:115px;
 				}
 				.title {
-					font-size:1.4em;
+					font-size:1.15em;
+					line-height:2.3em;
 				}
 			}
 			.block-agov-text-resize {
@@ -173,7 +215,7 @@ body{
 		display:none;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	//burger styling
 	.mobile-nav {
 		position:fixed;
@@ -212,10 +254,6 @@ body{
 			top:28px;
 			width:35px;
 		}
-	}
-	//header styling
-	.header {
-		margin-top:60px;
 	}
 	//superfish styling
 	.region-navigation {
@@ -282,6 +320,11 @@ body{
 									&.sf-depth-2.menuparent::after {
 										transform:rotate(0deg);
 										-webkit-transform:rotate(0deg)!important;
+									}
+								}
+								&.sf-total-depth-2 {
+									ul {
+									left:0!important;
 									}
 								}
 							}

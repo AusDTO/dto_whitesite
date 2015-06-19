@@ -90,8 +90,8 @@
 }
 
 .views-field-name {
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1.15em;
+ // font-weight: bold;
   
   .field-content {
     display: table-cell;
@@ -111,12 +111,13 @@
 }
 
 .views-field-title {
-  margin-bottom: 0.5em;
+  margin-bottom: 0;
   
   a {
     font-size: 1.4em;
     color: $title-link-blue;
     text-decoration: none;
+    font-weight:bold;
   }
   
   a:hover,
@@ -132,11 +133,13 @@
 .views-field-field-article-length {
   display: inline-block;
   color: $dark-grey;
+  font-size:1.1em;
 }
 
 .views-field-comment-count {
   display: inline-block;
   color: $dark-grey;
+  font-size:1.1em;
 }
 
 .block__title {
@@ -159,4 +162,10 @@
   a:active {
     text-decoration: underline;
   }
+}
+
+.view-blog {
+	.view-content {
+		line-height:1.7rem!important;
+	}
 }

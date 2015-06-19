@@ -12,18 +12,18 @@
 $primaryColour: #4DC9E3;
 $primaryColour2: #1675bc;
 
-@import 'govcms';
-@import 'gov-blog';
-@import 'responsive';
-@import 'layout';
-@import 'print';
-@import 'blocks';
-@import 'mini-panels';
-@import 'guides';
-@import 'dss-criteria-list-view';
-@import 'comments-block';
-@import 'comments';
-@import 'blog';
+@import '_govcms';
+@import '_gov-blog';
+@import '_responsive';
+@import '_layout';
+@import '_print';
+@import '_blocks';
+@import '_mini-panels';
+@import '_guides';
+@import '_dss-criteria-list-view';
+@import '_comments-block';
+@import '_comments';
+@import '_blog';
 @import '_menu';
 @import '_footer';
 @import '_twitter-feed';
@@ -33,3 +33,5 @@ $primaryColour2: #1675bc;
 @import '_home-banner';
 @import '_home-communicate';
 @import '_breadcrumb';
+
+
