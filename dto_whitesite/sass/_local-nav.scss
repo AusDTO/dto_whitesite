@@ -1,0 +1,34 @@
+#block-menu-block-agov-menu-block-sidebar {
+	.menu {
+		li {
+			&.first {
+				padding-top:0;
+			}
+			&.last {
+				padding-bottom:0;
+			}
+			&.is-active {
+				a {
+					border-left:4px solid $dto-purple;
+					&.active {
+						font-weight:bold;
+					}
+				}
+			}
+			&.is-active-trail {
+				
+			}
+			.menu {
+				li {
+					a {
+						padding-left:30px;
+						border-left:4px solid #fff;
+						&.active {
+							border-left:4px solid $dto-purple;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -112,6 +112,16 @@
 			padding-left:0;
 		}
 	}
+	.footer {
+		.connect-with-dto {
+			.twitter-icon {
+				background-image:url('../images/update/twitter-logo-small.png');
+			}
+			.youtube-icon {
+				background-image:url('../images/update/youtube-logo-small.png');
+			}
+		}
+	}
 	.region-navigation .block__content > .menu > li.active-trail > a:before {
 		border-top:none!important;
 	}

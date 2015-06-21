@@ -419,3 +419,10 @@ body{
 	}
 }
 
+//removing default IOS styling on search box
+input {
+    -webkit-appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;
+}
+

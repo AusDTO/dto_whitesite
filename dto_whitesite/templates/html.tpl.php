@@ -21,6 +21,7 @@
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> <!--SS-stops zooming on inputs on mobile devices-->
     <?php endif; ?>
     <meta http-equiv="cleartype" content="on">
 

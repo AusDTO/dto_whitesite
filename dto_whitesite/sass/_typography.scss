@@ -19,7 +19,7 @@
 h1 {
 	font-weight:bold;
 	color:$ultra-grey;
-	//margin-bottom:25px;
+	margin-bottom:25px;
 	line-height:3.1rem;
 }
 
@@ -27,6 +27,7 @@ h2 {
 	font-weight:bold;
 	color:$ultra-grey;
 	margin-bottom:25px;
+	line-height:2.33rem;
 }
 
 h3 {
@@ -37,3 +38,25 @@ h3 {
 .more-link {
 	font-weight:bold;
 }
+
+@media (max-width: 480px) {
+	h1 {
+		font-size:1.8rem;
+		line-height:2.1rem;
+	}
+	/*h2 {
+		margin-bottom:15px;
+		font-size:1.2rem;
+		line-height:1.2rem;
+		margin-top:30px;
+	}
+	h3 {
+		
+	}*/
+	.field-name-field-summary {
+		font-size:1.3rem;
+		line-height:1.6rem;
+		margin-top:15px;
+	}
+}
+
