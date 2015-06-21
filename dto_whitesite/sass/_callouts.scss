@@ -1,0 +1,11 @@
+.callout {
+	background-color:$background-grey;
+	padding:17px 20px 5px;
+	margin-bottom:25px;
+	&.callout-general {
+		border-left:4px solid $dto-purple;
+	}
+	&.callout-alert {
+		border-left:4px solid $dto-error;
+	}
+}

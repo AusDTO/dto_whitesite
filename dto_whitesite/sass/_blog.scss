@@ -12,7 +12,7 @@
  */
 .view-blog {
   overflow: hidden;
-  
+  margin-top:25px;
   > .view-header {
     margin-bottom: 40px;
     
@@ -192,7 +192,7 @@
 }
 
 //Responsive layout - single column for iPad
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 	.node-type-blog-article {
 		.sidebar {
 			display:none;
@@ -201,7 +201,7 @@
 			width:100%;
 		}
 	}
-}
+}*/
 
 //Related blogs block on blog content page (BELOW CONTENT eg mobile)
 .field-name-related-blogs-block {
@@ -244,5 +244,5 @@
 .dto-view-blog-by-term-term-name {
 	font-size:2em;
 	margin-bottom:25px;
-	margin-top:-20px;
+	margin-top:3px;
 }

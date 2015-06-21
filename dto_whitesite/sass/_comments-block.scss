@@ -3,7 +3,35 @@
  * containing the comments attached to a node view.
  */
 
-#comments {
+/*#comments {
   margin-top: 50px;
   padding-top: 10px;
+}*/
+
+#comments {
+	&.comment-wrapper {
+		.comment {
+			background-image:none;
+			padding:25px;
+			.submitted {
+				font-size:1em;
+				font-weight:bold;
+				color:$dark-grey;
+			}
+			.field-name-comment-body {
+				margin-top:20px;
+				margin-bottom:0;
+				.field-label {
+					display:none;
+				}
+			}
+			.links {
+				.comment-reply {
+					a {
+						font-style:normal;
+					}
+				}
+			}
+		}
+	}
 }
