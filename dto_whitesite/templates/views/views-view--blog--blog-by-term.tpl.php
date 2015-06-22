@@ -28,7 +28,7 @@
  */
 ?>
 <?php if (!empty($view->args[0])): ?>
-  <div class="dto-view-blog-by-term-term-name"><?php print str_replace('-', ' ', $view->args[0]); ?></div>
+  <h2 class="dto-view-blog-by-term-term-name"><?php print str_replace('-', ' ', $view->args[0]); ?></h2>
 <?php endif; ?>
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix); ?>
