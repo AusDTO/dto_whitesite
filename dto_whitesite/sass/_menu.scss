@@ -16,10 +16,10 @@ body{
 						display:block;
 						a{
 							//color:#333;
-							font-size:1em;
-							padding:16px 20px;
+							font-size:0.9em;
+							padding:16px 17px;
 							&.active {
-								padding:16px 20px;
+								padding:16px 17px;
 								&::before {
 									border-top:none!important;
 								}
@@ -40,7 +40,7 @@ body{
 						&.active-trail {
 							a{	
 								&.sf-depth-1 {
-									padding:16px 20px;
+									padding:16px 17px;
 									background-color:$background-grey;//Fix me
 									&::before {
 										border-top:none!important;
