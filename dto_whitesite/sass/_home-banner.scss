@@ -3,10 +3,13 @@
 		.hp_top {
 			padding-top:20px;
 			padding-bottom:20px;
-			background-color:$dto-blue;
-			color:#fff;
+			background-color:$background-grey;
+			color:$ultra-grey;
+			.panel-pane {
+				max-width:768px;
+			}
 			h2 {
-				color:#fff;
+				color:$ultra-grey;
 				margin-bottom:15px;
 			}
 		}

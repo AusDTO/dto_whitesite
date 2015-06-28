@@ -2,7 +2,7 @@
 
 body{
 	.region-navigation {
-		background-color:$ultra-grey;
+		background-color:$dto-blue;
 		.block-superfish {
 			.block__content {
 				margin-left:auto;
@@ -10,7 +10,7 @@ body{
 				max-width:980px;
 				ul {
 					&.menu {
-						background-color:$ultra-grey;
+						background-color:$dto-blue;
 					}
 					li{
 						display:block;
