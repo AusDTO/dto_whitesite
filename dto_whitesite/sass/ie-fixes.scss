@@ -1,3 +1,5 @@
+@import "vars";
+
 .lt-ie9 {
 	//HEADER AND NAV STUFF
 	.tinynav {
@@ -6,7 +8,7 @@
 	.text-resize {
 		display:inline-block;
 	}
-	.header__region-item, .header .block-search-api-page, .header .block-agov-text-resize {
+	.header__region-item, .header .block-search-api-page, .header .block-govcms-text-resize {
 		display:inline-block;
 		margin-right:10px;
 	}

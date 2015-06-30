@@ -133,9 +133,9 @@ function dto_whitesite_preprocess_block(&$variables, $hook) {
 // */
 
 /**
- * Implementation for agov_social_link.
+ * Implementation for govcms_social_link.
  */
-function dto_whitesite_agov_social_link($variables) {
+function dto_whitesite_govcms_social_link($variables) {
   $title = $variables['title'];
   $output = '';
 

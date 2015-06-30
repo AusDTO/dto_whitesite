@@ -19,7 +19,7 @@ description = The Agency Whitesite theme for govCMS
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
 
 core        = 7.x
-base theme  = agov_zen
+base theme  = govcms_zen
 
 
 
@@ -47,9 +47,9 @@ base theme  = agov_zen
 stylesheets[all][] = system.menus.css
 stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
-; Remove the agov_zen base theme styles.
-stylesheets[all][] = agov_zen.css
-stylesheets[all][] = agov_styles.css
+; Remove the govcms_zen base theme styles.
+stylesheets[all][] = govcms_zen.css
+stylesheets[all][] = govcms_styles.css
 
 ; Then we add our own stylesheet.
 stylesheets[all][] = css/styles.css
