@@ -1,0 +1,23 @@
+.page-design-guides {
+	.page-wrapper {
+		.view-dss-guides {
+			.view-content {
+				h3 {
+					line-height:2rem;
+				}
+				.views-row {
+					border-top:1px solid $light-grey;
+					padding-top:6px;
+					padding-bottom:4px;
+					&.views-row-last {
+						border-bottom:1px solid $light-grey;
+						margin-bottom:30px;
+					}
+					a {
+						font-size:1.1em;
+					}
+				}
+			}
+		}
+	}
+}
