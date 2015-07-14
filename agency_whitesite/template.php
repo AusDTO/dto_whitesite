@@ -129,9 +129,9 @@ function agency_whitesite_preprocess_block(&$variables, $hook) {
 // */
 
 /**
- * Implementation for agov_social_link.
+ * Implementation for govcms_social_link.
  */
-function agency_whitesite_agov_social_link($variables) {
+function agency_whitesite_govcms_social_link($variables) {
   $title = $variables['title'];
   $output = '';
 

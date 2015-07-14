@@ -24,21 +24,21 @@ input.placeholder {
   margin-bottom: 25px;
 }
 
-body.front div.pane-agov-social-links-services div.social-link {
+body.front div.pane-govcms-social-links-services div.social-link {
   float: left;
 }
 
-body.front div.pane-agov-social-links-services div.social-link a.social-links-title-title {
+body.front div.pane-govcms-social-links-services div.social-link a.social-links-title-title {
   display: none;
 }
 
 
-body.front div.pane-agov-social-links-services div.social-link a.social-links-img-link {
+body.front div.pane-govcms-social-links-services div.social-link a.social-links-img-link {
   padding-left: 0;
   padding-right: 12px;
 }
 
-body.front div.pane-agov-social-links-services div.social-link a.social-links-img-link img {
+body.front div.pane-govcms-social-links-services div.social-link a.social-links-img-link img {
   height: auto;
   width: auto;
 }
@@ -175,7 +175,7 @@ a:focus, a:active {
 }
 
 //Remove once DTO go live and have their own theme
-.menu-block-agov_menu_block-sidebar .menu .menu__link.active {
+.menu-block-govcms_menu_block-sidebar .menu .menu__link.active {
   border-left-color: #4DC9E3;
 }
 
