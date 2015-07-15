@@ -9,7 +9,7 @@
 			}
 			&.is-active {
 				a {
-					border-left:4px solid $dto-purple;
+					border-left:4px solid $dto-blue;
 					&.active {
 						font-weight:bold;
 					}
@@ -24,7 +24,7 @@
 						padding-left:30px;
 						border-left:4px solid #fff;
 						&.active {
-							border-left:4px solid $dto-purple;
+							border-left:4px solid $dto-blue;
 						}
 					}
 				}

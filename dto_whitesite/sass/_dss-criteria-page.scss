@@ -3,15 +3,40 @@
 		font-size:4.3em;
 		font-weight:bold;
 		padding-left:0;
-		list-style-position:inside;
+		//list-style-position:inside;
+		list-style-type:none;
+		counter-reset:standard-counter;
 		li {
 			border-top:1px solid $light-grey;
-			p {
-				padding-left:30px;
-				font-size:16px;
+			padding-top:25px;
+			padding-bottom:20px;
+			min-height:115px;
+			&:before {
+				content:counter(standard-counter,decimal);
+				counter-increment:standard-counter;
 				display:inline-block;
+				float:left;
+				padding-top:20px;
+				text-align:center;
+				width:75px;
+			}
+			p {
+				padding-left:95px;
+				font-size:16px;
+				//display:inline-block;
 				vertical-align:top;
 				font-weight:normal;
+			}
+			.related-guides {
+				p {
+					margin-bottom:3px;
+					color:$dark-grey;
+					font-size:15px;
+				}
+				a {
+					display:block;
+					font-size:15px;
+				}
 			}
 		}
 	}

@@ -1,0 +1,51 @@
+.dss-home-block {
+	overflow:hidden;
+	border-bottom:1px solid $light-grey;
+	margin-bottom:50px;
+	padding-bottom:20px;
+	.dss-homepage {
+		width:33%;
+		float:left;
+		text-align:center;
+		padding-left:5px;
+		padding-right:5px;
+		&.one {
+			padding-left:0;
+		}
+		&.three {
+			padding-right:0;
+		}
+		img {
+			max-width:100px;
+		}
+		.dss-block {
+			margin-top:15px;
+			h3 {
+				font-size:1.35em;
+				line-height:1.35em;
+			}
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.dss-home-block {
+		.dss-homepage {
+			width:100%;
+			float:left;
+			text-align:center;
+			margin-bottom:0;
+			padding-bottom:20px;
+			img {
+				max-width:100px;
+			}
+			.dss-block {
+				margin-top:15px;
+				h3 {
+					font-size:1.35em;
+					line-height:1.35em;
+				}
+			}
+		}
+	}
+}
