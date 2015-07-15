@@ -55,7 +55,20 @@ function dto_whitesite_preprocess_html(&$variables, $hook) {
  */
 
 function dto_whitesite_preprocess_page(&$variables, $hook) {
-  
+
+  if ($variables['node']->type == 'page' || $variables['node']->type == 'subguide') {
+    // Create back to guides page link.
+    $options = array(
+      'class' => 'dto-back-to-guides-link',
+      'title' => t('Go back to list of guides page'),
+    );
+    $variables['page']['back_to_guides_link'] = array(
+      '#markup' => l(t('Back to guides'), 'design-guides', $options),
+      '#prefix' => '<div class="dto-back-to-guides-link-wrapper">',
+      '#suffix' => '</div>',
+    );
+  }
+
   // Get node title if is comment reply page. Used in page--comment-reply.tpl.php
   if (!empty($variables['page']['content']['system_main']['comment_node']['#node'])) {
     $node = $variables['page']['content']['system_main']['comment_node']['#node'];
@@ -560,8 +573,20 @@ function dto_whitesite_preprocess_menu_link(&$variables, $hook) {
 }
 
 
-/// make the timestamp pretty
+/**
+ * Implements hook_preprocess_HOOK
+ */
 function dto_whitesite_preprocess_node(&$vars, $hook) {
+  
+  // Optionally, run node-type-specific preprocess functions, like
+  // dto_whitesite_preprocess_node_page() or
+  // dto_whitesite_preprocess_node_story().
+  $function = __FUNCTION__ . '_' . $vars['node']->type;
+  if (function_exists($function)) {
+    $function($vars, $hook);
+  }
+  
+  // make the timestamp pretty
   $vars['submitted'] = "<span class='postedStart'>Posted </span>".
                        "<span class='postedTime'>at " . date("g:ia", $vars['created']) . " </span>".
                        "<span class='postedDate'>on " . date("l, M jS, Y", $vars['created']) . " </span>".

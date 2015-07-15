@@ -63,6 +63,8 @@
 
   <?php print $breadcrumb; ?>
 
+  <?php print render($page['back_to_guides_link']); ?>
+
   <?php print render($page['highlighted']); ?>
 
   <div class="<?php print $layout; ?>">
