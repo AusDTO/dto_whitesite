@@ -63,10 +63,10 @@
 
   <?php print $breadcrumb; ?>
 
-  <?php print render($page['back_to_guides_link']); ?>
+  
 
   <?php print render($page['highlighted']); ?>
-
+  <?php print render($page['back_to_guides_link']); ?>
   <div class="<?php print $layout; ?>">
 
     <?php if ($sidebar): ?>
@@ -114,6 +114,7 @@
     <h2>Connect with DTO</h2>
     <a href="https://twitter.com/AusDTO" title="DTO Twitter"><div class="twitter-icon"></div></a>
     <a href="https://www.youtube.com/channel/UCmDkFN3UlK2wSKDQQhd-Y-A" title="DTO Youtube"><div class="youtube-icon"></div></a>
+    <!--<a href="#" title="DTO Linkedin"><div class="linkedin-icon"></div></a>-->
     </div>
     <div class="footer-links">
    <!-- <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="sites/all/themes/custom/dto_whitesite/images/update/government-crest.png" alt="<?php print t('Home'); ?>" class="header__logo-image" /><span class="title">Digital Transformation Office</span></a>-->

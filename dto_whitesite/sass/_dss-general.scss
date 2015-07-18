@@ -15,3 +15,28 @@
 		}
 	}
 }
+
+//DSS subguide contents menu
+.node-type-subguide {
+	.sidebar {
+		#block-views-dss-subguide-parent-block-1 {
+			margin-bottom:0;
+		}
+		.last {
+			h2 {
+				display:none;
+			}
+			.view-dss-sibling-subguides {
+				a {
+					border-left:4px solid #fff;
+					padding-left:15px;
+					&.active {
+					font-weight:bold;
+					border-left:4px solid $dto-blue;
+					}
+				}
+				
+			}
+		}
+	}
+}
