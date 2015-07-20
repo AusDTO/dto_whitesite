@@ -9,11 +9,18 @@
 		}
 		iframe {
 			width:100%!important;
-			//#twitter-widget-0 {
-				//max-width:768px;
-			//}	
+			#twitter-widget-0 {
+				width:100%!important;
+			}	
+		}
+		#twitter-widget-0 {
+			width:768px!important;
 		}
 	}
+}
+.twitter-timeline-hack {
+	width:100%!important;
+	max-width:100%!important;
 }
 
 

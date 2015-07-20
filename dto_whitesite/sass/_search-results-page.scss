@@ -1,0 +1,15 @@
+.page-search {
+	.search-results {
+		padding-left:0;
+		.search-result {
+			margin-bottom:15px;
+			margin-top:20px;
+			border-top:none;
+			border-bottom:1px solid #ccc;
+			padding-bottom:25px;
+			.search-info {
+				display:none;
+			}
+		}
+	}
+}
