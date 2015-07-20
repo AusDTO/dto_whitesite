@@ -22,4 +22,4 @@
  * the view is modified.
  */
 ?>
-<a class="" href="/news-media/blog/<?php print str_replace(' ', '-', $row->{$field->field_alias}); ?>"><?php print $row->{$field->field_alias}; ?></a>
+<a class="" href="/blog/<?php print str_replace(' ', '-', $row->{$field->field_alias}); ?>"><?php print $row->{$field->field_alias}; ?></a>
