@@ -247,3 +247,11 @@
 	margin-bottom:25px;
 	margin-top:3px;
 }
+
+.node-type-blog-article {
+	.block-service-links {
+		h2 {
+			display:none;
+		}
+	}
+}
