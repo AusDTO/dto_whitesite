@@ -1,4 +1,4 @@
-#block-menu-block-govcms-menu-block-sidebar {
+#block-menu-block-govcms-menu-block-sidebar, #block-menu-block-1 {
 	.menu {
 		li {
 			&.first {
@@ -23,6 +23,9 @@
 					a {
 						padding-left:30px;
 						border-left:4px solid #fff;
+						&:hover {
+							color:$dto-blue;
+						}
 						&.active {
 							border-left:4px solid $dto-blue;
 						}
@@ -30,5 +33,38 @@
 				}
 			}
 		}
+	}
+}
+
+#block-menu-block-1 {
+	.menu {
+		border:1px solid #e2e2e2;
+		list-style:outside none none;
+		padding:0;
+		li {
+			padding-top:0;
+			background-color:#f5f5f5;
+			border-bottom:1px solid #e2e2e2;
+			&.is-active-trail {
+				background-color:#fff;
+				a {
+					font-weight:bold;
+					border-left:4px solid #015a96;
+					padding-left:16px;
+				}
+			}
+			a {
+				//border-left:4px solid #fff;
+				padding:8px 5px 8px 20px;
+				text-decoration:none;
+				display:block;
+				color:#444;
+				&:hover {
+					color:$dto-blue;
+					text-decoration:underline;
+				}
+			}
+		}
+		
 	}
 }
