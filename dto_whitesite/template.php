@@ -201,15 +201,6 @@ function dto_whitesite_button($variables) {
 }
 
 /**
- * Implements hook_form_alter().
- */
-function dto_whitesite_form_search_api_page_search_form_default_search_alter(&$form, &$form_state, $form_id) {
-  if (isset($form['id']['#value']) && isset($form['keys_' . $form['id']['#value']])) {
-    $form['keys_' . $form['id']['#value']]['#attributes']['placeholder'] = t('Search website…');
-  }
-}
-
-/**
  * Implements hook_preprocess_panels_pane().
  */
 function dto_whitesite_preprocess_panels_pane(&$variables) {
@@ -603,7 +594,9 @@ function dto_whitesite_form_alter(&$form, &$form_state, $form_id) {
     // Modify default search form.
     case 'search_api_page_search_form_default_search':
       // Add title tag to search form keywords field for improved accessibility.
-      $form['keys_1']['#attributes']['title'] = t('Enter your search keywords');
+      $placeholder = t('Search dto.gov.au');
+      $form['keys_1']['#title'] = $placeholder;
+      $form['keys_1']['#attributes']['placeholder'] = $placeholder;
       break;
     
     case 'comment_node_dss_criteria_form':
