@@ -43,7 +43,26 @@ function CalculateWeights(arrValues, weightsCount) {
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
-    // Place your code here.
+    // Set keyboard focus when accessibility skip links are used.
+    $(document).ready(function() {
+     // bind a click event to the 'skip' link
+      $(".skip-link").click(function(event){
+    
+        // strip the leading hash and declare
+        // the content we're skipping to
+        var skipTo="#"+this.href.split('#')[1];
+    
+        // Setting 'tabindex' to -1 takes an element out of normal 
+        // tab flow but allows it to be focused via javascript
+        $(skipTo).attr('tabindex', -1).on('blur focusout', function () {
+    
+          // when focus leaves this element, 
+          // remove the tabindex attribute
+          $(this).removeAttr('tabindex');
+    
+        }).focus(); // focus on the content container
+      });
+    });
 
   }
 };
