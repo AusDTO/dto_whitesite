@@ -14,6 +14,13 @@ body{
 					}
 					li{
 						display:block;
+						&.sfHover {
+							a {
+								&.sf-depth-1::before {
+									border-top:none!important;
+								}
+							}
+						}
 						a{
 							//color:#333;
 							font-size:0.9em;
@@ -38,7 +45,7 @@ body{
 							&.active:before {
 								border-left:none;
 							}
-							&:hover:before {
+							&:hover:before, &:focus:before {
 								border-left:4px solid $dto-blue;
 							}
 						}

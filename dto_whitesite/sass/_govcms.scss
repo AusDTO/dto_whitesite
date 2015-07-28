@@ -183,3 +183,23 @@ a:focus, a:active {
 *, html, body {
   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
+
+//Adjusting GovCMS focus state border 
+a:focus {
+	outline:none!important;
+	background-color:#000;
+	color:#fff!important;
+}
+.connect-with-dto {
+	a:focus {
+		div {
+			border:1px dotted $dto-blue;
+		}
+	}
+}
+body {
+	input:focus, button:focus, textarea:focus {
+		border:0px solid $dto-blue!important;
+		outline:2px solid $dto-blue;
+	}
+}
