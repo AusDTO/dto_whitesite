@@ -8,6 +8,16 @@
        url('../fonts/font-awesome/fontawesome-webfont#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Open_Sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Open_Sans/OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Open_Sans/OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Open_Sans/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Open_Sans/OpenSans-Regular#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 /*h1, h2, .listing__title, .node-teaser h2, .search-results h3.title, .mission__statement, h3, h4, h5, h6, a {
 	font-family:Arial,Helvetica Neue,Helvetica,sans-serif!important;
 }*/

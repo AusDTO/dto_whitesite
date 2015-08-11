@@ -1,0 +1,46 @@
+html, body {
+	height:100%;
+}
+	.front {
+		.header {
+			z-index:99;
+		}
+		.region-navigation {
+			z-index:99;
+			//position: relative;
+		}
+		.layout-centered {
+			height:100%;
+			.layout-no-sidebar {
+				height:100%;
+				.main-content {
+					height:100%;
+					.panels-flexible-1 {
+						height:100%;
+						.panels-flexible-1-inside {
+							height:100%;
+							.fullscreen-splash {
+								min-height:100%;
+								position:relative;
+								top:-170px;
+								padding-top:170px;
+								background-color:$dto-blue;
+								z-index:98;	
+								h1 {
+									color:#fff;
+								}
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+	
+@media (min-width: 767px) {
+	.front {
+		.region-navigation {
+			position:relative;
+		}
+	}
+}
