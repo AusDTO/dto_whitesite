@@ -98,6 +98,7 @@ regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[banner]         = Banner
 regions[highlighted]    = Highlighted
+regions[recruitment_menu]    = Recruitment Menu
 regions[help]           = Help
 regions[content]        = Content
 regions[sidebar]        = Sidebar Left

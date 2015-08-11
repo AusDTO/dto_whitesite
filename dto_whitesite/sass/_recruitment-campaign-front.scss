@@ -11,7 +11,37 @@ html, body {
 		}
 		.layout-centered {
 			height:100%;
-			.layout-no-sidebar {
+			.region-highlighted {
+				max-width:100%;
+				height:100%;
+				position:relative;
+				top:-170px;
+				padding-top:170px;
+				background-color:$dto-blue;
+				z-index:98;
+				margin-bottom:-170px;
+				.block {
+					height:100%;
+					.block__content {
+						height:100%;
+						.fullscreen-homescreen {
+							max-width:1020px;
+							padding-left:20px;
+							padding-right:20px;
+							margin-left:auto;
+							margin-right:auto;
+							position:relative;
+							top:30%;	
+							h1 {
+								color:#fff;
+								font-size:6em;
+								line-height:6.5rem;
+							}
+						}
+					}
+				}
+			}
+			/*.layout-no-sidebar {
 				height:100%;
 				.main-content {
 					height:100%;
@@ -20,21 +50,40 @@ html, body {
 						.panels-flexible-1-inside {
 							height:100%;
 							.fullscreen-splash {
-								min-height:100%;
+								height:100%;
 								position:relative;
 								top:-170px;
 								padding-top:170px;
 								background-color:$dto-blue;
-								z-index:98;	
-								h1 {
-									color:#fff;
+								z-index:98;
+								margin-bottom:-170px;
+								.inside {
+									height:100%;
+									.panels-flexible-region {
+										height:100%;
+										.inside {
+											height:100%;
+											.panel-pane {
+												height:100%;
+											}
+										}
+									}
+								}
+								.fullscreen-homescreen {
+									position:relative;
+									top:30%;	
+									h1 {
+										color:#fff;
+										font-size:6em;
+										line-height:6.5rem;
+									}
 								}
 							}
 						}
 					}
 				}
-			}
-		}	
+			}*/	
+		}
 	}
 	
 @media (min-width: 767px) {
@@ -43,4 +92,40 @@ html, body {
 			position:relative;
 		}
 	}
+}
+
+//header line break
+@media (min-width: 767px) {
+	.front {
+		.fullscreen-homescreen {
+			h1 {
+				span {
+					display:block;
+					font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+				}
+			}
+		}
+	}
+}
+
+//quote 
+.front {
+	.panel-flexible {
+		.hp_top {
+			.panel-pane {
+				max-width:100%!important;
+				.recruitment-quote {
+					p {
+						text-align:center;
+						span {
+							display:block;
+							font-size:2em;
+							line-height:1.1em;
+						}
+					}
+				}
+			}
+		}
+	}
+	
 }
