@@ -111,21 +111,93 @@ html, body {
 //quote 
 .front {
 	.panel-flexible {
+		display:none; //get rid of dumb front page for now
 		.hp_top {
 			.panel-pane {
 				max-width:100%!important;
-				.recruitment-quote {
-					p {
-						text-align:center;
-						span {
-							display:block;
-							font-size:2em;
-							line-height:1.1em;
+				
+			}
+		}
+	}	
+}
+
+.front {
+	.recruitment-quote {
+		background-color:$background-grey;
+		position:relative;
+		top:-61px;
+		p {
+			text-align:center;
+			max-width:1020px;
+			padding:40px 20px;
+			margin-left:auto;
+			margin-right:auto;
+			span {
+				display:block;
+				font-size:2em;
+				line-height:1.1em;
+			}
+		}
+	}
+}
+
+.footer {
+	margin-top:1500px;
+}
+
+//recruitment menu
+.front {
+	.region-recruitment {
+		background-color:#fff;
+		position:relative;
+		top:-63px;
+		z-index:9999;
+		.recruitment-menu {
+			max-width:1020px;
+			padding:10px 20px 5px;
+			//padding-right:20px;
+			margin-left:auto;
+			margin-right:auto;
+			h3 {
+				color:$dto-blue;
+				display:inline-block;
+			}
+			.recruit-menu {
+				display:inline-block;
+				float:right;
+				padding-top:10px;
+				margin-bottom:0;
+				li {
+					margin-left:10px;
+					display:inline-block;
+					a {
+						color:$ultra-grey;
+						text-decoration:none;
+						&.sign-up {
+							border:1px solid $dto-blue;
+							border-radius:5px;
+							color:$dto-blue;
+							padding:5px 13px;
 						}
 					}
 				}
 			}
 		}
 	}
-	
+}
+
+//recruitment menu scrolled
+@media (min-width: 767px) {
+	.front {
+		&.recruit-sticky {
+			.region-recruitment {
+				position:fixed;
+				top:0;
+				width:100%;
+			}
+			.recruitment-quote {
+				top:2px;
+			}
+		}
+	}
 }

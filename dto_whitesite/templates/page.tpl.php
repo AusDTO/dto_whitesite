@@ -66,6 +66,7 @@
   
 
   <?php print render($page['highlighted']); ?>
+  <?php print render($page['recruitment']); ?>
   <?php print render($page['back_to_guides_link']); ?>
   <div class="<?php print $layout; ?>">
 

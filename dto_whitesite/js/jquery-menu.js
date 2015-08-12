@@ -1,3 +1,7 @@
+
+
+
+//highcharts
 jQuery(function () {
     jQuery('#container').highcharts({
 	    colors: ['#015a96', '#333333'],
@@ -52,6 +56,30 @@ jQuery(document).ready(function() {
    	});
 });
 
+//recruitment menu sticky
+jQuery(function(){
+	
+			// fires on resize of browser
+
+		
+    var stickyHeaderTop = jQuery('.region-recruitment').offset().top;
+
+
+
+    jQuery(window).scroll(function(){
+            if( jQuery(window).scrollTop() > stickyHeaderTop ) {
+                    //jQuery('.region-recruitment').css({position: 'fixed', top: '0px'});
+                    jQuery('body').addClass('recruit-sticky');
+                    //jQuery('#sticky').css('display', 'block');
+            } else {
+                    //jQuery('.region-recruitment').css({position: 'relative', top: '-63px'});
+                    jQuery('body').removeClass('recruit-sticky');
+                    //jQuery('#sticky').css('display', 'none');
+            }
+    });
+});
+
+
 
 twttr.events.bind('rendered',function(){
   [].slice.call(document.querySelectorAll('iframe.twitter-timeline')).forEach(function(e,i,a){
@@ -79,3 +107,4 @@ jQuery(document).ready(function() {
 		fixedContentPos: false
 	});
 });
+
