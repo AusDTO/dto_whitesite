@@ -73,10 +73,12 @@ stylesheets[all][] = css/magnific-popup.css
 
 scripts[] = js/agency.js
 scripts[] = libraries/gray/js/jquery.gray.js
-scripts[] = js/jquery-menu.js
 scripts[] = js/highcharts.js
 scripts[] = js/exporting.js
 scripts[] = js/data.js
+scripts[] = js/jquery.magnific-popup.js
+scripts[] = js/jquery-menu.js
+
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and

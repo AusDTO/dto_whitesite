@@ -34,6 +34,8 @@ function dto_whitesite_preprocess_maintenance_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("html" in this case.)
  */
+
+ 
 /* -- Delete this line if you want to use this function
 function dto_whitesite_preprocess_html(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
@@ -620,3 +622,35 @@ function dto_whitesite_preprocess_views_view_fields(&$vars) {
   }
 }
 */
+
+
+/**
+ * Implement hook_js_alter()
+ * Attempt to replace the system jQuery on non admin and non node admin pages with a newer version provided by the theme
+ */
+
+function dto_whitesite_js_alter(&$javascript) {
+  $node_admin_paths = array(
+    'node/*/edit',
+    'node/add',
+    'node/add/*',
+    'node/*/extend_review_date',
+  );
+  $replace_jquery = TRUE;
+  if (path_is_admin(current_path())) {
+    $replace_jquery = FALSE;
+  } else {
+    foreach ($node_admin_paths as $node_admin_path) {
+      if (drupal_match_path(current_path(), $node_admin_path)) {
+        $replace_jquery = FALSE;
+      }
+    }
+  }
+// Swap out jQuery to use an updated version of the library.
+  if ($replace_jquery) {
+    $javascript['misc/jquery.js']['data'] = '//code.jquery.com/jquery-1.7.0.min.js';
+  }
+}
+
+
+
