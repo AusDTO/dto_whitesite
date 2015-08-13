@@ -6,7 +6,7 @@ html, body {
 			z-index:99;
 		}
 		.region-navigation {
-			z-index:99;
+			z-index:1001;
 			//position: relative;
 		}
 		.layout-centered {
@@ -245,6 +245,50 @@ html, body {
 					float:left;
 					color:$dto-blue;
 					padding-bottom:10px;
+				}
+			}
+		}
+	}
+}
+
+//video overlay
+.front {
+	.mfp-bg {
+		display:none;
+	}
+	.mfp-wrap {
+		top:0!important;
+		z-index:1000;
+		.mfp-container {
+			padding-bottom:63px;
+			padding-top:166px;
+			padding-left:0;
+			padding-right:0;
+			.mfp-content {
+				max-width:100%;
+				height:100%;
+				.mfp-iframe-scaler {
+					//background-color:$dto-blue;
+					box-shadow:none;
+					.mfp-close {
+						opacity:1;
+						top:0;
+						width:55px;
+						height:45px;
+						background-color:$dto-blue;
+						padding-right:20px;
+						&::before {
+							content:none;
+						}
+					}
+					.mfp-iframe {
+						//background-color:$dto-blue;
+						box-shadow:none;
+						//padding-top:50px;
+						.html5-video-player {
+							background-color:$dto-blue;
+						}
+					}
 				}
 			}
 		}

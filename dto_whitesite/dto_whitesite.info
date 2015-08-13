@@ -52,10 +52,10 @@ stylesheets[all][] = govcms_zen.css
 stylesheets[all][] = govcms_styles.css
 
 ; Then we add our own stylesheet.
-stylesheets[all][] = css/styles.css
 stylesheets[all][] = libraries/gray/css/gray.min.css
 stylesheets[all][] = css/font-awesome.min.css
 stylesheets[all][] = css/magnific-popup.css
+stylesheets[all][] = css/styles.css
 
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
 ; Instead, Zen now adds conditional-comment-included classes to the html
