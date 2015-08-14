@@ -76,6 +76,16 @@ jQuery(function(){
     });
 });
 
+
+jQuery(document).ready(function($) {
+ 
+	$(".anchor-scroll").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+	});
+});
+//jQuery('body').scrollTo('#values_anchor');
+
 /*twttr.events.bind('rendered',function(){
   [].slice.call(document.querySelectorAll('iframe.twitter-timeline')).forEach(function(e,i,a){
     var fE = e.contentDocument.getElementsByClassName('timeline');

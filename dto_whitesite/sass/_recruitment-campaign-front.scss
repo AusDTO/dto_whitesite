@@ -37,6 +37,17 @@ html, body {
 								font-size:6em;
 								line-height:6.5rem;
 							}
+							a {
+								color:#fff;
+								text-decoration:none;
+								text-transform: uppercase;
+								font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+								font-size:0.9em;
+								margin-right:25px;
+								img {
+									display:block;
+								}
+							}
 						}
 					}
 				}
@@ -126,6 +137,8 @@ html, body {
 		background-color:$background-grey;
 		position:relative;
 		top:-61px;
+		padding-top:60px;
+		margin-bottom:-60px;
 		p {
 			text-align:left;
 			max-width:1020px;
@@ -147,6 +160,14 @@ html, body {
 }
 
 .front {
+	&.recruit-sticky {
+		.recruitment-quote {
+			//top:0;
+		}
+	}
+}
+
+.front {
 	.footer {
 		margin-top:1500px;
 	}
@@ -155,9 +176,13 @@ html, body {
 //recruitment menu
 .front {
 	.region-recruitment {
+		box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.19), 3px 0 3px 0 rgba(0, 0, 0, 0.19), 0 3px 3px 0 rgba(0, 0, 0, 0.23);//stolen from wired
 		background-color:#fff;
-		position:relative;
-		top:-63px;
+		//position:relative;
+		position:absolute;
+		bottom:0;
+		width:100%;
+		//top:-63px;
 		z-index:9999;
 		.recruitment-menu {
 			max-width:1020px;
@@ -201,9 +226,10 @@ html, body {
 				position:fixed;
 				top:0;
 				width:100%;
+				bottom:inherit;
 			}
 			.recruitment-quote {
-				top:2px;
+				//top:2px;
 			}
 		}
 	}
@@ -218,6 +244,34 @@ html, body {
 			padding:40px 20px;
 			margin-left:auto;
 			margin-right:auto;
+			padding-top:80px;
+			overflow:hidden;
+			.left-container {
+				width:70%;
+				float:left;
+				padding-right:20px;
+				padding-top:18px;
+			}
+			.values-icons {
+				width:30%;
+				float:left;
+				//padding-top:25px;
+				.value {
+					padding-bottom:10px;
+					//float:left;
+					//width:20%;
+					h3 {
+						font-size:1.3em;
+						color:$dark-grey;
+						line-height:1.6em;
+						//text-transform: uppercase;
+					}
+					img {
+						float:left;
+						margin-right:15px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -230,11 +284,9 @@ html, body {
 			margin-left:auto;
 			margin-right:auto;
 			padding:40px 20px;
-			h2 {
-				
+			h2 {	
 			}
-			p {
-				
+			p {	
 			}
 			ul {
 				overflow:hidden;
