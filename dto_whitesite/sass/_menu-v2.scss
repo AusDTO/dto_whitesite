@@ -1,0 +1,136 @@
+.header {
+	.nav-head-container {
+		.header__logo {
+			.header__logo-image {
+				max-height:55px;
+			}
+		}
+		.region-header {
+			//overflow: hidden;
+			//menu items
+			margin-top:10px;
+			padding-top:10px;
+			.block-menu-block {
+				float:right;
+				z-index:99;
+				.menu {
+					list-style-type:none;
+					li {
+						display:inline;
+						padding-left:15px;
+						a {
+							text-decoration:none;
+							color:$ultra-grey;
+							&:focus {
+								color:$dto-blue!important;
+								border-bottom:2px solid $dto-blue;
+							}
+							&.active {
+								color:$dto-blue!important;
+							}
+						}
+						&:hover  {
+							a {
+								color:$dto-blue;
+								border-bottom:2px solid $dto-blue;
+							}
+						}
+					}
+				}
+			}
+			.block {
+				float:right;
+				background-color:#fff;
+				.sb-icon-search {
+					padding-left:15px;
+					background:url("../images/search__button.png");
+					background-repeat:no-repeat;
+					background-position:50% 50%;
+					color:#fff;
+					width:45px;
+					min-height:25px;
+					display:inline-block;
+					overflow:hidden;
+					text-indent: 500px;
+				}
+				&.even {
+					float:right;
+				}	
+			}
+			//search 
+			.block-search-api-page {
+				margin-top:-35px;
+				z-index:-1;
+				float:right;
+				display:block;
+				position:relative;
+				top:30px;
+				right:0;
+				width:5%;
+				//left:38px;
+				transition: all 0.5s ease-out;
+				-webkit-transition: all 0.5s ease-out;
+				-webkit-backface-visibility: hidden;
+				.search-form-widget {
+					
+					.form-type-textfield {
+						input {
+							border-color:#fff;
+							&:focus {
+								border-color:#fff;
+								outline-color: #fff;
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+.search-open {
+	.header {
+	.nav-head-container {
+		.region-header {
+			
+			//menu items
+			.block {
+				//float:left;
+				.sb-icon-search {
+					background:url("../images/search__button.png");
+					background-repeat:no-repeat;
+					background-position:50% 50%;
+				}
+			}
+			//search 
+			.block-search-api-page {
+				z-index:99;
+				//float:right;
+				display:block;
+				position:relative;
+				top:30px;
+				width:75%;
+				right:40px;
+				padding-left:30px;
+				input {
+					outline:2px solid #fff;
+					border:0;
+					&:focus {
+						outline:1px solid $dto-blue!important;
+						//border-bottom:2px solid $dto-blue;
+						
+					}
+				}
+				.search-form-widget {
+					
+					.form-type-textfield {
+						
+					}
+					
+				}
+			}
+		}
+	}
+}
+}

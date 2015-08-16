@@ -54,7 +54,21 @@ jQuery(document).ready(function() {
         jQuery('body').removeClass('show');
    	});	
    	
-   
+   		
+   	jQuery('.sb-icon-search').click(function() {
+        jQuery('body').toggleClass('search-open');
+        jQuery( "#edit-keys-1" ).focus();
+        //jQuery('#block-search-api-page-default-search').toggleClass('opened');
+    });
+    
+   /* jQuery('.sb-icon-search-close').click(function() {
+	    jQuery('body').removeClass('search-open');
+	});*/
+    
+    //jQuery('#edit-keys-1').bind('input', function() {
+	  //  jQuery('#edit-keys-1').on('input',function(e){
+    //jQuery('body').addClass('search-open-test');
+
 	
 });
 

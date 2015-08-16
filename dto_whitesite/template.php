@@ -604,6 +604,7 @@ function dto_whitesite_form_alter(&$form, &$form_state, $form_id) {
     case 'comment_node_dss_criteria_form':
       $form['actions']['submit']['#value'] = t('Post comment');
       break;
+      
   }
 }
 
@@ -651,6 +652,8 @@ function dto_whitesite_js_alter(&$javascript) {
     $javascript['misc/jquery.js']['data'] = '//code.jquery.com/jquery-1.7.0.min.js';
   }
 }
+
+
 
 
 
