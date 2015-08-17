@@ -441,7 +441,7 @@ body{
 }
 
 //removing default IOS styling on search box
-input {
+input [type=search] {
     -webkit-appearance: none;
     -webkit-border-radius:0; 
     border-radius:0;

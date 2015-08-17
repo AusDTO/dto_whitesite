@@ -9,7 +9,7 @@
 ?>
 
 <!--<div class="layout-centered page-wrapper">-->
-<div class="menu-open"></div>
+<!--<div class="menu-open"></div>-->
 <div class="ie-warning"><span class="warning-text">It looks like you're using an old version of Internet Explorer. For the best experience, please update your browser.</span></div>
   <header class="header" role="banner">
   <div class="nav-head-container">

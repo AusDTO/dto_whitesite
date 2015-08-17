@@ -1,3 +1,26 @@
+function isTouchDevice(){
+var deviceAgent = navigator.userAgent.toLowerCase();
+
+var isTouchDevice = Modernizr.touch || 
+(deviceAgent.match(/(iphone|ipod|ipad)/) ||
+deviceAgent.match(/(android)/)  || 
+deviceAgent.match(/(iemobile)/) || 
+deviceAgent.match(/iphone/i) || 
+deviceAgent.match(/ipad/i) || 
+deviceAgent.match(/ipod/i) || 
+deviceAgent.match(/blackberry/i) || 
+deviceAgent.match(/bada/i));
+
+	if (isTouchDevice) {
+	        jQuery('body').addClass('touch');
+	    } 
+	    else {
+	        jQuery('body').addClass('no-touch');
+	    }
+}
+
+
+
 //highcharts
 jQuery(function () {
     jQuery('#container').highcharts({
@@ -57,8 +80,15 @@ jQuery(document).ready(function() {
    		
    	jQuery('.sb-icon-search').click(function() {
         jQuery('body').toggleClass('search-open');
-        jQuery( "#edit-keys-1" ).focus();
-        //jQuery('#block-search-api-page-default-search').toggleClass('opened');
+        jQuery('.sb-icon-search').toggleClass('close');
+        
+        if (jQuery('.sb-icon-search').hasClass('close')){
+	        jQuery( "#edit-keys-1" ).focus();
+           
+        } else {
+	        jQuery( ".sb-icon-search" ).focus();
+	        jQuery( ".sb-icon-search" ).focus();
+          }
     });
     
    /* jQuery('.sb-icon-search-close').click(function() {
@@ -125,7 +155,4 @@ jQuery(document).ready(function() {
 		fixedContentPos: false
 	});
 });
-
-
-
 
