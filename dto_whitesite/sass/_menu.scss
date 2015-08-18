@@ -173,27 +173,27 @@ body{
 
 @media only screen and (min-width:768px) and (max-width: 980px) {
 	.header {
-	.nav-head-container {
-		.header__logo {
-			max-width:60%;
-			img {
-				//width:135px;
-				//max-height:none;
+		.nav-head-container {
+			.header__logo {
+				max-width:60%;
+				img {
+					//width:135px;
+					//max-height:none;
+				}
+				.title {
+					font-size:1.25em;
+					line-height:2.9em;
+				}
 			}
-			.title {
-				font-size:1.25em;
-				line-height:2.9em;
-			}
+			.header__region {
+				margin-top:10px;
+			} 
 		}
-		.header__region {
-			margin-top:10px;
-		} 
-	}
-}
-	
+	}	
 }
 
-@media (max-width: 767px) {
+/*Simon revert
+	@media (max-width: 767px) {
 	.header {
 		margin-top:55px;
 		padding-bottom:0;
@@ -229,7 +229,7 @@ body{
 			}
 		}
 	}
-}
+}*/
 
 @media (min-width: 768px) {
 	.mobile-nav {

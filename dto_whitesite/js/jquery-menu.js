@@ -151,7 +151,7 @@ jQuery(document).ready(function() {
 		removalDelay: 160,
 		preloader: false,
 		closeBtnInside: true,
-		
+		closeOnBgClick: false,
 		fixedContentPos: false
 	});
 });

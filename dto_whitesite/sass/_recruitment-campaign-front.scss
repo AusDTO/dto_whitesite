@@ -167,8 +167,8 @@ html, body {
 	.recruitment-quote {
 		background-color:$background-grey;
 		position:relative;
-		top:-61px;
-		padding-top:60px;
+		top:-3px;
+		padding-top:40px;
 		margin-bottom:-60px;
 		p {
 			text-align:left;
@@ -278,19 +278,23 @@ html, body {
 			padding-top:80px;
 			overflow:hidden;
 			.left-container {
-				width:70%;
-				float:left;
+				//width:70%;
+				//float:left;
 				padding-right:20px;
 				padding-top:18px;
 			}
 			.values-icons {
-				width:30%;
-				float:left;
-				//padding-top:25px;
+				//width:30%;
+				//float:left;
+				padding-top:25px;
+				text-align:center;
 				.value {
 					padding-bottom:10px;
-					//float:left;
-					//width:20%;
+					float:left;
+					width:20%;
+					p {
+						margin-bottom:0;
+					}
 					h3 {
 						font-size:1.3em;
 						color:$dark-grey;
@@ -298,8 +302,9 @@ html, body {
 						//text-transform: uppercase;
 					}
 					img {
-						float:left;
-						margin-right:15px;
+						//float:left;
+						//margin-right:15px;
+						margin-bottom:5px;
 					}
 				}
 			}
@@ -380,15 +385,18 @@ html, body {
 
 //video overlay
 .front {
+	.header {
+		z-index:100;
+	}
 	.mfp-bg {
 		display:none;
 	}
 	.mfp-wrap {
 		top:0!important;
-		z-index:1000;
+		z-index:99;
 		.mfp-container {
 			padding-bottom:63px;
-			padding-top:166px;
+			padding-top:117px;
 			padding-left:0;
 			padding-right:0;
 			.mfp-content {
@@ -415,6 +423,71 @@ html, body {
 						.html5-video-player {
 							background-color:$dto-blue;
 						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//video overlay
+.front {
+	.block-webform {
+		background-color:#fff;
+		.block__content {
+			max-width:1020px;
+			margin-left:auto;
+			margin-right:auto;
+			padding-left:20px;
+			padding-right:20px;
+			form {
+				.webform-component-fieldset {
+					border:none;
+					border-bottom:1px solid $dto-grey;
+					padding-left:0;
+					margin-bottom:65px;
+					padding-bottom:45px;
+					.form-required {
+						color:$dto-blue;
+					}
+					legend {
+						width:35%;
+						float:left;
+						.fieldset-legend {
+							font-size:1.15em;
+							font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important
+						}
+					}
+					.fieldset-wrapper {
+						margin-top:-20px;
+						width:65%;
+						float:left;
+						.webform-component-fieldset {
+							margin-bottom:0;
+							padding-bottom:0;
+							border:none;
+							legend {
+								width:100%;
+								//float:left;
+								.fieldset-legend {	
+									font-size:1em;
+									font-family:"OpenSans",Arial,Helvetica Neue,Helvetica,sans-serif !important
+								}
+							}
+							.fieldset-wrapper {
+								width:100%;
+								margin-top:0;
+							}	
+							
+						}
+					}
+				}
+				.form-actions {
+					overflow:hidden;
+					margin-top:-35px;
+					padding-bottom:40px;
+					.webform-submit {
+						float:right;
 					}
 				}
 			}
