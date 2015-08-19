@@ -5,6 +5,8 @@
 }
 
 .header {
+	padding-top:10px;
+	padding-bottom:22px;
 	.nav-head-container {
 		.header__logo {
 			.header__logo-image {
@@ -15,7 +17,7 @@
 			//overflow: hidden;
 			//menu items
 			margin-top:10px;
-			padding-top:10px;
+			padding-top:20px;
 			float:none;
 			.block-menu-block {
 				float:right;
@@ -28,6 +30,7 @@
 						a {
 							text-decoration:none;
 							color:$ultra-grey;
+							padding-bottom:5px;
 							&:focus {
 								color:$dto-blue!important;
 								border-bottom:2px solid $dto-blue;
@@ -118,7 +121,7 @@
 		background-color:#fff;
 		font-size:0.75em;
 		z-index:10001;
-		top:30px;
+		top:15px;
 		color:$ultra-grey;
 		float:right;
 		text-decoration:none;
@@ -171,7 +174,7 @@
 				z-index:10000;
 				padding:10px;
 				background-color:#fff;
-				margin-top:105px;
+				margin-top:87px;
 				.block {
 					.block__content {
 						.sb-icon-search {
@@ -230,7 +233,7 @@
 					z-index:10000;
 					padding:10px;
 					background-color:#fff;
-					margin-top:105px;
+					margin-top:87px;
 					.block-menu-block {
 						float:left;
 						margin-top:55px;
