@@ -32,11 +32,13 @@ html, body {
 							margin-right:auto;
 							position:relative;
 							top:30%;	
-							h1 {
+							h2 {
 								color:#fff;
 								font-size:6em;
 								line-height:6.5rem;
+								font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 								span {
+									display:block;
 									font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 								}
 							}
@@ -88,7 +90,7 @@ html, body {
 					.block__content {
 						.fullscreen-homescreen {
 							top:50px;	
-							h1 {
+							h2 {
 								font-size:3em;
 								line-height:1.2em;
 							}
