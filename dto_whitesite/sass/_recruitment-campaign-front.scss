@@ -51,6 +51,10 @@ html, body {
 								margin-right:25px;
 								img {
 									display:block;
+									margin-bottom:4px;
+									&.more {
+										margin-left:4px;
+									}
 								}
 							}
 						}
@@ -552,8 +556,11 @@ html, body {
 						input, select, .form-radios, textarea {
 							margin-top:5px;	
 						}
-						input, textarea {
-							//-webkit-appearance:caret;
+						input[type="text"], input[type="email"], textarea, select {
+							-webkit-appearance:none;
+							-moz-appearance:none;
+							box-shadow: none;
+							border-radius:none;
 						}
 						.form-item {
 							margin-top:0;
@@ -634,6 +641,92 @@ html, body {
 							margin-left:auto;
 							margin-right:auto;
 						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//webform confirmation page
+.page-node-1086, .page-node-861 {
+	.page-wrapper {
+		.layout-sidebar-right {
+			padding-top:50px;
+			padding-bottom:60px;
+		}
+		.breadcrumb {
+				display:none;
+			}
+		.main-content {
+			width:100%;
+			margin-right:0;
+			display:block;
+			float:none;
+			padding-bottom:0;
+			margin-bottom:30px;
+			padding-right:0;
+			.page__title {
+				display:none;
+			}
+			.webform-confirmation {
+				h2 {
+					font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+					font-size:2.8rem;
+					line-height:3.1rem;
+				}
+			}
+			.links {
+				display:none;
+			}
+		}
+		.sidebar-right {
+			width:100%;
+			margin-right:0;
+			margin-left:0;
+			display:block;
+			float:none;
+			padding-left:0;
+			.recruit-social-media {
+				margin-top:50px;
+				width:100%;
+				a {
+					width:32%;
+					float:left;
+					text-align:center;
+					padding:10px 20px;
+					border:1px solid $dto-grey;
+					border-radius:5px;
+					text-decoration:none;
+					margin-right:2%;
+					margin-bottom:18px;
+					color: $dark-grey;
+					font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+					line-height:2.1em;
+					&.linkedin {
+						margin-right:0;
+					}
+					&.youtube {
+						margin-right:0;
+					}
+					&:before {
+						background-repeat: no-repeat;
+						height:32px;
+						width:32px;
+						float:left;
+						content:" ";
+					}
+					&.github::before {
+						background-image:url('../images/update/social-icons-grey/github-icon.png');	
+					}
+					&.twitter::before {
+						background-image:url('../images/update/social-icons-grey/twitter-icon.png');	
+					}
+					&.linkedin::before {
+						background-image:url('../images/update/social-icons-grey/linkedin-icon.png');	
+					}
+					&.youtube::before {
+						background-image:url('../images/update/social-icons-grey/youtube-icon.png');	
 					}
 				}
 			}
