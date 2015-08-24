@@ -536,7 +536,9 @@ html, body {
 					margin-bottom:65px;
 					padding-bottom:45px;
 					.form-required {
-						display:none;
+						//display:none;
+						color:$dark-grey;
+						font-size:0.85em;
 					}
 					legend {
 						width:35%;
