@@ -67,6 +67,9 @@
 							display:inline-block;
 							overflow:hidden;
 							text-indent: 500px;
+							&:focus {
+								border:1px dotted #333!important;
+							}
 						}
 				}
 				&.even {
@@ -259,113 +262,9 @@
 				}
 			}
 		}
-	//}
-	//superfish styling
-	/*.region-navigation {
-		background-color:#fff!important;
-		transition:500ms;
-		-webkit-transition:500ms;
-		top:0;
-		right:-100%;
-		overflow-x:hidden;
-		overflow-y: auto;
-		position:fixed;
-		height:100%;
-		border-left:1px solid #ccc;
-		width:80%;
-		z-index:1001;
-		padding:10px;
-		background-color:#fff;
-		.block-superfish {
-			.block__content {
-				ul {
-					display:block;
-					li {
-						width:100%;
-						//padding-left:15px;
-						border-left:none;
-						border-right:none;
-						border-bottom:1px solid #ccc;
-						background-color:#fff;
-						
-						&.first {
-							border-bottom:1px solid #ccc;
-						}
-						a{
-							padding-right:30px!important;
-							color:#333;
-							font-size:0.8em!important;
-							&.menuparent::after {
-								float:right;
-								margin-right:-22px;
-								color:#000!important;
-							}
-						}
-						ul {
-							box-shadow:none;
-							position:relative;
-							left:0!important;
-							width:100%!important;
-							li {
-								padding-left:10px;
-								width:100%;
-								&.last {
-									border-bottom:none;
-								}
-								a {
-									padding-right:30px!important;
-									width:100%;
-									&.menuparent::after {
-										position:absolute;
-										right:5px;
-										transform:rotate(90deg);
-										margin-right:-22px;
-										color:#000!important;
-									}
-									&.sf-depth-2.menuparent::after {
-										transform:rotate(0deg);
-										-webkit-transform:rotate(0deg)!important;
-									}
-								}
-								&.sf-total-depth-2 {
-									ul {
-									left:0!important;
-									}
-								}
-							}
-						}
-						
-					}
-				}
-			}
-		}
-		.tinynav {
-			display:none;
-		}
-		//changes hover state to accordion
-		.block__content > .menu > li > ul, .region-navigation .block__content > .menu ul ul {
-			position:relative;
-			width:100%!important;
-		}
-		.active-trail a.active::before {
-			border-top:none!important;
-		}
-		li:hover, li:focus {
-			a::before {
-				border-top:none!important;
-				border-left:none!important;
-			}
-			a {
-				background-color:#fff!important;
-			}
-		}
-		.active-trail a.active {
-			font-weight:bold;
-			color:#4dc9e3;
-		}
-	}*/
-	//controls menu opening
 	
+	
+	//controls menu opening	
 	.show {
 		overflow:hidden;
 		&.front {
@@ -401,21 +300,6 @@
 		}
 		
 	}
-	//Search bar placement
-	/*.header__region.region.region-header {
-		margin-top:0;
-		position:fixed;
-		top:0;
-		left:0;
-		background-color:#fff;
-		z-index:1000;
-		width:100%;
-		padding:10px;
-		border-bottom:1px solid #eee;
-		.search--header, .block-search-api-page {
-			width:75%;
-		}
-	}*/
 }
 
 .search-open {
@@ -472,10 +356,22 @@
 					max-height:50px;
 				}
 			}
+			.region-header {
+				.block-menu-block {
+					.menu {
+						li {
+							a {
+								font-size:1.4em;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
 
+//makes blog menu item active on blog pages
 .node-type-blog-article {
 	.region-header {
 		.block-menu-block {
