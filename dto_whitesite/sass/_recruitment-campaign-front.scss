@@ -489,6 +489,9 @@ html, body {
 						&::before {
 							content:none;
 						}
+						&:focus {
+							border:2px solid #fff;
+						}
 					}
 					.mfp-iframe {
 						//background-color:$dto-blue;
@@ -727,6 +730,12 @@ html, body {
 					}
 					&.youtube::before {
 						background-image:url('../images/update/social-icons-grey/youtube-icon.png');	
+					}
+					&.email::before {
+						background-image:url('../images/update/social-icons-grey/mail-icon.png');	
+					}
+					&.rss::before {
+						background-image:url('../images/update/social-icons-grey/rss-icon.png');	
 					}
 				}
 			}
