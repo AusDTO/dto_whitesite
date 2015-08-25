@@ -118,7 +118,7 @@ jQuery(document).ready(function() {
 		fixedContentPos: false,
 		iframe: {
 			markup: '<div class="mfp-iframe-scaler">'+
-						'<div class="video-header"><h3 class="title">Something big is happening here</h3><a href="#">Read transcript</a></div>'+
+						'<div class="video-header"><a href="/transcript-recruitment-video">Read transcript</a></div>'+
             			'<div class="mfp-close"></div>'+
 						'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
 					'</div>'
