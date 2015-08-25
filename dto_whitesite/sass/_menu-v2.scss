@@ -91,6 +91,10 @@
 					
 					.form-type-textfield {
 						input {
+							-webkit-appearance:none;
+							-moz-appearance:none;
+							box-shadow: none;
+							border-radius:none;
 							border-color:#fff;
 							&:focus {
 								border-color:#fff;

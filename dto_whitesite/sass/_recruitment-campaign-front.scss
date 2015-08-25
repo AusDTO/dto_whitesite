@@ -412,7 +412,8 @@ html, body {
 	#sign-me-up {
 		padding-top:60px;
 		margin-top:-60px;
-		margin-bottom:50px;
+		margin-bottom:0;
+		padding-bottom:5px;
 	}
 	.recruitment-roles {
 		.container {
@@ -784,6 +785,150 @@ html, body {
 			margin-left:auto;
 			margin-right:auto;
 			display:block;
+		}
+	}
+}
+
+.recruitment-form {
+	//display:none;
+}
+
+.front {
+	.recruitment-form {
+		display:block;
+		background-color:#fff;
+		position:relative;
+		z-index:999999999999;
+		.rbox-widget {
+			max-width:1020px;
+			padding-left:20px;
+			padding-right:20px;
+			margin-left:auto;
+			margin-right:auto;
+			.rbox-opening-li {
+				a {
+					&.rbox-opening-li-title {
+						font-weight: normal;
+						font-size:1em;
+						color:$dto-blue;
+						//font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+					}
+				}
+				.rbox-job-shortdesc {
+					font-size:0.9em;
+					opacity:1;
+					color:$dark-grey;
+					
+					.rbox-opening-position-info {
+					//float:left;
+					margin-top:0;
+					.rbox-opening-position-type {
+						border:none;
+						padding:0;
+						color:$dark-grey;
+						font-size:1em;
+						padding-left:8px;
+						&:before {
+							content: "/";
+							padding-right:8px;
+						}
+					}
+				}
+				}
+			}
+			.rbox-job-fullpage {
+				overflow: hidden;
+				padding-bottom:30px;
+				h2 {
+					font-weight:normal;
+					//background-color:$dto-blue;
+					//color:#fff;
+				}
+				.rbox-top-links, .rbox-bottom-links {
+					border-top:1px dotted $dto-grey;
+					border-bottom:1px dotted $dto-grey;
+					padding-bottom:18px;
+					padding-top:18px;
+					margin-top:15px;
+					a {
+						color:$dto-blue;
+						text-decoration:none;
+					}
+				}
+				.rbox-job-shortdesc {
+					font-size:0.9em;
+					opacity:1;
+					color:$dark-grey;
+					float:left;
+					//background-color:$dto-blue;
+				}
+				.rbox-opening-position-info {
+					//float:left;
+					margin-top:0;
+					.rbox-opening-position-type {
+						border:none;
+						padding:0;
+						color:$dark-grey;
+						font-size:0.9em;
+						padding-left:8px;
+						&:before {
+							content: "/";
+							padding-right:8px;
+						}
+					}
+				}
+				.rbox-job-longdesc {
+					margin-top:15px;
+					padding-top:0;
+					border-top:none;
+				}
+			}
+			.rbox-form-actions, .rbox-buttons {
+				.rbox-btn {
+					background-image: none;
+					background-color:$dto-blue;
+					color:#fff;
+					border-radius:0;
+					box-shadow:none;
+					text-shadow:none;
+					border:none;
+					margin-bottom:30px;
+					&::before {
+						content:none;
+					}
+				}
+			}
+			.rbox-application {
+				input[type="text"], input[type="email"], input[type="url"], textarea, select {
+					-webkit-appearance:caret;
+					-moz-appearance:caret;
+					box-shadow: none;
+					border-radius:0;
+					border:1px solid #333;
+					&:focus {
+						border:2px solid $dto-blue!important;
+						transition:none;
+					}
+				}
+				textarea {
+					min-height:200px;
+					width:80%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 769px) {
+	.front {
+		.recruitment-form {
+			.rbox-widget {
+				.rbox-application {
+					textarea {
+						width:100%;
+					}
+				}
+			}
 		}
 	}
 }
