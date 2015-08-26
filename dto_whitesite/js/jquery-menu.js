@@ -122,7 +122,8 @@ jQuery(document).ready(function() {
             			'<div class="mfp-close"></div>'+
 						'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
 					'</div>'
-				}
+				
+		}
 	});
 	jQuery('.popup-youtube').click(function() {
         jQuery('html, body').animate({ scrollTop: 0 }, 0);

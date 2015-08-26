@@ -35,7 +35,7 @@
 								color:$dto-blue!important;
 								border-bottom:2px solid $dto-blue;
 							}
-							&.active {
+							&.active, &.active-trail {
 								color:$dto-blue!important;
 							}
 						}
