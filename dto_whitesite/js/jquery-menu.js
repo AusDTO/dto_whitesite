@@ -127,7 +127,8 @@ jQuery(document).ready(function() {
 	jQuery('.popup-youtube').click(function() {
         jQuery('html, body').animate({ scrollTop: 0 }, 0);
         jQuery("body").css("overflow", "hidden");
-	        jQuery('button').click(function() {
+        
+	    jQuery('button').click(function() {
 	        jQuery("body").css("overflow", "auto");
 	    });
     });

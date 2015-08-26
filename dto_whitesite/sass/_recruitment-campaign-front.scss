@@ -76,7 +76,30 @@ html, body {
 		}
 	}
 
-@media (max-width: 920px) {
+
+@media (min-width: 761px) and (max-width: 920px) {
+	.front {
+		.layout-centered {
+			.region-highlighted {
+				.block {
+					.block__content {
+						.fullscreen-homescreen {
+							top:15%;	
+							h1 {
+							}
+							a {
+								img {
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 760px) {
 	.front {
 		.layout-centered {
 			.region-highlighted {
