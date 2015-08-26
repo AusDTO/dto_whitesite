@@ -45,6 +45,14 @@ html, body {
 									font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 								}
 							}
+							p {
+								&.subtext {
+									float:none;
+									font-size:2em;
+									color:#fff;
+									margin-bottom:38px;
+								}
+							}
 							a {
 								color:#fff;
 								text-decoration:none;
@@ -98,8 +106,14 @@ html, body {
 						.fullscreen-homescreen {
 							top:50px;	
 							h2 {
-								font-size:3em;
+								font-size:2.5em;
 								line-height:1.2em;
+							}
+							p {
+								&.subtext {
+									font-size:1.1em;
+									margin-bottom:30px;
+								}
 							}
 							a {
 								img {
@@ -318,7 +332,7 @@ html, body {
 //values
 .front {
 	.recruitment-values {
-		background-color:#585858;
+		background-color:$dark-grey;
 		.container {
 			max-width:1020px;
 			padding:80px 20px;
@@ -935,6 +949,9 @@ html, body {
 				}
 			}
 			.rbox-application {
+				.rbox-field-label {
+					margin-bottom:3px;
+				}
 				input[type="text"], input[type="email"], input[type="url"], textarea, select {
 					-webkit-appearance:caret;
 					-moz-appearance:caret;
