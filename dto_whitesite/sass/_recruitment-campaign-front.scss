@@ -367,7 +367,8 @@ html, body {
 		position:absolute;
 		bottom:0;
 		width:100%;
-		z-index:9999;
+		//z-index:9999;
+		z-index:101;
 		.recruitment-menu {
 			max-width:1020px;
 			padding:10px 20px 5px;
@@ -378,7 +379,8 @@ html, body {
 				color:$dto-blue;
 				display:inline-block;
 			}
-			.recruit-menu {
+			ul {
+				
 				display:inline-block;
 				float:right;
 				padding-top:10px;
@@ -594,14 +596,16 @@ html, body {
 //video overlay
 .front {
 	.header {
-		z-index:100;
+		z-index:102;
 	}
 	.mfp-bg {
-		display:none;
+		//display:none;
+		z-index:103;
 	}
 	.mfp-wrap {
 		top:0!important;
-		z-index:99;
+		//z-index:99;
+		z-index:104;
 		.mfp-container {
 			padding-bottom:63px;
 			padding-top:107px;
@@ -938,6 +942,7 @@ html, body {
 			margin-left:auto;
 			margin-right:auto;
 			display:block;
+			width:100%;
 		}
 	}
 }
@@ -952,7 +957,8 @@ html, body {
 		display:block;
 		background-color:#fff;
 		position:relative;
-		z-index:999999999999;
+		//z-index:999999999999;
+		z-index:102;
 		padding-bottom:30px;
 		.rbox-widget {
 			max-width:1020px;
@@ -960,6 +966,11 @@ html, body {
 			padding-right:20px;
 			margin-left:auto;
 			margin-right:auto;
+			.rbox-jobs-group {
+				h3 {
+					margin-bottom:8px;
+				}
+			}
 			.rbox-opening-li {
 				border-color: $dto-grey;
 				overflow:hidden;
@@ -1123,6 +1134,19 @@ html, body {
 				.rbox-application {
 					textarea {
 						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	.front {
+		.recruitment-form {
+			.rbox-widget {
+				.rbox-application {
+					textarea, input {
+						width:295px;
 					}
 				}
 			}

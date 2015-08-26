@@ -124,5 +124,14 @@ jQuery(document).ready(function() {
 					'</div>'
 				}
 	});
+	jQuery('.popup-youtube').click(function() {
+        jQuery('html, body').animate({ scrollTop: 0 }, 0);
+        jQuery("body").css("overflow", "hidden");
+	        jQuery('button').click(function() {
+	        jQuery("body").css("overflow", "auto");
+	    });
+    });
+    
 });
+
 
