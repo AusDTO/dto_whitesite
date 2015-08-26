@@ -34,7 +34,7 @@ html, body {
 							margin-left:auto;
 							margin-right:auto;
 							position:relative;
-							top:30%;	
+							top:20%;	
 							h2 {
 								color:#fff;
 								font-size:6em;
@@ -51,6 +51,7 @@ html, body {
 									font-size:2em;
 									color:#fff;
 									margin-bottom:38px;
+									line-height:1.2em;
 								}
 							}
 							a {
@@ -82,7 +83,8 @@ html, body {
 				.block {
 					.block__content {
 						.fullscreen-homescreen {
-							top:15%;	
+							//top:15%;	
+							top:15px;
 							h1 {
 							}
 							a {
@@ -104,9 +106,9 @@ html, body {
 				.block {
 					.block__content {
 						.fullscreen-homescreen {
-							top:50px;	
+							//top:50px;	
 							h2 {
-								font-size:2.5em;
+								font-size:2em;
 								line-height:1.2em;
 							}
 							p {
@@ -117,6 +119,114 @@ html, body {
 							}
 							a {
 								img {
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//landscape mobile devices
+@media (min-width: 581px) and (max-width: 736px) {
+	.front {
+		.layout-centered {
+			.region-highlighted {
+				.block {
+					.block__content {
+						.fullscreen-homescreen {
+							top:15px;	
+							h2 {
+								font-size:2em;
+								line-height:1.2em;
+								margin-bottom:15px;
+								span {
+									display:inline-block;
+								}
+							}
+							p {
+								&.subtext {
+									font-size:1.1em;
+									margin-bottom:10px;
+								}
+							}
+							a {
+								font-size:0.8em;
+								img {
+									//width:26px;
+									//height:26px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//iPhone 6
+@media (max-width: 480px) {
+	.front {
+		.layout-centered {
+			.region-highlighted {
+				.block {
+					.block__content {
+						.fullscreen-homescreen {
+							top:15px;	
+							h2 {
+								font-size:2em;
+								line-height:1.2em;
+								margin-bottom:15px;
+							}
+							p {
+								&.subtext {
+									font-size:1.1em;
+									margin-bottom:20px;
+								}
+							}
+							a {
+								font-size:0.8em;
+								img {
+									//width:26px;
+									//height:26px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//iPhone 5
+@media (max-width: 370px) {
+	.front {
+		.layout-centered {
+			.region-highlighted {
+				.block {
+					.block__content {
+						.fullscreen-homescreen {
+							top:15px;	
+							h2 {
+								font-size:2em;
+								line-height:1.2em;
+								margin-bottom:15px;
+							}
+							p {
+								&.subtext {
+									font-size:1.1em;
+									margin-bottom:20px;
+								}
+							}
+							a {
+								font-size:0.8em;
+								img {
+									width:26px;
+									height:26px;
 								}
 							}
 						}
@@ -186,6 +296,7 @@ html, body {
 		padding-left:20px;
 		padding-right:20px;
 		width:100%;
+		display:block;
 		img {
 			float:left;
 			height:110px;
@@ -311,8 +422,8 @@ html, body {
 	.front {
 			.region-recruitment {
 				.recruitment-menu {
-					padding-top:15px;
-					padding-bottom:25px;
+					padding-top:7px;
+					padding-bottom:15px;
 					.recruit-menu {
 						float:none;
 						display:block;
@@ -413,6 +524,11 @@ html, body {
 	.front {
 		.recruitment-values {
 			.container {
+				padding-top:60px;
+				padding-bottom:30px;
+				h2 {
+					font-size:1.7em
+				}
 				.values-icons {
 					width:100%;
 					.value {
@@ -462,6 +578,9 @@ html, body {
 	.front {
 		.recruitment-roles {
 			.container {
+				h2 {
+					font-size:1.7em;
+				}
 				ul {
 					li {
 						width:100%;
@@ -843,7 +962,20 @@ html, body {
 			margin-right:auto;
 			.rbox-opening-li {
 				border-color: $dto-grey;
+				overflow:hidden;
+				&:after {
+					content:"Apply";
+					//background-color:$dto-blue;
+					//color:#fff;
+					padding:10px 20px;
+					float:right;
+					color:$dto-blue;
+					border:1px solid $dto-blue;
+					min-width:60px;
+					text-align:center;
+				}
 				a {
+					line-height:2.8em;
 					&.rbox-opening-li-title {
 						font-weight: normal;
 						font-size:1em;
@@ -855,7 +987,7 @@ html, body {
 					font-size:0.9em;
 					opacity:1;
 					color:$dark-grey;
-					
+					display:none;
 					.rbox-opening-position-info {
 					//float:left;
 					margin-top:0;
@@ -873,6 +1005,18 @@ html, body {
 				}
 				}
 			}
+			#rbox-opening-li-77880 {
+				&:after {
+					content:"Register";
+				}
+			}
+				/*margin-top:80px;
+				&:before {
+					position:absolute;
+					bottom:100px;
+					content:"Your job not listed here?";
+				}
+			}*/
 			.rbox-job-fullpage {
 				overflow: hidden;
 				padding-bottom:30px;
