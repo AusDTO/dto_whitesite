@@ -17,7 +17,9 @@
 	
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
-	<meta property="og:image" content="https://www.dto.gov.au/sites/g/files/net466/f/dto_crest_inline_0.png"/>
+    
+    <meta property="og:image" content="https://www.dto.gov.au/sites/g/files/net466/f/dto_crest_inline_0.png"/>
+
     <?php if ($default_mobile_metatags): ?>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
