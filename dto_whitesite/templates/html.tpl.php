@@ -18,8 +18,9 @@
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
     
-    <meta property="og:image" content="https://www.dto.gov.au/sites/g/files/net466/f/dto_crest_inline_0.png"/>
-
+    <meta property="og:image" content="https://www.dto.gov.au/sites/g/files/net466/f/styles/large/public/dto_icn_150x80px_midblue.png?itok=zvy6Xc24"/><!--linkedin link logo-->
+	<link rel="image_src" href="https://www.dto.gov.au/sites/g/files/net466/f/styles/large/public/dto_icn_150x80px_midblue.png?itok=zvy6Xc24 " /> <!--facebook link logo-->
+	
     <?php if ($default_mobile_metatags): ?>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
