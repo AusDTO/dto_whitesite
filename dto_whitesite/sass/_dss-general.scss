@@ -16,7 +16,7 @@
 	}
 }
 
-//DSS subguide contents menu
+//DSS subguide contents menu on subguides page
 .node-type-subguide {
 	.sidebar {
 		#block-views-dss-subguide-parent-block-1 {
@@ -28,14 +28,56 @@
 			}
 			.view-dss-sibling-subguides {
 				a {
-					border-left:4px solid #fff;
+					//border-left:3px solid #fff;
 					padding-left:15px;
+					text-decoration:none;
+					display:block;
+					color:$dto-blue;
 					&.active {
-					font-weight:bold;
-					border-left:4px solid $dto-blue;
+					font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+					//border-left:3px solid $dto-blue;
+					}
+				}	
+			}
+		}
+		.view-dss-subguide-parent {
+			a {
+				text-decoration:none;
+				color:$dto-blue;
+				display:block;
+			}
+		}
+	}
+}
+
+//DSS subguide contents menu on guides page
+.node-type-page {
+	.sidebar {
+		.block-views {
+			&.first {
+				margin-bottom:7px;
+				a {
+					text-decoration: none;
+					display:block;
+					color:$dto-blue;
+					&.active {
+						font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+						//border-left:3px solid $dto-blue;
+						//padding-left:5px;
 					}
 				}
-				
+			}
+		}
+		.view-dss-child-subguides {
+			.views-row {
+				margin-bottom:5px;
+				a {
+					color:$dto-blue;
+					//border-left:4px solid #fff;
+					padding-left:15px;
+					text-decoration: none;
+					display:block;
+				}
 			}
 		}
 	}

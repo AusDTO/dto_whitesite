@@ -40,12 +40,15 @@ html, body {
 								font-size:6em;
 								line-height:0.95em;
 								font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+								margin-top:0;
 								span {
 									display:block;
 									font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 								}
 							}
 							p {
+								margin-top:0;
+								float:left;
 								&.subtext {
 									float:none;
 									font-size:2em;
@@ -401,6 +404,7 @@ html, body {
 			h3 {
 				color:$dto-blue;
 				display:inline-block;
+				margin-top:5px;
 			}
 			ul {
 				
@@ -835,96 +839,6 @@ html, body {
 	}
 }
 
-//webform confirmation page
-/*.page-node-1086, .page-node-861 {
-	.page-wrapper {
-		.layout-sidebar-right {
-			padding-top:50px;
-			padding-bottom:60px;
-		}
-		.breadcrumb {
-				display:none;
-			}
-		.main-content {
-			width:100%;
-			margin-right:0;
-			display:block;
-			float:none;
-			padding-bottom:0;
-			margin-bottom:30px;
-			padding-right:0;
-			.page__title {
-				display:none;
-			}
-			.webform-confirmation {
-				h2 {
-					font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
-					font-size:2.8rem;
-					line-height:3.1rem;
-				}
-			}
-			.links {
-				display:none;
-			}
-		}
-		.sidebar-right {
-			width:100%;
-			margin-right:0;
-			margin-left:0;
-			display:block;
-			float:none;
-			padding-left:0;
-			.recruit-social-media {
-				margin-top:50px;
-				width:100%;
-				a {
-					width:32%;
-					float:left;
-					text-align:center;
-					padding:10px 20px;
-					border:1px solid $dto-grey;
-					text-decoration:none;
-					margin-right:2%;
-					margin-bottom:18px;
-					color: $dark-grey;
-					font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-					line-height:2.1em;
-					&.linkedin {
-						margin-right:0;
-					}
-					&.youtube {
-						margin-right:0;
-					}
-					&:before {
-						background-repeat: no-repeat;
-						height:32px;
-						width:32px;
-						float:left;
-						content:" ";
-					}
-					&.github::before {
-						background-image:url('../images/update/social-icons-grey/github-icon.png');	
-					}
-					&.twitter::before {
-						background-image:url('../images/update/social-icons-grey/twitter-icon.png');	
-					}
-					&.linkedin::before {
-						background-image:url('../images/update/social-icons-grey/linkedin-icon.png');	
-					}
-					&.youtube::before {
-						background-image:url('../images/update/social-icons-grey/youtube-icon.png');	
-					}
-					&.email::before {
-						background-image:url('../images/update/social-icons-grey/mail-icon.png');	
-					}
-					&.rss::before {
-						background-image:url('../images/update/social-icons-grey/rss-icon.png');	
-					}
-				}
-			}
-		}
-	}
-}*/
 
 .front {
 	.job-container {
@@ -964,6 +878,9 @@ html, body {
 .front {
 	.recruitment-banner {
 		background-color:$dto-blue;
+		p {
+			margin-top:0;
+		}
 		img {
 			margin-left:auto;
 			margin-right:auto;
@@ -1134,7 +1051,7 @@ html, body {
 					margin-bottom:3px;
 				}
 				input[type="text"], input[type="email"], input[type="url"], textarea, select {
-					-webkit-appearance:caret;
+					-webkit-appearance:none;
 					-moz-appearance:caret;
 					box-shadow: none;
 					border-radius:0;

@@ -1,11 +1,25 @@
 .callout {
 	background-color:$background-grey;
-	padding:17px 20px 5px;
-	margin-bottom:25px;
-	&.callout-general {
-		border-left:4px solid $dto-purple;
-	}
-	&.callout-alert {
-		border-left:4px solid $dto-error;
+	border-left:5px solid $dto-blue;
+	padding:20px;
+	padding-top:15px;
+	padding-bottom:1px;
+	display:block;
+	margin-bottom:20px;
+}
+
+.callout-example {
+	//background-color:$background-grey;
+	border-top:1px dotted $dto-grey;
+	border-bottom:1px dotted $dto-grey;
+	padding:25px 0px 1px 0;
+	display:block;
+	margin-bottom:20px;
+	&:before {
+		content:'Example';
+		position:relative;
+		top:-21px;
+		background-color:$background-grey;
+		padding:5px 10px;
 	}
 }

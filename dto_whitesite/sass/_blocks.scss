@@ -16,7 +16,7 @@
 .sidebar {
   
   .block {   
-    
+    margin-bottom:30px;
     .block__title {
       font-size: 2rem;
       color: $black;
@@ -29,6 +29,12 @@
     .block__content {
       background-color: white;
       padding: 0;
+      .views-field-title {
+	    a {
+		    color:$dto-blue;
+		    text-decoration:none;
+	    }
+	}
     }
   }
 }

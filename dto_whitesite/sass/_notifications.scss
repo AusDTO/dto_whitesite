@@ -1,0 +1,25 @@
+.region-navigation {
+	background-color:$dto-blue;
+	.global-notification {
+		max-width:1020px;
+		padding:15px 20px;
+		margin-left:auto;
+		margin-right:auto;
+		p {
+			margin-bottom:0;
+			color:#fff;
+			a {
+				color:#fff;
+			}
+		}
+	}
+}
+
+.front {
+	.region-navigation {
+		&.region {
+		position:absolute;
+		}
+	}
+}
+

@@ -1,4 +1,3 @@
-
 // Include supporting libraries.
 @import "zen";
 @import "breakpoint";
@@ -8,49 +7,63 @@
 @import 'vars';
 @import 'base';
 
-// our vars
-$primaryColour: #4DC9E3;
-$primaryColour2: #1675bc;
-
-@import '_govcms';
-@import '_gov-blog';
-@import '_responsive';
-@import '_layout';
-@import '_print';
-@import '_profile';
-@import '_blocks';
-@import '_mini-panels';
-@import '_guides';
-@import '_dss-criteria-list-view';
-@import '_comments-block';
-@import '_comments';
+//Blog pages
 @import '_blog';
+@import '_comments-block';
+
+//navigation
+@import '_breadcrumb';
 @import '_menu';
-@import '_footer';
+@import '_pager';
+@import '_local-nav';
+@import '_menu-v2';
+@import '_scroll-to-top';
+
+//bad homepage
 @import '_twitter-feed';
-@import '_typography';
 @import '_front-blog-news';
-@import '_layout';
 @import '_home-banner';
 @import '_home-communicate';
-@import '_breadcrumb';
-@import '_pager';
-@import '_callouts';
-@import 'ie-fixes';
-@import '_comments-block';
-@import '_local-nav';
 @import '_home-dss';
-@import '_dss-general';
-@import '_highlighted';
+
+//footer
+@import '_footer';
+
+//page components
+@import '_callouts';
+@import '_typography';
+@import '_notifications';
+@import '_tables';
+
+//CSS for libraries
 @import '_highcharts';
 @import '_magnific-popup';
-@import '_menu-v2';
 
-
-//pages
+//DSS pages
 @import '_design-guides-page';
 @import '_dss-criteria-page';
 @import '_search-results-page';
+@import '_dss-criteria-list-view';
+@import '_dss-general';
 
 //recruitment campaign
 @import '_recruitment-campaign-front';
+
+//general layout
+@import '_layout';
+@import 'ie-fixes';
+@import '_govcms';
+@import '_mini-panels';
+
+
+
+//@import '_highlighted';
+//@import '_comments-block';
+//@import '_gov-blog';
+//@import '_responsive';
+//@import '_layout';
+//@import '_print';
+//@import '_profile';
+//@import '_blocks';
+//@import '_guides';
+

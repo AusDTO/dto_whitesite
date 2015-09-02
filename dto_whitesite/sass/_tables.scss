@@ -1,0 +1,7 @@
+//responsive table
+@media (max-width: 620px) {
+	table {
+		overflow-x:auto;
+		display:block;
+	}
+}
