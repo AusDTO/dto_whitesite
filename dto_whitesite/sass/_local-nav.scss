@@ -1,4 +1,10 @@
 #block-menu-block-govcms-menu-block-sidebar, #block-menu-block-1 {
+	.block__title {
+		border-bottom:2px solid $dto-grey;
+		border-top:none;
+		margin-bottom:5px;
+		padding-bottom:7px;
+	}
 	.menu {
 		border:none;
 		li {
@@ -9,6 +15,7 @@
 			}
 			&.last {
 				padding-bottom:0;
+				border-bottom:1px solid #e2e2e2;
 			}
 			&.is-active {
 				a {
@@ -29,6 +36,7 @@
 			.menu {
 				li {
 					margin-bottom:0;
+					border-bottom:none;
 					a {
 						padding-left:20px;
 						border-left:4px solid #fff;
@@ -55,6 +63,9 @@
 			//background-color:#f5f5f5;
 			background-color:#fff;
 			border-bottom:1px solid #e2e2e2;
+			&.last {
+				border-bottom:1px solid #e2e2e2;
+			}
 			&.is-active-trail {
 				background-color:#fff;
 				a {

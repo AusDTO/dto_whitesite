@@ -86,12 +86,13 @@ h4 {
 }
 
 h5 {
-	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+	font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 	color:$ultra-grey;
 	margin-bottom:0.3125em;
 	margin-top:1.05263em;
 	font-size:17px;
 	line-height:1.5;
+	font-style:italic;
 }
 
 p {
@@ -164,7 +165,7 @@ a {
 	}
 	
 	h5 {
-		font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+		font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 		color:$ultra-grey;
 		margin-bottom:15px;
 		margin-top:25px;

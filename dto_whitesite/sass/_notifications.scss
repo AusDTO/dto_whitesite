@@ -1,5 +1,6 @@
 .region-navigation {
 	background-color:$dto-blue;
+	z-index:101;
 	.global-notification {
 		max-width:1020px;
 		padding:15px 20px;
@@ -17,6 +18,7 @@
 
 .front {
 	.region-navigation {
+		z-index:101!important;
 		&.region {
 		position:absolute;
 		}
