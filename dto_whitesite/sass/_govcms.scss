@@ -176,7 +176,8 @@ a:focus, a:active {
 
 //Remove once DTO go live and have their own theme
 .menu-block-govcms_menu_block-sidebar .menu .menu__link.active {
-  border-left-color: #4DC9E3;
+  //border-left-color: #4DC9E3;
+  border-left:none;
 }
 
 //Need to fix up this font stuff at some point

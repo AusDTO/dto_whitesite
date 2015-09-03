@@ -41,6 +41,7 @@ html, body {
 								line-height:0.95em;
 								font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 								margin-top:0;
+								margin-bottom:10px;
 								span {
 									display:block;
 									font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
@@ -405,6 +406,7 @@ html, body {
 				color:$dto-blue;
 				display:inline-block;
 				margin-top:5px;
+				float:left;
 			}
 			ul {
 				
@@ -508,6 +510,7 @@ html, body {
 						font-size:1.3em;
 						color:#fff;
 						line-height:1.6em;
+						margin-top:0;
 						//text-transform: uppercase;
 					}
 					img {
