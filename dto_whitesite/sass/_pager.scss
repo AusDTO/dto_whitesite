@@ -3,11 +3,32 @@
 	.pager-responsive__start-nav {
 		.pager-responsive__item {
 			border-right:1px solid #ccc;
+			margin-bottom:0;
+			a {
+				padding:10px;
+			}
 		}
 	}
 	.pager-responsive__end-nav {
 		.pager-responsive__item {
 			border-left:1px solid #ccc;
+			margin-bottom:0;
+			a {
+				padding:10px;
+			}
+		}
+	}
+	.pager-responsive__pages {
+		.pager-responsive__list {
+			.pager-responsive__item-current {
+				padding:10px 20px;
+			}
+			li {
+				margin-bottom:0;
+				a {
+					padding:10px 20px;
+				}
+			}
 		}
 	}
 }

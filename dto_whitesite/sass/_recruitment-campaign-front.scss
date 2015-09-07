@@ -18,7 +18,7 @@ html, body {
 				max-width:100%;
 				height:100%;
 				position:relative;
-				top:-188px;
+				top:-175px;
 				padding-top:170px;
 				background-color:$dto-blue;
 				z-index:98;
@@ -87,6 +87,7 @@ html, body {
 	.front {
 		.layout-centered {
 			.region-highlighted {
+				top:-130px;
 				.block {
 					.block__content {
 						.fullscreen-homescreen {
@@ -109,6 +110,7 @@ html, body {
 	.front {
 		.layout-centered {
 			.region-highlighted {
+				top:-130px;
 				.block {
 					.block__content {
 						.fullscreen-homescreen {
@@ -132,6 +134,7 @@ html, body {
 	.front {
 		.layout-centered {
 			.region-highlighted {
+				
 				.block {
 					.block__content {
 						.fullscreen-homescreen {
@@ -409,12 +412,13 @@ html, body {
 				display:inline-block;
 				margin-top:5px;
 				float:left;
+				font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 			}
 			ul {
 				
 				display:inline-block;
 				float:right;
-				padding-top:10px;
+				padding-top:5px;
 				margin-bottom:0;
 				li {
 					margin-left:10px;
@@ -513,6 +517,7 @@ html, body {
 						color:#fff;
 						line-height:1.6em;
 						margin-top:0;
+						font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 						//text-transform: uppercase;
 					}
 					img {
