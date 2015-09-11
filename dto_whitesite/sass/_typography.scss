@@ -116,12 +116,14 @@ ul, ol {
 	li {
 		margin-bottom:5px;
 	}
+	ul {
+		padding:10px 0 3px 40px;
+		list-style-type:disc;
+	}
 }
 
-.lead-in {
-	p {
-		margin-bottom:8px;
-	}
+p.lead-in {
+	margin-bottom:8px;
 }
 
 a {
