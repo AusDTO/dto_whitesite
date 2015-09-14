@@ -92,7 +92,7 @@ $zen-gutter-width: 20px;
 	}
 }
 
-.front {
+/*.front {
 	.layout-centered.page-wrapper {
 		.layout-sidebar-left, .layout-no-sidebar{
 			max-width:100%;
@@ -124,7 +124,7 @@ $zen-gutter-width: 20px;
 			}
 		}
 	}
-}
+}*/
 
 //padding adjusts
 .layout-sidebar-right .layout-sidebar-right__main {
@@ -199,4 +199,21 @@ $zen-gutter-width: 20px;
       min-height: 7.5em;
     }
   }
+}
+
+//front page layout
+.front {
+	.page-wrapper {
+		margin-top:0;
+		.layout-no-sidebar {
+			max-width:100%;
+			padding:0;
+			.panels-flexible-region-1-hp_middle {
+				width:100%;
+			}
+			.panels-flexible-row {
+				padding:0;
+			}
+		}
+	}
 }

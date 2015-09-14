@@ -1,0 +1,262 @@
+.page-careers {
+	.layout-centered {
+		&.page-wrapper {
+			margin-top:0;
+			.layout-no-sidebar {
+				max-width:100%;
+				padding:0;
+				.panels-flexible-region {
+					width:100%;
+					.pane-block {
+					
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+//banner
+.page-careers {
+	.recruitment-splash {
+		background-color:$dto-blue;
+		.container {
+			max-width:1020px;
+			padding:160px 20px 60px;
+			margin-left:auto;
+			margin-right:auto;
+			overflow:hidden;	
+			h2 {
+				color:#fff;
+				font-size:5em;
+				line-height:0.95em;
+				font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+				margin-top:0;
+				margin-bottom:10px;
+				margin-bottom:30px;
+				span {
+					display:block;
+					font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+				}
+			}
+			p {
+				font-size:15px;
+				margin-top:0;
+				float:left;
+				&.subtext {
+					float:none;
+					font-size:1.65em;
+					color:#fff;
+					margin-bottom:38px;
+					line-height:1.2em;
+				}
+			}
+			a {
+				color:#fff;
+				text-decoration:none;
+				text-transform: uppercase;
+				font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+				font-size:0.9em;
+				margin-right:25px;
+				img {
+					display:block;
+					margin-bottom:4px;
+					&.more {
+						margin-left:4px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.page-careers {
+		.recruitment-splash {
+			.container {
+				padding:40px 20px 30px;	
+				h2 {
+					font-size:2em;
+					line-height:1.2em;
+					margin-bottom:16px;
+				}
+				p {
+					&.subtext {
+						font-size:1.1em;
+					}
+				}
+				a {
+					font-size:0.8em;
+				}
+			}
+		}
+	}
+}
+
+//values
+.page-careers {
+	.recruitment-values {
+		background-color:$dark-grey;
+		.container {
+			max-width:1020px;
+			padding:80px 20px;
+			margin-left:auto;
+			margin-right:auto;
+			padding-top:90px;
+			overflow:hidden;
+			h2 {
+				color:#fff;
+			}
+			.left-container {
+				//width:70%;
+				//float:left;
+				padding-right:20px;
+				padding-top:18px;
+			}
+			.values-icons {
+				//width:30%;
+				//float:left;
+				padding-top:25px;
+				text-align:center;
+				.value {
+					padding-bottom:10px;
+					float:left;
+					width:20%;
+					p {
+						margin-bottom:0;
+					}
+					h3 {
+						font-size:1.3em;
+						color:#fff;
+						line-height:1.6em;
+						margin-top:0;
+						font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+						//text-transform: uppercase;
+					}
+					img {
+						//float:left;
+						//margin-right:15px;
+						margin-bottom:15px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.page-careers  {
+		.recruitment-values {
+			.container {
+				.left-container {
+					width:100%;
+					float:left;
+				}
+				.values-icons {
+					width:100%;
+					//float:left;
+					text-align:center;
+					//padding-top:25px;
+					.value {
+						width:33%;
+						margin-bottom:15px;
+						h3 {
+						}
+						p {
+							margin-bottom:10px;
+							img {
+								float:none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.page-careers  {
+		.recruitment-values {
+			.container {
+				padding-top:60px;
+				padding-bottom:30px;
+				h2 {
+					font-size:1.7em
+				}
+				.values-icons {
+					width:100%;
+					.value {
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+//roles banner image
+.page-careers {
+	.recruitment-banner {
+		background-color:$dto-blue;
+		p {
+			margin-top:0;
+		}
+		img {
+			margin-left:auto;
+			margin-right:auto;
+			display:block;
+			width:100%;
+		}
+	}
+}
+
+//We're hiring text section
+.page-careers {
+	#sign-me-up {
+		margin-bottom:0;
+		padding-bottom:5px;
+	}
+	.recruitment-roles {
+		.container {
+			max-width:1020px;
+			margin-left:auto;
+			margin-right:auto;
+			padding:10px 20px;
+			padding-bottom:0;
+			h2 {	
+			}
+			p {	
+			}
+			ul {
+				overflow:hidden;
+				padding-left:0;
+				li {
+					list-style-type: none;
+					width:30%;
+					float:left;
+					color:$dto-blue;
+					padding-bottom:10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.page-careers {
+		.recruitment-roles {
+			.container {
+				h2 {
+					font-size:1.7em;
+				}
+				ul {
+					li {
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
