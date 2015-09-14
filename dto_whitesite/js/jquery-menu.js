@@ -91,7 +91,7 @@ jQuery(document).ready(function() {
 });
 
 //recruitment menu sticky
-jQuery(function(){
+/*jQuery(function(){
 	
     var stickyHeaderTop = jQuery('.region-recruitment').offset().top;
 
@@ -102,7 +102,7 @@ jQuery(function(){
                 jQuery('body').removeClass('recruit-sticky');
             }
     });
-});
+});*/
 
 
 jQuery(document).ready(function($) {

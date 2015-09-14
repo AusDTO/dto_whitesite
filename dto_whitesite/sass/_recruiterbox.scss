@@ -1,0 +1,206 @@
+.recruitment-form {
+	display:none;
+}
+
+.page-careers {
+	.recruitment-form {
+		visibility: visible;
+		display:block;
+		background-color:#fff;
+		position:relative;
+		//z-index:999999999999;
+		z-index:102;
+		padding-bottom:30px;
+		.rbox-widget {
+			max-width:1020px;
+			padding-left:20px;
+			padding-right:20px;
+			margin-left:auto;
+			margin-right:auto;
+			.rbox-jobs-group {
+				h3 {
+					margin-bottom:8px;
+				}
+			}
+			.rbox-opening-li {
+				border-color: $dto-grey;
+				overflow:hidden;
+				&:after {
+					content:"Apply";
+					//background-color:$dto-blue;
+					//color:#fff;
+					padding:10px 20px;
+					float:right;
+					color:$dto-blue;
+					border:1px solid $dto-blue;
+					min-width:60px;
+					text-align:center;
+				}
+				a {
+					line-height:2.8em;
+					&.rbox-opening-li-title {
+						font-weight: normal;
+						font-size:1em;
+						color:$dto-blue;
+						//font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+					}
+				}
+				.rbox-job-shortdesc {
+					font-size:0.9em;
+					opacity:1;
+					color:$dark-grey;
+					display:none;
+					.rbox-opening-position-info {
+					//float:left;
+					margin-top:0;
+					.rbox-opening-position-type {
+						border:none;
+						padding:0;
+						color:$dark-grey;
+						font-size:1em;
+						padding-left:8px;
+						&:before {
+							content: "/";
+							padding-right:8px;
+						}
+					}
+				}
+				}
+			}
+			#rbox-opening-li-77880 {
+				&:after {
+					content:"Register";
+				}
+			}
+				/*margin-top:80px;
+				&:before {
+					position:absolute;
+					bottom:100px;
+					content:"Your job not listed here?";
+				}
+			}*/
+			.rbox-job-fullpage {
+				overflow: hidden;
+				padding-bottom:30px;
+				h2 {
+					font-weight:normal;
+					//background-color:$dto-blue;
+					//color:#fff;
+				}
+				h3 {
+					font-size:1.3em;
+					margin-bottom:8px;
+				}
+				.rbox-top-links, .rbox-bottom-links {
+					border-top:1px dotted $dto-grey;
+					border-bottom:1px dotted $dto-grey;
+					padding-bottom:18px;
+					padding-top:18px;
+					margin-top:15px;
+					a {
+						color:$dto-blue;
+						text-decoration:none;
+					}
+				}
+				.rbox-job-shortdesc {
+					font-size:0.9em;
+					opacity:1;
+					color:$dark-grey;
+					float:left;
+					//background-color:$dto-blue;
+				}
+				.rbox-opening-position-info {
+					//float:left;
+					margin-top:0;
+					.rbox-opening-position-type {
+						border:none;
+						padding:0;
+						color:$dark-grey;
+						font-size:0.9em;
+						padding-left:8px;
+						&:before {
+							content: "/";
+							padding-right:8px;
+						}
+					}
+				}
+				.rbox-job-longdesc {
+					margin-top:15px;
+					padding-top:0;
+					border-top:none;
+					ul {
+						padding-bottom:10px;
+						li {
+							margin-bottom:8px;
+							p {
+								margin-bottom:0;
+							}
+						}
+					}
+				}
+			}
+			.rbox-form-actions, .rbox-buttons {
+				.rbox-btn {
+					background-image: none;
+					background-color:$dto-blue;
+					color:#fff;
+					border-radius:0;
+					box-shadow:none;
+					text-shadow:none;
+					border:none;
+					margin-bottom:30px;
+					&::before {
+						content:none;
+					}
+				}
+			}
+			.rbox-application {
+				.rbox-field-label {
+					margin-bottom:3px;
+				}
+				input[type="text"], input[type="email"], input[type="url"], textarea, select {
+					-webkit-appearance:none;
+					-moz-appearance:caret;
+					box-shadow: none;
+					border-radius:0;
+					border:1px solid #333;
+					&:focus {
+						border:2px solid $dto-blue!important;
+						transition:none;
+					}
+				}
+				textarea {
+					min-height:200px;
+					width:80%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 769px) {
+	.page-careers  {
+		.recruitment-form {
+			.rbox-widget {
+				.rbox-application {
+					textarea {
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	.page-careers  {
+		.recruitment-form {
+			.rbox-widget {
+				.rbox-application {
+					textarea, input {
+						width:295px;
+					}
+				}
+			}
+		}
+	}
+}

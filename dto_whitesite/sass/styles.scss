@@ -20,11 +20,11 @@
 @import '_scroll-to-top';
 
 //bad homepage
-@import '_twitter-feed';
-@import '_front-blog-news';
-@import '_home-banner';
-@import '_home-communicate';
-@import '_home-dss';
+//@import '_twitter-feed';
+//@import '_front-blog-news';
+//@import '_home-banner';
+///@import '_home-communicate';
+//@import '_home-dss';
 
 //footer
 @import '_footer';
@@ -47,7 +47,11 @@
 @import '_dss-general';
 
 //recruitment campaign
-@import '_recruitment-campaign-front';
+//@import '_recruitment-campaign-front';
+@import '_careers-page';
+
+//home page
+@import '_homepage-banner';
 
 //general layout
 @import '_layout';
@@ -55,7 +59,8 @@
 @import '_govcms';
 @import '_mini-panels';
 
-
+//styling for plugins
+@import '_recruiterbox';
 
 //@import '_highlighted';
 //@import '_comments-block';
