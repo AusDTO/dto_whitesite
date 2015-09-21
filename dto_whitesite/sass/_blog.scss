@@ -11,11 +11,17 @@
 	       	font-size:22px;
 	       	border-top: 2px solid $dto-grey;
 	       	&.block__title {
-		       	margin-bottom:22px;
+		       	//margin-bottom:22px;
+		       	margin-bottom:11px;
 	       	}
 		}
+		.block__content {
+			a {
+				color:$dto-blue;
+			}
+		}
 		//blog catergories
-		.view-blog-categories {
+	/*	.view-blog-categories {
 			.view-content {
 				.views-row {
 					display: inline-block;
@@ -34,7 +40,7 @@
         			}
       			}
 			}
-		}
+		}*/
 		.blog-updates {
 			display:block;
 			overflow:hidden;
@@ -59,24 +65,24 @@
 .service-links {
 	display:block;
 	a {
-		height:40px;
-		width:40px;
+		height:35px;
+		width:35px;
 		display:inline-block;
 		background-repeat:no-repeat; 
 		img {
 			display:none;
 		}
 		&.service-links-facebook {
-			background-image:url('../images/update/social-icons-grey/facebook-icon.png');
+			background-image:url('../images/update/social-icons-grey/facebook_square.png');
 		}
 		&.service-links-twitter {
-			background-image:url('../images/update/social-icons-grey/twitter-icon.png');
+			background-image:url('../images/update/social-icons-grey/twitter_square.png');
 		}
 		&.service-links-linkedin {
-			background-image:url('../images/update/social-icons-grey/linkedin-icon.png');
+			background-image:url('../images/update/social-icons-grey/linkedin_square.png');
 		}
 		&.service-links-email {
-			background-image:url('../images/update/social-icons-grey/mail-icon.png');
+			background-image:url('../images/update/social-icons-grey/email_square.png');
 		}
 	}
 }
@@ -97,7 +103,7 @@
 /*
  * Blog categories/tags styling ss old
  */
-.view-blog {
+/*.view-blog {
   
   > .view-header {
        .block__title {
@@ -133,7 +139,7 @@
       margin-bottom: 40px;
     }
   }
-}
+}*/
 
 
 
@@ -168,7 +174,7 @@
 .sidebar {
 	.block {
 		.block__title {
-			font-size:20px;
+			font-size:19px;
 		}
 		.views-field-title {
 			margin-bottom:5px;
@@ -183,7 +189,7 @@
 //Related blogs block on blog content page (BELOW CONTENT eg mobile)
 .field-name-related-blogs-block {
 	.block-title {
-		font-size:1.2rem;
+		//font-size:1.2rem;
 		margin-bottom:0;
 		margin-top:20px;
 	}
@@ -215,24 +221,26 @@
 	.view-content {
 		padding-right:20px;
 		.views-row {
+			margin-bottom:45px;
 			.dto-view-blog-author-wrapper {
 				overflow: hidden;
-				margin-bottom: 1.3em;
+				margin-bottom: 13px;
 				.views-field-picture {
 					display: inline-block;
-					width: 64px;
+					width: 48px;
 					img {
-						border-radius:32px;
+						border-radius:24px;
 					}
 				}
 				.dto-view-blog-author-name-create-field-wrapper {
 					display: inline-block;
 					margin-left: 6px;
 					.views-field-name {
-						font-size:16px;
+						font-size:14px;
+						line-height:1.1;
 					}
 					.views-field-created {
-						font-size:16px;
+						font-size:14px;
 					}
 				}
 			}
@@ -253,13 +261,14 @@
 	}
 }
 
+//blog content page
 .node-type-blog-article {
 	.main-content {
 		h1 {
 			//border-top:1px solid $dto-grey;
-			font-size:33px;
+			font-size:28px;
 			margin-top:0;
-			margin-bottom:15px;
+			margin-bottom:5px;
 			//padding-top:10px;
 			//margin-bottom:15px;
 		}
@@ -269,7 +278,8 @@
 				margin-right:10px;
 				//font-size:15px;
 				.field-item {
-					font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+					font-family:"OpenSans",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+					color:$dark-grey;
 				}
 				
 			}
@@ -281,12 +291,16 @@
 					padding-right:10px;
 				}
 				.field-item {
-					font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+					font-family:"OpenSans",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+					color:$dark-grey;
 				}
+			}
+			.field-name-service-links-top {
+				margin-top:8px;
 			}
 			.field-name-body {
 				margin-top:15px;
-				padding-top:25px;
+				padding-top:0;
 			}
 		}
 	}

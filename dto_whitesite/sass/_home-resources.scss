@@ -1,0 +1,58 @@
+.front {
+	.resources {
+		overflow:hidden;
+		.container {
+			max-width:1020px;
+			padding:0 20px 40px;
+			margin-left:auto;
+			margin-right:auto;
+			overflow:hidden;
+			//border-bottom:3px solid $light-grey;
+			.col-4 {
+				width:33%;
+				float:left;
+				margin-bottom:1.05263em;
+				a {
+					color:$dto-blue;
+					font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+					font-size:18px;
+					line-height:1.31579;
+					padding-right:25px;
+				}
+				p {
+					font-size:15px;
+					line-height:1.25;
+					margin-bottom:0;
+					min-height:40px;
+					padding-right:25px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.front {
+		.resources {
+			.container {
+				.col-4 {
+					width:100%;
+					float:left;
+					margin-bottom:1.05263em;
+					a {
+						font-size:16px;
+						line-height:1.31579;
+						padding-right:0;
+					}
+					p {
+						font-size:13px;
+						line-height:1.25;
+						margin-bottom:0;
+						padding-right:0;
+						min-height:5px;
+					}
+				}
+			}
+		}
+	}
+}

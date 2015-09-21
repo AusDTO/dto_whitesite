@@ -129,6 +129,7 @@ $zen-gutter-width: 20px;
 //padding adjusts
 .layout-sidebar-right .layout-sidebar-right__main {
 	padding-left:0;
+	padding-right:20px;
 }
 .layout-sidebar-right .layout-sidebar-right__sidebar_two {
 	padding-right:0;
@@ -158,8 +159,11 @@ $zen-gutter-width: 20px;
     margin-bottom:30px;
     .block__title {
     	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-		color:$ultra-grey;
-		font-size:22px;
+		//color:$ultra-grey;
+		//font-size:22px;
+		color:$dark-grey;
+		font-size:19px;
+		border-top:0px solid $dto-grey;
 		line-height:1.5;      
 		margin: 0 0 11px;
 		background-color: $white;
@@ -205,6 +209,7 @@ $zen-gutter-width: 20px;
 .front {
 	.page-wrapper {
 		margin-top:0;
+		border-top:none;
 		.layout-no-sidebar {
 			max-width:100%;
 			padding:0;
@@ -216,4 +221,9 @@ $zen-gutter-width: 20px;
 			}
 		}
 	}
+}
+
+.page-wrapper {
+	margin-top:0;
+	border-top:8px solid $dto-blue;
 }
