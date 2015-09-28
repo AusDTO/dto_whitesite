@@ -1,13 +1,11 @@
 /**
  * Contains general layout styling
  */
+body {
+	margin:0;
+}
 
-// Grid config.
-$zen-column-count: 12;
-$zen-gutter-width: 20px;
-
-
-
+//padding adjusts
 .layout-sidebar-left,
 .layout-sidebar-right,
 .layout-sidebar-both,
@@ -15,18 +13,57 @@ $zen-gutter-width: 20px;
   padding: 20px;
 }
 
-.sidebar,
+
 .main-content {
-  padding-bottom: 1em;
+	padding-bottom: 35px;
 }
 
+
+//global page layout
+body {
+	background-color:$background-grey;
+	.page-wrapper {
+		background-color:#fff;
+		margin-top:0;
+		border-top:8px solid $dto-blue;
+		margin-bottom:0;
+		max-width:100%;
+		outline:none;
+		.layout-sidebar-left, .layout-no-sidebar, .layout-sidebar-right{
+			max-width:1020px;
+			margin-left:auto;				
+			margin-right:auto;
+		}
+		.panels-flexible-row {
+			padding:0;
+		}
+	}
+	.layout-sidebar-right {
+		.layout-sidebar-right__main {
+			padding-left:0;
+			padding-right:20px;
+		}
+		.layout-sidebar-right__sidebar_two {
+			padding-right:0;
+		}
+	}
+	.layout-sidebar-left { 
+		.layout-sidebar-left__sidebar {
+			padding-left:0;
+		}
+	}
+}
+
+// Grid config.
+$zen-column-count: 12;
+$zen-gutter-width: 20px;
 
 // Left sidebar only.
 .layout-sidebar-left {
   
   @include zen-grid-container;
   
-  @include breakpoint($narrow) {
+  @include breakpoint($single-column) {
     
     .layout-sidebar-left__sidebar {
       @include zen-grid-item(3, 1);
@@ -43,7 +80,7 @@ $zen-gutter-width: 20px;
   
   @include zen-grid-container;
   
-  @include breakpoint($narrow) {
+  @include breakpoint($single-column) {
     
     .layout-sidebar-right__main {
       @include zen-grid-item(8, 1);
@@ -62,7 +99,7 @@ $zen-gutter-width: 20px;
   
   @include zen-grid-container;
   
-  @include breakpoint($narrow) {
+  @include breakpoint($single-column) {
     
     // Left sidebar.
     .layout-sidebar-both__sidebar {
@@ -80,63 +117,7 @@ $zen-gutter-width: 20px;
   }
 }
 
-//ss main page layout adjusts
-.layout-centered {
-	&.page-wrapper {
-		max-width:100%;
-		.layout-sidebar-left, .layout-no-sidebar, .layout-sidebar-right{
-			max-width:1020px;
-			margin-left:auto;
-			margin-right:auto;
-		}
-	}
-}
 
-/*.front {
-	.layout-centered.page-wrapper {
-		.layout-sidebar-left, .layout-no-sidebar{
-			max-width:100%;
-		}
-		margin-top:-6px;
-		max-width:100%;
-		outline:none;
-		.layout-no-sidebar {
-			padding:0;
-			.main-content {
-				max-width:100%;
-				padding-bottom:0;
-				.panels-flexible-row-inside {
-					max-width:1020px;
-					padding-left:20px;
-					padding-right:20px;
-					margin-left:auto;
-					margin-right:auto;
-				}
-				.panels-flexible-row {
-					padding-top:40px;
-				}
-				.hp_top {
-					padding-top:20px;
-				}
-				.panels-flexible-row-last {
-					
-				}
-			}
-		}
-	}
-}*/
-
-//padding adjusts
-.layout-sidebar-right .layout-sidebar-right__main {
-	padding-left:0;
-	padding-right:20px;
-}
-.layout-sidebar-right .layout-sidebar-right__sidebar_two {
-	padding-right:0;
-}
-.layout-sidebar-left .layout-sidebar-left__sidebar {
-	padding-left:0;
-}
 
 /*
  * Block styling.
@@ -145,46 +126,14 @@ $zen-gutter-width: 20px;
 /**
  * Front page three column responsive mini-panel block
  */
-#block-panels-mini-front-page-3-col-layout {
+/*#block-panels-mini-front-page-3-col-layout {
   border-bottom: 1px solid grey;
-}
+}*/
 
 
-/**
- * General sidebar block styling 
- */
-.sidebar {
-  
-  .block {   
-    margin-bottom:30px;
-    .block__title {
-    	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-		//color:$ultra-grey;
-		//font-size:22px;
-		color:$dark-grey;
-		font-size:19px;
-		border-top:0px solid $dto-grey;
-		line-height:1.5;      
-		margin: 0 0 11px;
-		background-color: $white;
-		padding: 0;
-		padding-top:8px;
-    }
-    
-    .block__content {
-      background-color: white;
-      padding: 0;
-      .views-field-title {
-	    a {
-		    color:$dto-blue;
-		    text-decoration:none;
-	    }
-	}
-    }
-  }
-}
 
-@media (max-width: 980px) {
+
+/*@media (max-width: 980px) {
   .panel-1col-stacked .panel-col-top {
     // .pane-govcms-social-links-services {
     //   margin-bottom: 5em;
@@ -221,9 +170,6 @@ $zen-gutter-width: 20px;
 			}
 		}
 	}
-}
+}*/
 
-.page-wrapper {
-	margin-top:0;
-	border-top:8px solid $dto-blue;
-}
+

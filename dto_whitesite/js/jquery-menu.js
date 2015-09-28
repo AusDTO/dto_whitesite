@@ -20,27 +20,27 @@ jQuery(document).ready(function(){
 
 //highcharts
 jQuery(function () {
-    jQuery('#container').highcharts({
+    jQuery('.bar-chart').highcharts({
 	    colors: ['#015a96', '#333333'],
         data: {
-            table: 'datatable'
+            table: 'bar-chart-data'
         },
         chart: {
-            type: 'column'
+            type: 'line'
         },
         title: {
-            text: 'Dissatisfaction having to interact digitally with the Federal government by age'
+           text: ''
         },
         yAxis: {
             allowDecimals: false,
             title: {
-                text: 'Percentage'
+                text: ''
             }
         },
         xAxis: {
             allowDecimals: false,
             title: {
-                text: 'Age'
+                text: ''
             }
         },
         tooltip: {
@@ -53,7 +53,7 @@ jQuery(function () {
             series: {
                 borderWidth: 0,
                 dataLabels: {
-                    enabled: true,
+                    enabled: false,
                     format: '{point.y:.1f}%'
                 }
             }

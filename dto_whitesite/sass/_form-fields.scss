@@ -1,0 +1,72 @@
+fieldset {
+	border:none;;
+	margin:0;
+	padding:0;
+}
+
+label {
+	font-size:16px;
+	font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif;
+	margin-bottom:5px;
+	display:block;
+}
+
+legend {
+	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
+	color:$dark-grey;
+	font-size:19px;
+	line-height:1.5;      
+	padding-top:18px;
+	padding-left:0;
+	margin-left:0;			
+}
+
+.form-item {
+	margin:25px 0;
+	label {
+		.form-required {
+			color:$dto-blue;
+		}
+	}
+	.form-type-radio, .form-type-checkbox {
+		margin:5px 0;
+		label {
+			display:inline;
+			font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif;
+			.option {
+				display:inline;
+			}
+		}
+	}
+	.description {
+		font-size:16px;
+		color:$dark-grey;
+	}
+}
+
+select, input {
+	height:40px;
+	padding:0 11px;
+	text-transform:none;
+}
+
+input[type='file'] {
+	padding:0!important;
+}
+
+.form-type-radio, .form-type-checkbox {
+	input {
+		height:auto;
+	}
+}
+
+textarea, input, select {
+	border:1px solid $dto-grey;
+	overflow:auto;
+	color:inherit;
+	font:inherit;
+	font-size:inherit;
+	&:focus {
+		border:2px solid $dto-blue;
+	}
+}

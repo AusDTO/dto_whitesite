@@ -1,0 +1,29 @@
+body {
+	.atlwdg-trigger {
+		&.atlwdg-SUBTLE {
+			display:none;
+		}
+	}
+}
+
+.node-type-basic-page, .page-design-guides, .node-type-subguide {
+	.atlwdg-trigger {
+		&.atlwdg-SUBTLE {
+		display:block;
+		background-color:$dto-blue;
+		color:#fff!important;
+		box-shadow:none;
+		border:none;
+		font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+		font-weight:normal;
+		padding:8px;
+		font-size:13px;
+		}
+	}
+}
+
+@media (max-width: 810px) {
+	.atlwdg-popup {
+		width:100%!important;
+	}
+}

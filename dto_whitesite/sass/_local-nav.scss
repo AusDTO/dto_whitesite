@@ -1,3 +1,4 @@
+//Left sidebar block styling 
 #block-menu-block-govcms-menu-block-sidebar, #block-menu-block-1 {
 	.block__title {
 		border-bottom:2px solid $dto-grey;
@@ -6,10 +7,14 @@
 		padding-bottom:7px;
 	}
 	.menu {
+		list-style:outside none none;
+		padding:0;
 		border:none;
 		li {
 			background-color:#fff;
 			margin-bottom:0;
+			padding-top:0;
+			border-bottom:1px solid #e2e2e2;
 			&.first {
 				padding-top:0;
 			}
@@ -19,19 +24,21 @@
 			}
 			&.is-active {
 				a {
-					//border-left:4px solid $dto-blue;
 					&.active {
-						//font-weight:bold;
-						font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+						font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
 					}
 				}
 			}
 			a {
 				font-size:15px;
-				padding-left:0;
-			}
-			&.is-active-trail {
-				
+				padding:8px 5px 8px 0px;
+				text-decoration:none;
+				display:block;
+				color:#444;
+				&:hover {
+					color:$dto-blue;
+					text-decoration:underline;
+				}
 			}
 			.menu {
 				li {
@@ -43,9 +50,6 @@
 						&:hover {
 							color:$dto-blue;
 						}
-						&.active {
-							//border-left:4px solid $dto-blue;
-						}
 					}
 				}
 			}
@@ -53,81 +57,30 @@
 	}
 }
 
-#block-menu-block-1 {
-	.menu {
-		//border:1px solid #e2e2e2;
-		list-style:outside none none;
-		padding:0;
-		li {
-			padding-top:0;
-			//background-color:#f5f5f5;
-			background-color:#fff;
-			border-bottom:1px solid #e2e2e2;
-			&.last {
-				border-bottom:1px solid #e2e2e2;
+//General right sidebar block styling 
+.sidebar { 
+	.block {   
+  		margin-bottom:30px;
+  		.block__title {
+	    	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
+			color:$dark-grey;
+			font-size:19px;
+			border-top:0px solid $dto-grey;
+			line-height:1.5;      
+			margin: 0 0 11px;
+			background-color: #fff;
+			padding: 0;
+			padding-top:8px;
+    	}
+	    .block__content {
+	    	background-color: white;
+			padding: 0;
+			.views-field-title {
+		  		a {
+				color:$dto-blue;
+			    text-decoration:none;
+		    	}
 			}
-			&.is-active-trail {
-				background-color:#fff;
-				a {
-					//font-weight:bold;
-					//border-left:4px solid #015a96;
-					//padding-left:16px;
-				}
-			}
-			a {
-				//border-left:4px solid #fff;
-				padding:8px 5px 8px 0px;
-				text-decoration:none;
-				display:block;
-				color:#444;
-				&:hover {
-					color:$dto-blue;
-					text-decoration:underline;
-				}
-			}
-		}
-		
-	}
-}
-
-/*
- * Block styling.
- */
-
-/**
- * Front page three column responsive mini-panel block
- */
-#block-panels-mini-front-page-3-col-layout {
-  border-bottom: 1px solid grey;
-}
-
-
-/**
- * General sidebar block styling 
- */
-.sidebar {
-  
-  .block {   
-    margin-bottom:30px;
-    .block__title {
-      font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-	  color:$ultra-grey;
-	  font-size:17px;
-	  line-height:1.5;
-      margin: 1px 0 11px;
-      background-color: $white;
-      padding: 0;
-    }
-    
-    .block__content {
-      background-color: white;
-      padding: 0;
-      .views-field-title {
-	    a {
-		    color:$dto-blue;
-		    text-decoration:none;
 	    }
-	}
-    }
-  }
+  	}
 }

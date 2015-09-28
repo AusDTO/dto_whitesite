@@ -1,76 +1,64 @@
-// Include supporting libraries.
+//Include supporting libraries.
 @import "zen";
 @import "breakpoint";
 @import "compass";
 
-// @import 'variables'; //errors
-@import 'vars';
-@import 'base';
+//Contains govCMS base themeing
+//@import 'base';
 
-//Blog pages
-@import '_blog';
-@import '_comments-block';
+
+//DTO variables
+@import '_vars';
+@import '_globals';
+
+@import '_admin';
 
 //navigation
 @import '_breadcrumb';
-@import '_menu';
 @import '_pager';
 @import '_local-nav';
 @import '_menu-v2';
 @import '_scroll-to-top';
-
-//bad homepage
-//@import '_twitter-feed';
-//@import '_front-blog-news';
-//@import '_home-banner';
-///@import '_home-communicate';
-//@import '_home-dss';
-
-//footer
-@import '_footer';
 
 //page components
 @import '_callouts';
 @import '_typography';
 @import '_notifications';
 @import '_tables';
+@import '_form-fields';
+@import '_buttons';
+@import '_comments-block';
 
-//CSS for libraries
+//CSS for libraries and plugins
 @import '_highcharts';
-@import '_magnific-popup';
+@import '_recruiterbox';
+@import '_jira-feedback';
+
+//Blog pages
+@import '_blog';
 
 //DSS pages
 @import '_design-guides-page';
 @import '_dss-criteria-page';
-@import '_search-results-page';
-@import '_dss-criteria-list-view';
 @import '_dss-general';
 
-//recruitment campaign
-//@import '_recruitment-campaign-front';
+//Other pages
 @import '_careers-page';
+@import '_search-results-page';
+@import '_exemplars-page';
 
 //home page
 @import '_homepage-banner';
 @import '_home-resources';
 @import '_home-blogs';
+@import '_shetler-quote';
+@import '_homepage-banner-simple';
+@import '_values';
 
 //general layout
+@import '_footer';
 @import '_layout';
 @import 'ie-fixes';
-@import '_govcms';
+//@import '_govcms';
 @import '_mini-panels';
-
-//styling for plugins
-@import '_recruiterbox';
-
-//@import '_highlighted';
-//@import '_comments-block';
-//@import '_gov-blog';
-//@import '_responsive';
-//@import '_layout';
-//@import '_print';
-//@import '_profile';
-//@import '_blocks';
-//@import '_guides';
-
+@import '_page-layouts';

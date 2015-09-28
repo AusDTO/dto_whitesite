@@ -1,3 +1,25 @@
+table {
+	border:none;
+	border-collapse: collapse;
+	thead {
+		tr {
+			background-color:$background-grey;
+			th {
+				border:1px solid $light-grey;
+				padding:10px 15px;
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				border:1px solid $light-grey;
+				padding:10px 15px;
+			}
+		}
+	}
+}
+
 //responsive table
 @media (max-width: 620px) {
 	table {

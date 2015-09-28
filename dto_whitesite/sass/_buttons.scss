@@ -1,0 +1,26 @@
+body {
+	.page-wrapper {
+		button {
+			background-color:$dto-blue;
+			color:#fff;
+			border-width:0px;
+			text-transform:none;
+			font-size:16px;
+			padding:12px 17px;
+			margin-right:10px;
+			margin-top:10px;
+			&:before {
+				content:none;
+			}
+			&:hover {
+				cursor:pointer;
+			}
+		}
+		.form-managed-file {
+			button {
+				background-color:#fff;
+				color:$dto-blue;
+			}
+		}
+	}
+}

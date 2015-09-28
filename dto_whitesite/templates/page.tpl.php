@@ -79,7 +79,7 @@
 
     <div class="<?php print $layout; ?>__main main-content" role="main">
 
-      <a href="#skip-link" id="skip-content" class="element-invisible">Go to top of page</a>
+      <a href="#skip-link" id="skip-content" class="element-invisible">Top</a>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
@@ -104,7 +104,7 @@
     <?php endif; ?>
 
   </div>
-<a href="#" class="scroll-to-top">Scroll To Top</a>
+<a href="#" class="scroll-to-top">Top</a>
 <div class="recruitment-form">
 	<script type="text/javascript" id="rbox-loader-script">
 if(!window._rbox){
@@ -118,6 +118,12 @@ _rbox = { host_protocol:document.location.protocol, ready:function(cb){this.onre
     }})(document, 'script');
 }
 </script>
+<!-- floating feedback trigger -->
+<script type="text/javascript" src="https://ausdto.atlassian.net/s/2be08a0e7957f502dae4cb4ca639fcae-T/en_UKjlv30p/70102/103b3c92a24e6e7815329de9567aae5d/2.0.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-UK&collectorId=52982756"></script>
+<!-- embedded feedback trigger --> 
+<script type="text/javascript" src="https://ausdto.atlassian.net/s/01626e5d6ba7cda4bd510bfe1d66634c-T/en_UK-mss7m1/70102/103b3c92a24e6e7815329de9567aae5d/2.0.7/_/download/batch/com.atlassian.jira.collector.plug\
+in.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-UK&collectorId=eb295156"></script> 
+
 </div>	  
 
 </div>
@@ -126,18 +132,7 @@ _rbox = { host_protocol:document.location.protocol, ready:function(cb){this.onre
 
 
 <footer class="footer">
-	<div class="connect-with-dto">
-    <h2>Connect with DTO</h2>
-    <a href="https://twitter.com/AusDTO" title="DTO Twitter"><div class="twitter-icon"></div></a>
-    <a href="https://www.youtube.com/channel/UCmDkFN3UlK2wSKDQQhd-Y-A" title="DTO Youtube"><div class="youtube-icon"></div></a>
-    <a href="https://www.linkedin.com/company/digital-transformation-office" title="DTO Linkedin"><div class="linkedin-icon"></div></a>
-    <a href="https://github.com/AusDTO" title="DTO Github"><div class="github-icon"></div></a>
-    </div>
-    <div class="footer-links">
-   <!--<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="sites/all/themes/custom/dto_whitesite/images/update/government-crest.png" alt="<?php print t('Home'); ?>" class="header__logo-image" /><span class="title">Digital Transformation Office</span></a>-->
-    <?php print render($page['footer_bottom']); ?>
-    </div>
-  
+    <?php print render($page['footer_bottom']); ?>  
 </footer>
 
 <?php print render($page['bottom']); ?>

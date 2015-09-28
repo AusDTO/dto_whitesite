@@ -1,0 +1,325 @@
+.page-projects {
+	.page-wrapper {
+		.view-exemplars {
+			margin-top:4em;
+			.view-content {
+				.views-row {
+					margin-bottom:3em;
+					overflow:hidden;
+					border-bottom:1px solid #ccc;
+					padding-bottom:30px;
+					.views-field {
+						//float:right;
+						margin-left:auto;
+					}
+					.views-field-term-node-tid {
+						//border-top:1px solid #ccc;
+						margin-bottom:22px;
+						//float:right;
+						//display:inline-block;
+						//width:33%;
+						.field-content {
+							margin-bottom:0;
+						}
+						span {
+							//background-color:$dto-blue;
+							color:#fff;
+							
+							font-size:19px;
+							display:inline-block;
+							text-transform: uppercase;
+							//display:block;
+							margin-left:10px;
+							.Live, .Beta, .Alpha, .Discovery {
+								padding:7px 12px;
+								font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+							}
+							.Live {
+								background-color:$live;
+							}
+							.Beta {
+								background-color:$beta;
+							}
+							.Alpha {
+								background-color:$alpha;
+							}
+							.Discovery {
+								background-color:$discovery;
+							}
+						}
+					}
+					.views-field-title {
+						width:66%;	
+						float:left;
+						padding-right:20px;
+						margin-bottom:15px;
+						a {
+							color:$dto-blue;
+							font-size:24px;
+							font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+							text-decoration:none; 	
+						}
+					}
+					.views-field-field-summary {
+						width:66%;
+						float:left;
+						padding-right:20px;
+						.field-content {
+							//min-height:170px;
+						}
+					}
+					.views-field-field-partners {
+						width:33%;
+						//float:right;
+						//margin-left:auto;
+						//display:inline-block;
+					}
+					.views-field-field-code {
+						width:33%;
+						//float:right;
+						//margin-left:auto;
+						//display:inline-block;
+					}
+					.views-field-field-project {
+						width:33%;
+						//float:right;
+						//margin-left:auto;
+						//display:inline-block;
+					}
+					.views-label {
+						font-size:19px;
+						font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+						color:$dark-grey;	
+					}
+					.field-content {
+						margin-bottom:15px;
+					}
+					.views-field-field-partners, .views-field-field-code, .views-field-field-project {
+						//margin-bottom:15px;
+						
+						.field-content {
+							font-size:16px;
+							a {
+								color:$dto-blue;
+							}
+						}
+					}
+				}
+			}
+			.view-footer {
+				width:33%;
+				display:inline-block;
+				.views-field {
+					margin-bottom:15px;
+				}
+				.views-label {
+					font-size:19px;
+					font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+					color:$dark-grey;
+					
+				}
+				.field-content {
+					font-size:16px;
+					a {
+						color:$dto-blue;
+					}
+				}
+			}
+		}
+	}
+}
+
+//exemplar content page 
+.node-type-exemplar {
+	.sidebar-right {
+		.views-field-term-node-tid {
+			margin-bottom:22px;
+			span {
+				//background-color:$dto-blue;
+				color:#fff;
+				//padding:7px 12px;
+				font-size:19px;
+				
+				text-transform: uppercase;
+				//display:block;
+				.Live, .Beta, .Alpha, .Discovery {
+					padding:7px 12px;
+					display:inline-block;
+					font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+				}
+				.Live {
+					background-color:$live;
+				}
+				.Beta {
+					background-color:$beta;
+				}
+				.Alpha {
+					background-color:$alpha;
+				}
+				.Discovery {
+					background-color:$discovery;
+				}
+			}
+		}
+		.views-field {
+			margin-bottom:15px;
+		}
+		.views-label {
+			font-size:19px;
+			font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+			color:$dark-grey;
+		}
+		.field-content {
+			font-size:16px;
+			a {
+				color:$dto-blue;
+			}
+		}
+	}
+}
+
+//exemplar process diagram 
+.page-projects {
+		.page-wrapper {
+			.view-exemplar-process {
+				overflow:hidden;
+				border-bottom:1px solid #ccc;
+				padding-bottom:3em;
+				margin-top:3em;
+				.views-row {
+					width:23.8%;
+					float:left;
+					margin-right:1.5%;
+					&.views-row-last {
+						margin-right:0;
+						//margin-left:2%;
+					}
+					.Live, .Beta, .Alpha, .Discovery {
+						color:#fff;
+						font-size:20px;
+						font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+						text-align:center;
+						padding:8px;
+					}
+					.Live {
+						background-color:$live;
+					}
+					.Beta {
+						background-color:$beta;
+					}
+					.Alpha {
+						background-color:$alpha;
+					}
+					.Discovery {
+						background-color:$discovery;
+					}
+					.views-field-nid {
+						text-align:center;
+						.field-content {
+							font-size:80px;
+							font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+							
+						}
+					}
+					.views-field-description {
+						p {
+							//font-size:16px;
+							//text-align:center;
+						}
+					}
+				}
+			}
+		}
+}
+
+@media (max-width: 660px) { 
+	.page-projects {
+		.page-wrapper {
+			.view-exemplar-process {
+				.views-row {
+					width:100%;
+					float:left;
+					margin-right:0;
+					&.views-row-last {
+					}
+					.Live, .Beta, .Alpha, .Discovery {
+						color:#fff;
+						font-size:20px;
+						font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+						text-align:center;
+						padding:8px;
+					}
+					.views-field-nid {
+						.field-content {	
+						}
+					}
+				}
+			}
+		}
+}
+
+}
+
+@media (max-width: 660px) {
+	.page-projects {
+		.page-wrapper {
+			.view-exemplars {			
+				.view-content {
+					.views-row {
+						.views-field {
+						}
+						.views-field-term-node-tid {
+							margin-bottom:12px;
+							span {
+								margin-left:0;
+								margin-top:15px;
+							}
+						}
+						.views-field-title {
+							width:100%;	
+							a {
+							}
+						}
+						.views-field-field-summary {
+							width:100%;
+							padding-right:20px;
+							.field-content {
+								min-height:0;
+							}
+						}
+						.views-field-field-partners {
+							width:100%;
+							float:right;
+							//display:inline-block;
+						}
+						.views-field-field-code {
+							width:100%;
+							float:right;
+							//display:inline-block;
+						}
+						.views-field-field-project {
+							width:100%;
+							float:right;
+							//display:inline-block;
+						}
+						.views-field-field-partners, .views-field-field-code, .views-field-field-project {
+							margin-bottom:15px;
+							.views-label {
+						font-size:19px;
+						font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif !important;
+						color:$dark-grey;
+						
+					}
+					.field-content {
+						font-size:16px;
+						a {
+							color:$dto-blue;
+						}
+					}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -41,25 +41,24 @@
 }
 
 
-/*h1, h2, .listing__title, .node-teaser h2, .search-results h3.title, .mission__statement, h3, h4, h5, h6, a {
-	font-family:Arial,Helvetica Neue,Helvetica,sans-serif!important;
-}*/
+html, body {
+	font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif;
+}
 
-*, html, body {
-	font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+h1, h2, h3, h4, h5 {
+	color:$ultra-grey;
 }
 
 h1 {
-	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-	color:$ultra-grey;
+	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
 	margin-bottom:1.175em;
+	margin-top:0;
 	line-height:1.34167;
 	font-size:44px;
 }
 
 h2 {
-	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-	color:$ultra-grey;
+	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
 	margin-bottom:15px;
 	line-height:1.31111;
 	font-size:34px;
@@ -68,8 +67,7 @@ h2 {
 }
 
 h3 {
-	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-	color:$ultra-grey;
+	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
 	margin-bottom:0.833333em;
 	font-size:23px;
 	line-height:1.45;
@@ -77,8 +75,7 @@ h3 {
 }
 
 h4 {
-	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-	color:$ultra-grey;
+	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
 	margin-bottom:0.3125em;
 	margin-top:1.05263em;
 	font-size:17px;
@@ -86,8 +83,7 @@ h4 {
 }
 
 h5 {
-	font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-	color:$ultra-grey;
+	font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif;
 	margin-bottom:0.3125em;
 	margin-top:1.05263em;
 	font-size:17px;
@@ -126,22 +122,32 @@ p.lead-in {
 	margin-bottom:8px;
 }
 
+.field-name-field-summary, .lede {
+	font-size:24px;
+	color:$ultra-grey;
+	margin-bottom:16px;
+}
+
+strong {
+	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
 a {
 	color:$dto-blue;
+	&:focus {
+		color:#fff!important;
+		background-color:#000;
+	}
 }
 
 @media (max-width: 640px) {
 	h1 {
-		font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-		color:$ultra-grey;
 		margin-bottom:25px;
 		line-height:1.09375;
 		font-size:30px;
 	}
 	
 	h2 {
-		font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-		color:$ultra-grey;
 		margin-bottom:15px;
 		line-height:1.04167;
 		font-size:22px;
@@ -149,8 +155,6 @@ a {
 	}
 	
 	h3 {
-		font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-		color:$ultra-grey;
 		margin-bottom:15px;
 		font-size:18px;
 		line-height:1.2;
@@ -158,8 +162,6 @@ a {
 	}
 	
 	h4 {
-		font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-		color:$ultra-grey;
 		margin-bottom:15px;
 		margin-top:25px;
 		font-size:16px;
@@ -167,8 +169,6 @@ a {
 	}
 	
 	h5 {
-		font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif!important;
-		color:$ultra-grey;
 		margin-bottom:15px;
 		margin-top:25px;
 		font-size:16px;
@@ -195,21 +195,5 @@ a {
 		li {
 			margin-bottom:5px;
 		}
-	}
-	
+	}	
 }
-
-.more-link {
-	font-weight:bold;
-}
-
-@media (max-width: 480px) {
-	.field-name-field-summary {
-		font-size:1.3rem;
-		line-height:1.6rem;
-		margin-top:15px;
-	}
-}
-
-
-

@@ -2,25 +2,31 @@
  * Variables 
  */
 
-// Colors
-$white: white;
-$black: black;
-$grey-line: #bfc1c3;
-$title-link-blue: #2384bb;
-$dark-grey: #676767;
-$light-grey: #d6d7d6;
-$ultra-grey: #333;
-$dto-blue: #015a96;
-$dto-purple: #1d1f42;
-$dto-error: #af1324;
-$warning-background: #fcf8e3;
-$background-grey: #f4f4f4;
-$dto-grey: #aaaaaa;
+// COLOURS
+//greys
+$grey-line:#ccc;			//use for darker borders
+$light-grey:#d6d7d6;		//use for lighter borders
+$dark-grey:#676767;			//lightest grey accessibile on $background-grey
+$ultra-grey:#333;			//dark grey font colour - headings
+$dto-grey:#aaaaaa;			//light grey font colour - subheading
+$background-grey:#f4f4f4;	//general background grey
 
-// Breakpoints.
+//flagship blue colour
+$dto-blue: #015a96;
+
+//development phase colours
+//not to be used for text. Only to be used with white text - minumium 20px and bold
+$discovery: #912b87;
+$alpha: #c52a72;
+$beta: #ef6a30;
+$live: #859949;
+
+//used for IE warning message
+$warning-background: #fcf8e3;	
+
+// Breakpoints
+$single-column:768px;
 $narrow: 640px;
 $wide: 720px;
 
-//variables required for govCMS
-$primaryColour: #4DC9E3;
-$primaryColour2: #1675bc;
+

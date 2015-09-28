@@ -1,25 +1,30 @@
 .scroll-to-top{
-	width:50px; 
-	height:50px;
-	padding:10px; 
+	padding:23px 12px 8px; 
 	text-align:center; 
 	background-color:$background-grey;
-	color: $background-grey!important;
+	color:$ultra-grey!important;
 	text-decoration: none;
 	position:fixed;
-	bottom:20px;
+	bottom:50px;
 	right:20px;
 	display:none;
 	z-index:999999;
-	text-indent:5000px;
 	overflow:hidden;
-	background-image:url('../images/update/back-to-top-greyarrow.png');
 	background-repeat:no-repeat;
 	background-position:9px 9px;
 	opacity:0.8;
+	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-size:12px;
+	text-transform:uppercase; 
+	&:before {
+		content:"\f102";
+		font-family:FontAwesome;
+		position:absolute;
+		top:2px;
+		right:19px;
+		font-size:18px;
+	}
 }
 .scroll-to-top:hover, .scroll-to-top:focus{
 	text-decoration:none;
-	color:#fff;
-	background-color:#fff!important;
 }

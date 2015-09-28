@@ -12,7 +12,8 @@
 	&.comment-wrapper {
 		.comment {
 			background-image:none;
-			padding:25px;
+			padding:0;
+			margin-bottom:25px;
 			.submitted {
 				font-size:1em;
 				font-weight:bold;
@@ -29,6 +30,11 @@
 				}
 			}
 			.links {
+				list-style-type:none;
+				padding-left:0;
+				li {
+					display:inline;
+				}
 				.comment-reply {
 					a {
 						font-style:normal;
@@ -37,4 +43,8 @@
 			}
 		}
 	}
+}
+
+.filter-guidelines {
+	padding-left:0;
 }

@@ -3,10 +3,10 @@
 		&.page-wrapper {
 			margin-top:0;
 			.layout-no-sidebar {
-				max-width:100%;
-				padding:0;
+				max-width:1020px;
+				padding:20px;
 				.panels-flexible-region {
-					width:100%;
+					//width:100%;
 					.pane-block {
 					
 					}
@@ -17,12 +17,61 @@
 	}
 }
 
+//We're hiring text section
+.page-careers {
+	#sign-me-up {
+		margin-bottom:0;
+		padding-bottom:5px;
+	}
+	.recruitment-roles {
+		.container {
+			max-width:1020px;
+			margin-left:auto;
+			margin-right:auto;
+			//padding:10px 20px;
+			padding-bottom:0;
+			h2 {	
+			}
+			p {	
+			}
+			ul {
+				overflow:hidden;
+				padding-left:0;
+				li {
+					list-style-type: none;
+					width:30%;
+					float:left;
+					color:$dto-blue;
+					padding-bottom:10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.page-careers {
+		.recruitment-roles {
+			.container {
+				h2 {
+					font-size:1.7em;
+				}
+				ul {
+					li {
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
+
 //banner
 .page-careers {
 	.recruitment-splash {
 		background-color:$dto-blue;
 		.container {
-			max-width:1020px;
+			//max-width:1020px;
 			padding:160px 20px 60px;
 			margin-left:auto;
 			margin-right:auto;
@@ -212,51 +261,3 @@
 	}
 }
 
-//We're hiring text section
-.page-careers {
-	#sign-me-up {
-		margin-bottom:0;
-		padding-bottom:5px;
-	}
-	.recruitment-roles {
-		.container {
-			max-width:1020px;
-			margin-left:auto;
-			margin-right:auto;
-			padding:10px 20px;
-			padding-bottom:0;
-			h2 {	
-			}
-			p {	
-			}
-			ul {
-				overflow:hidden;
-				padding-left:0;
-				li {
-					list-style-type: none;
-					width:30%;
-					float:left;
-					color:$dto-blue;
-					padding-bottom:10px;
-				}
-			}
-		}
-	}
-}
-
-@media (max-width: 580px) {
-	.page-careers {
-		.recruitment-roles {
-			.container {
-				h2 {
-					font-size:1.7em;
-				}
-				ul {
-					li {
-						width:100%;
-					}
-				}
-			}
-		}
-	}
-}
