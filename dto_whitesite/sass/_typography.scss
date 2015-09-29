@@ -28,6 +28,8 @@
        url('../fonts/Open_Sans/opensans-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/Open_Sans/opensans-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/Open_Sans/opensans-bold-webfont#svgFontName') format('svg'); /* Legacy iOS */
+       font-weight: normal;
+	   font-style: normal;
 }
 
 @font-face {
@@ -47,6 +49,7 @@ html, body {
 
 h1, h2, h3, h4, h5 {
 	color:$ultra-grey;
+	font-weight: normal;
 }
 
 h1 {

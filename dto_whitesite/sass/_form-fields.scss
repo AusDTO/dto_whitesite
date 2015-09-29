@@ -70,3 +70,14 @@ textarea, input, select {
 		border:2px solid $dto-blue;
 	}
 }
+
+@include breakpoint($narrow) {
+	textarea, input, select {
+		width:100%;
+	}
+	.form-type-radio, .form-type-checkbox {
+		input {
+			width:auto;
+		}
+	}
+}

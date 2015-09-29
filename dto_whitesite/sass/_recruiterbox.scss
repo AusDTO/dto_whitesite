@@ -8,7 +8,6 @@
 		display:block;
 		background-color:#fff;
 		position:relative;
-		//z-index:999999999999;
 		z-index:102;
 		padding-bottom:30px;
 		.rbox-widget {
@@ -42,7 +41,6 @@
 						font-weight: normal;
 						font-size:1em;
 						color:$dto-blue;
-						//font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 					}
 				}
 				.rbox-job-shortdesc {
@@ -51,7 +49,6 @@
 					color:$dark-grey;
 					display:none;
 					.rbox-opening-position-info {
-					//float:left;
 					margin-top:0;
 					.rbox-opening-position-type {
 						border:none;
@@ -72,24 +69,13 @@
 					content:"Register";
 				}
 			}
-				/*margin-top:80px;
-				&:before {
-					position:absolute;
-					bottom:100px;
-					content:"Your job not listed here?";
-				}
-			}*/
 			.rbox-job-fullpage {
 				overflow: hidden;
 				padding-bottom:30px;
 				h2 {
 					font-weight:normal;
-					//background-color:$dto-blue;
-					//color:#fff;
 				}
 				h3 {
-					//font-size:1.3em;
-					//margin-bottom:8px;
 				}
 				.rbox-top-links, .rbox-bottom-links {
 					border-top:1px dotted $dto-grey;
@@ -107,10 +93,8 @@
 					opacity:1;
 					color:$dark-grey;
 					float:left;
-					//background-color:$dto-blue;
 				}
 				.rbox-opening-position-info {
-					//float:left;
 					margin-top:0;
 					.rbox-opening-position-type {
 						border:none;
@@ -178,6 +162,26 @@
 	}
 }
 
+@include breakpoint($narrow) {
+	.page-careers  {
+		.recruitment-form {
+			.rbox-widget {
+				.rbox-application {
+					textarea, input, select {
+						width:100%;
+					}
+					.rbox-checkbox-label {
+						textarea, input, select {
+							width:auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
 @media (max-width: 769px) {
 	.page-careers  {
 		.recruitment-form {
@@ -203,4 +207,4 @@
 			}
 		}
 	}
-}
+}*/

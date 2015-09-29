@@ -263,6 +263,7 @@
 			.dto-view-blog-author-wrapper {
 				overflow: hidden;
 				margin-bottom: 13px;
+				display:table; 
 				.views-field-picture {
 					display: inline-block;
 					width: 48px;
@@ -273,6 +274,10 @@
 				.dto-view-blog-author-name-create-field-wrapper {
 					display: inline-block;
 					margin-left: 6px;
+					display:table-cell;
+					vertical-align:top; 
+					padding-left:10px;
+					padding-top:6px;
 					.views-field-name {
 						font-size:14px;
 						line-height:1.1;
@@ -343,6 +348,31 @@
 			.field-name-body {
 				margin-top:15px;
 				padding-top:0;
+			}
+		}
+	}
+}
+
+//blog subscribe block
+.page-blog, .node-type-blog-article {
+	.blog-updates {
+		.email, .rss {
+			&:before {
+				font-family:FontAwesome;
+				//color:$dark-grey;
+				color:$dto-blue;
+				font-size:24px;	
+				padding-right:5px;
+			}
+		}
+		.email {
+			&:before {
+				content:'\f003';
+			}
+		}
+		.rss {
+			&:before {
+				content:'\f09e';
 			}
 		}
 	}
