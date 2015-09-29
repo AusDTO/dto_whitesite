@@ -630,6 +630,7 @@ function dto_whitesite_preprocess_views_view_fields(&$vars) {
  * Attempt to replace the system jQuery on non admin and non node admin pages with a newer version provided by the theme
  */
 
+
 function dto_whitesite_js_alter(&$javascript) {
   $node_admin_paths = array(
     'node/*/edit',
