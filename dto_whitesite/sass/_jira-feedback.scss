@@ -8,6 +8,9 @@ body {
 
 .node-type-basic-page, .page-design-guides, .node-type-subguide {
 	.atlwdg-trigger {
+		position:fixed;
+		bottom:0;
+		right:0;
 		&.atlwdg-SUBTLE {
 		display:block;
 		background-color:$dto-blue;

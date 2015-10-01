@@ -2,7 +2,7 @@
 	.homepage-banner {
 		background-color:$dto-blue;
 		padding-top:60px;
-		padding-bottom:40px;
+		padding-bottom:60px;
 		p {
 			margin-top:0;
 		}
@@ -24,7 +24,8 @@
 				font-size:76px;
 				line-height:1;
 				span {
-					display:block;	
+					display:block;
+					font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;	
 				}
 			}
 			p {

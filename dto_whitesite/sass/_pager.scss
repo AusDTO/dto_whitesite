@@ -48,8 +48,9 @@
 			text-align:right;
 		.pager-responsive__item {
 			margin-bottom:0;
-			&:last-child {
-				display:none;
+			display:none;
+			&:first-child {
+				display:block;
 			}
 			a {
 				padding:10px;

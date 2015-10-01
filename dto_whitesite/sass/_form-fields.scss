@@ -54,6 +54,10 @@ input[type='file'] {
 	padding:0!important;
 }
 
+input[type='checkbox'] {
+	height:auto;
+}
+
 .form-type-radio, .form-type-checkbox {
 	input {
 		height:auto;
