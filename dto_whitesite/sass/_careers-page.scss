@@ -1,4 +1,7 @@
 .page-careers {
+	.main-content {
+		padding-bottom:0;
+	}
 	.layout-centered {
 		&.page-wrapper {
 			margin-top:0;
@@ -180,7 +183,7 @@
 						color:#fff;
 						line-height:1.6em;
 						margin-top:0;
-						font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif!important;
+						font-family:'OpenSans',Arial,Helvetica Neue,Helvetica,sans-serif;
 						//text-transform: uppercase;
 					}
 					img {

@@ -111,7 +111,7 @@ ul, ol {
 	margin-bottom:20px;
 	font-size:17px;
 	line-height:1.5;
-	padding-left:17px;
+	padding-left:20px;
 	margin-top:5px;
 	li {
 		margin-bottom:5px;
@@ -138,6 +138,7 @@ strong {
 
 a {
 	color:$dto-blue;
+	word-wrap:break-word;
 	&:focus {
 		color:#fff!important;
 		background-color:#000;
@@ -188,6 +189,12 @@ a {
 	body {
 		font-size:15px;
 		line-height:1.38;
+	}
+	
+	.field-name-field-summary, .lede {
+	font-size:19px;
+	color:$ultra-grey;
+	margin-bottom:16px;
 	}
 	
 	ul, ol {

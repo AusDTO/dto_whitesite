@@ -47,6 +47,13 @@
 				font-family:'OpenSansLight',Arial,Helvetica Neue,Helvetica,sans-serif!important;
 				margin-bottom:13px;
 				//max-width:900px;
+				&:before {
+					content:'"';
+					margin-left:-10px;
+				}
+				&:after {
+					content:'"';
+				}
 			}
 		}
 	}

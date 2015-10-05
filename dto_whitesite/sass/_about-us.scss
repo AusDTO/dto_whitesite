@@ -1,0 +1,117 @@
+.page-about-us {
+	.pane-staff-profiles {
+		margin-top:30px;
+		.view-content {
+			.views-row {
+				width:20%;
+				float:left;
+				text-align:center;
+				//margin-bottom:1em;
+				min-height:190px;
+				padding:0 10px;
+				img {
+					max-width:96px;
+					border:none;
+				}
+				.views-field-title {
+					//font-size:18px;
+				}
+				.views-field-field-job-title {
+					color:$dark-grey;
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint($large-column) {
+	.page-about-us {
+		.pane-staff-profiles {
+			.view-content {
+				.views-row {
+					width:33%;
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint($narrow) {
+	.page-about-us {
+		.pane-staff-profiles {
+			.view-content {
+				.views-row {
+					width:50%;
+				}
+			}
+		}
+	}
+}
+
+//Staff profile content page
+.node-type-staff-profile {
+	h1 {
+		margin-bottom:0;
+	}
+	article {
+		.field-name-field-job-title {
+			margin-bottom:3.175em;
+			color:$ultra-grey;
+		}
+		.field-name-field-twitter-handle {
+			&:before {
+				content:'\f099';
+				font-family:FontAwesome;
+				color:#55acee;
+				font-size:22px;	
+				padding-right:5px;
+				float:left;
+				line-height:1.2;
+			}
+			a {
+				text-decoration:none;
+			}
+		}
+		img {
+			max-width:112px;
+			margin-bottom:1em;
+		}
+	}
+	aside {
+		h2 {
+			float:left;
+		}
+		.view-content {
+			img {
+				max-width:112px;
+			}
+			.views-field-field-twitter-handle {
+				&:before {
+				content:'\f099';
+				font-family:FontAwesome;
+				color:#55acee;
+				font-size:22px;	
+				padding-right:5px;
+				float:left;
+				line-height:1.2;
+				}
+				a {
+					text-decoration:none;
+				}
+			}
+			.views-field-name {
+				line-height:1.5;
+				padding-top:8px;
+				color: $dark-grey;
+				span {
+					font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
+					font-size:19px;
+					margin-left:4px;
+				}
+			}
+			.views-field-title {
+				clear:left;
+			}
+		}
+	}
+}

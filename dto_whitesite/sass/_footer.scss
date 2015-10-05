@@ -2,6 +2,9 @@
 	background-color:$background-grey;
 	border-top:12px solid $dto-blue;
 	padding-top:10px;
+	a {
+		text-decoration:none;
+	}
 	.region-footer-bottom {
 		max-width:1020px;
 		margin-left:auto;
@@ -13,6 +16,9 @@
 		.first {
 			float:left;
 			margin-top:0;
+			.menu {
+				margin-top:8px;
+			}
 		}
 		.block-menu {
 			&.last {

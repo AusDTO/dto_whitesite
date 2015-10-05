@@ -48,10 +48,16 @@ select, input {
 	height:40px;
 	padding:0 11px;
 	text-transform:none;
+	&.webform-calendar {	
+	}
 }
 
 input[type='file'] {
-	padding:0!important;
+	padding:0;
+	margin-top:10px;
+	-webkit-appearance:none;
+	-webkit-border:none;
+	line-height:1!important;
 }
 
 input[type='checkbox'] {
@@ -75,9 +81,24 @@ textarea, input, select {
 	}
 }
 
+input[type="text"], input[type="email"], input[type="url"], textarea, select {
+	-webkit-appearance:none;
+	-moz-appearance:caret;
+	box-shadow: none;
+	border-radius:0;
+	border:1px solid #333;
+	&:focus {
+		border:2px solid $dto-blue!important;
+		transition:none;
+	}
+}
+
 @include breakpoint($narrow) {
 	textarea, input, select {
 		width:100%;
+		&.webform-calendar {
+			width:auto;
+		}
 	}
 	.form-type-radio, .form-type-checkbox {
 		input {
