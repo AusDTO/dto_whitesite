@@ -570,6 +570,8 @@ function dto_whitesite_preprocess_menu_link(&$variables, $hook) {
  * Implements hook_preprocess_HOOK
  */
 function dto_whitesite_preprocess_node(&$vars, $hook) {
+ 
+
   
   // Optionally, run node-type-specific preprocess functions, like
   // dto_whitesite_preprocess_node_page() or
@@ -653,8 +655,6 @@ function dto_whitesite_js_alter(&$javascript) {
     $javascript['misc/jquery.js']['data'] = '//code.jquery.com/jquery-1.7.0.min.js';
   }
 }
-
-
 
 
 

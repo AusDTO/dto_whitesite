@@ -134,17 +134,6 @@ _rbox = { host_protocol:document.location.protocol, ready:function(cb){this.onre
 <!-- floating feedback trigger -->
 <script type="text/javascript" src="https://ausdto.atlassian.net/s/2be08a0e7957f502dae4cb4ca639fcae-T/en_UKjlv30p/70102/103b3c92a24e6e7815329de9567aae5d/2.0.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-UK&collectorId=52982756"></script>
 <!-- embedded feedback trigger --> 
-<script type="text/javascript">
-	window.ATL_JQ_PAGE_PROPS =  {
-			"triggerFunction": function(showCollectorDialog) {
-				//Requries that jQuery is available! 
-				jQuery("#feedbackTrigger").click(function(e) {
-					e.preventDefault();
-					showCollectorDialog();
-				});
-			}
-		};
-</script>
 
 <script type="text/javascript" src="https://ausdto.atlassian.net/s/a0a16e3cdb27e39521a980cd4428562c-T/en_US-lj7l2g-ren-off/70107/103b3c92a24e6e7815329de9567aae5d/2.0.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=eb295156"></script> 
 

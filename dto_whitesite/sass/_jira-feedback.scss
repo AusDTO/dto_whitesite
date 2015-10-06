@@ -30,3 +30,13 @@ body {
 		width:100%!important;
 	}
 }
+
+@media (max-width: 640px) {
+	.node-type-basic-page, .page-design-guides, .node-type-subguide {
+		.atlwdg-trigger {
+			display:none!important;
+		}
+	}
+}
+
+
