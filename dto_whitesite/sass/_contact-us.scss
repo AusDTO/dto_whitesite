@@ -97,3 +97,17 @@
 		}
 	}
 }
+
+//removing submit button from text only forms
+.page-contact-us-test, .page-contact-us {
+	#webform-client-form-1211, #webform-client-form-1216, #webform-client-form-1221, #webform-client-form-874 {
+		fieldset {
+			&.collapsible, &.collapsed {
+				margin-bottom:0;
+			}
+		}
+		.form-actions {
+			display:none;
+		}
+	}
+}

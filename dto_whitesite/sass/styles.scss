@@ -3,10 +3,6 @@
 @import "breakpoint";
 @import "compass";
 
-//Contains govCMS base themeing
-//@import 'base';
-
-
 //DTO variables
 @import '_vars';
 @import '_globals';
@@ -17,7 +13,8 @@
 @import '_breadcrumb';
 @import '_pager';
 @import '_local-nav';
-@import '_menu-v2';
+@import '_menu';
+@import '_mobile-menu';
 @import '_scroll-to-top';
 
 //page components
@@ -61,6 +58,5 @@
 @import '_footer';
 @import '_layout';
 @import '_ie-fixes';
-//@import '_govcms';
 @import '_mini-panels';
 @import '_page-layouts';

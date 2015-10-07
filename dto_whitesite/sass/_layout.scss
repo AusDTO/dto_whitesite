@@ -81,7 +81,6 @@ $zen-gutter-width: 20px;
   @include zen-grid-container;
   
   @include breakpoint($single-column) {
-    
     .layout-sidebar-right__main {
       @include zen-grid-item(8, 1);
     }
@@ -117,7 +116,16 @@ $zen-gutter-width: 20px;
   }
 }
 
-
+@media (max-width: 769px) {
+	body {
+		.layout-sidebar-right {
+			.layout-sidebar-right__main {
+				padding-right:0;
+			}
+		}
+	}
+	
+}
 
 /*
  * Block styling.
