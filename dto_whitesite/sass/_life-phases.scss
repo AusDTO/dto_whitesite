@@ -1,0 +1,80 @@
+.service-life {
+	overflow:hidden;
+	.phases-list {
+		list-style-type:none;
+		padding-left:1.3em;
+		li {
+			border-left:#333 0.6em dotted;
+			padding-left:1.8em;
+			margin-top:1.5em;
+			display:block;
+			margin-top:2.5em;
+			&:before {
+				//border:0.3em solid;
+				content:"";
+				display:block;
+				//margin:0.5em -3.2em;
+				width:1.2em;
+			}
+			&.discovery, &.alpha, &.beta, &.live {
+				padding-bottom:0.3em;
+				&:before {
+					border: 0.6em solid;
+					border-radius:1.2em;
+					height:1.2em;
+					margin-left:-3.3em;
+					position:relative;
+					top:-2.1em;
+				}
+				h3 {
+					margin-top:-3.2em;
+				}
+				/*p {
+					&:before {
+						content:"";
+						display:block;
+						width:1.2em;
+						border:#333 .3em solid;
+					}
+				}*/
+			}
+			&.discovery {
+				border-color:$discovery;
+				&:before {
+				border-color:$discovery;
+				
+				}
+				h3 {
+					color:$discovery;
+				}
+			}
+			&.alpha {
+				border-color:#c52a72;
+				&:before {
+				border-color:#c52a72;
+				}
+				h3 {
+					color:#c52a72;
+				}
+			}
+			&.beta {
+				border-color:#ef6a30;
+				&:before {
+					border-color:#ef6a30;
+				}
+				h3 {
+					color:#ef6a30;
+				}
+			}
+			&.live {
+				border-color:$live;
+				&:before {
+					border-color:$live;
+				}
+				h3 {
+					color:$live;
+				}
+			}
+		}
+	}
+}
