@@ -21,7 +21,7 @@
 				background-color:#fff;
 			}
 			.header__logo-image {
-				max-height:55px;
+				max-height:64px;
 				max-width:none;
 				border:none;
 			}
@@ -39,11 +39,12 @@
 					list-style-type:none;
 					li {
 						display:inline;
-						padding-left:15px;
+						padding-left:13px;
 						a {
 							text-decoration:none;
 							color:$ultra-grey;
 							padding-bottom:5px;
+							font-size:16px;
 							&:focus {
 								color:$dto-blue!important;
 								background-color:#fff;
@@ -64,7 +65,7 @@
 			}
 			.block {
 				float:right;
-				background-color:#fff;
+			//	background-color:#fff;
 				.block__content {
 						p {
 							margin-bottom:0;
@@ -124,18 +125,18 @@
 }
 
 //resize menu items for iPad
-@media (min-width: 760px) and (max-width: 840px) {
+@media (min-width: 766px) and (max-width: 780px) {
 	.header {
 		.nav-head-container {
 			.header__logo {
 				.header__logo-image {
-					max-height:48px;
+					max-height:58px;
 				}
 			}
 			.menu {
 				padding-left:0;
 				a {
-					font-size:15px;
+					//font-size:15px;
 				}
 			}
 		}	

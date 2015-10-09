@@ -1,5 +1,5 @@
 //mobile-menu
-@media (max-width: 760px) {
+@media (max-width: 765px) {
 	//burger styling
 	.header {
 		.mobile-nav {
@@ -44,7 +44,7 @@
 			.header__logo {
 				margin-top:5px;
 				.header__logo-image {
-					max-height:50px;
+					max-height:58px;
 				}
 			}
 			.region-header {
@@ -60,7 +60,7 @@
 				max-height:0;
 				.block-menu-block {
 					float:left;
-					margin-top:55px;
+					margin-top:30px;
 					.menu {
 						padding-left:0;
 						margin-bottom:0;
@@ -155,7 +155,7 @@
 
 
 
-/*
+
 @media (max-width: 580px) {
 	.header {
 		.nav-head-container {
@@ -177,6 +177,6 @@
 			}
 		}
 	}
-}*/
+}
 
 //search styling
