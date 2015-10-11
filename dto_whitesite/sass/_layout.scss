@@ -49,7 +49,29 @@ body {
 	}
 	.layout-sidebar-left { 
 		.layout-sidebar-left__sidebar {
-			padding-left:0;
+			padding-right:10px;
+		}
+		.layout-sidebar-left__main {
+			padding-left:20px;
+		}
+	}
+	@include breakpoint($large-column) {
+		.layout-sidebar-right {
+			.layout-sidebar-right__main {
+				padding-left:0;
+				padding-right:0px;
+			}
+			.layout-sidebar-right__sidebar_two {
+				padding-right:0;
+			}
+		}
+		.layout-sidebar-left { 
+			.layout-sidebar-left__sidebar {
+				padding-right:0px;
+			}
+			.layout-sidebar-left__main {
+				padding-left:0px;
+			}
 		}
 	}
 }
