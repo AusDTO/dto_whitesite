@@ -72,10 +72,10 @@ function dto_whitesite_preprocess_page(&$variables, $hook) {
   }
 
   // Get node title if is comment reply page. Used in page--comment-reply.tpl.php
-  if (!empty($variables['page']['content']['system_main']['comment_node']['#node'])) {
-    $node = $variables['page']['content']['system_main']['comment_node']['#node'];
-    $variables['title'] = t('Add comment - ') . check_plain($node->title);
-  }
+//  if (!empty($variables['page']['content']['system_main']['comment_node']['#node'])) {
+  //  $node = $variables['page']['content']['system_main']['comment_node']['#node'];
+   // $variables['title'] = t('Add comment - ') . check_plain($node->title);
+  //}
 }
 
 /**
