@@ -9,7 +9,7 @@
 					border-bottom:1px solid #ccc;
 					padding-bottom:30px;
 					.views-field {
-						margin-left:auto;
+						//margin-left:auto;
 					}
 					.views-field-term-node-tid {
 						margin-bottom:22px;
@@ -42,11 +42,24 @@
 							}
 						}
 					}
+					.views-field-field-department-logo {
+						width:33%;
+						float:left;
+						margin-right:auto;
+						display:inline-block;
+						img {
+							max-width:260px;
+							height:auto;
+						}
+					}
 					.views-field-title {
 						width:66%;	
-						float:left;
-						padding-right:20px;
+						float:right;
+						padding-left:30px;
 						margin-bottom:15px;
+						h2 {
+							margin-top:0;
+						}
 						a {
 							color:$dto-blue;
 							font-size:24px;
@@ -56,8 +69,8 @@
 					}
 					.views-field-field-summary {
 						width:66%;
-						float:left;
-						padding-right:20px;
+						float:right;
+						padding-left:30px;
 						.field-content {
 						}
 					}
@@ -109,6 +122,42 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 660px) {
+	.page-projects {
+	.page-wrapper {
+		.view-exemplars {
+			.view-content {
+				.views-row {
+					.views-field-field-department-logo {
+						width:100%;
+						float:left;
+						margin-right:auto;
+						display:inline-block;
+						img {
+							max-width:260px;
+							height:auto;
+						}
+					}
+					.views-field-title {
+						width:100%;	
+						float:right;
+						padding-left:0;
+						margin-bottom:15px;
+						h2 {
+							margin-top:10px;
+						}
+					}
+					.views-field-field-summary {
+						width:100%;
+						padding-left:0;
+					}
+				}
+			}
+		}
+	}
+}
 }
 
 //exemplar content page 
