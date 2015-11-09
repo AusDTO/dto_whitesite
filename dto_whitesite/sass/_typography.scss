@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
 	font-family:'OpenSansBold',Arial,Helvetica Neue,Helvetica,sans-serif;
-	margin-bottom:1.175em;
+	margin-bottom:0.7em;
 	margin-top:0;
 	line-height:1.34167;
 	font-size:44px;
@@ -129,7 +129,8 @@ p.lead-in {
 .field-name-field-summary, .lede {
 	font-size:24px;
 	color:$ultra-grey;
-	margin-bottom:16px;
+	margin-bottom:1.55em;
+	margin-top:-0.85em;
 }
 
 strong {
