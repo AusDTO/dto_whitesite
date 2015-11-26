@@ -79,6 +79,14 @@
 						.field-content {
 						}
 					}
+					.views-field-field-summary {
+						font-size:28px;
+						color:$dark-grey;
+						margin-top:-34px;
+						.field-content {
+							font-family:"OpenSansBold",Arial,Helvetica Neue,Helvetica,sans-serif;
+						}
+					}
 					.views-field-field-partners {
 						width:33%;
 					}
@@ -156,9 +164,16 @@
 							margin-top:10px;
 						}
 					}
-					.views-field-field-summary, .views-field-field-project-end-date {
+					.views-field-field-summary {
+						font-size:21px;
+						margin-top:-30px;
+					}
+					.views-field-field-summary, .views-field-field-project-start-date, .views-field-field-project-end-date {
 						width:100%;
 						padding-left:0;
+					}
+					.views-label {
+						font-size:17px;
 					}
 				}
 			}
