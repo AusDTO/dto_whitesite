@@ -24,19 +24,20 @@
 			.rbox-opening-li {
 				border-color: $dto-grey;
 				overflow:hidden;
-				&:after {
-					content:"Apply";
-					//background-color:$dto-blue;
-					//color:#fff;
-					padding:10px 20px;
-					float:right;
-					color:$dto-blue;
-					border:1px solid $dto-blue;
-					min-width:60px;
-					text-align:center;
-				}
+				
 				a {
-					line-height:2.8em;
+					line-height:2.1em;
+					&:after {
+						content:"Apply";
+						//background-color:$dto-blue;
+						//color:#fff;
+						padding:10px 20px;
+						float:right;
+						color:$dto-blue;
+						border:1px solid $dto-blue;
+						min-width:60px;
+						text-align:center;
+					}
 					&.rbox-opening-li-title {
 						font-weight: normal;
 						font-size:1em;
@@ -47,9 +48,10 @@
 					font-size:0.9em;
 					opacity:1;
 					color:$dark-grey;
-					display:none;
+
 					.rbox-opening-position-info {
 					margin-top:0;
+					display:none;
 					.rbox-opening-position-type {
 						border:none;
 						padding:0;
