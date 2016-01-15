@@ -67,8 +67,10 @@
 				}
 			}
 			#rbox-opening-li-77880 {
-				&:after {
-					content:"Register";
+				a {
+					&:after {
+						content:"Register";
+					}
 				}
 			}
 			.rbox-job-fullpage {
